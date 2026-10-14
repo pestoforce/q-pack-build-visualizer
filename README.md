@@ -5,6 +5,15 @@ Ghostbusters Q-Pack MK4 proton pack and wand.
 
 **[Open the live viewer](https://pestoforce.github.io/q-pack-build-visualizer/)**
 
+[![Q-Pack Build Visualizer showing the proton-pack assembly, print groups, and progress controls](docs/images/proton-pack-preview.png)](https://pestoforce.github.io/q-pack-build-visualizer/)
+
+## Video walkthrough
+
+[![Watch the Q-Pack Build Visualizer walkthrough on YouTube](https://img.youtube.com/vi/SobxEf9ONpw/hqdefault.jpg)](https://www.youtube.com/watch?v=SobxEf9ONpw)
+
+**[Watch the video on YouTube](https://www.youtube.com/watch?v=SobxEf9ONpw)** to see the visualizer in action.
+GitHub READMEs do not support embedded YouTube players; the thumbnail opens the video.
+
 Viewer software is **MIT licensed**. Bundled Q-Pack model assets are
 **CC BY-NC-SA 4.0**, not MIT: attribution, noncommercial use, and ShareAlike
 restrictions apply. See [ATTRIBUTION.md](ATTRIBUTION.md).
