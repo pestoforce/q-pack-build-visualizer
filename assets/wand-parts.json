@@ -1,0 +1,411 @@
+{
+  "parts": {
+    "left_box": {
+      "name": "Left Box",
+      "plate": "Example Plate 12",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "Page 40",
+      "explode": [
+        -0.6,
+        -0.4,
+        0
+      ],
+      "source": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_left_box.stl"
+    },
+    "left_box_plate": {
+      "name": "Left Box Cover Plate",
+      "plate": "Example Plate 12",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "Page 40",
+      "explode": [
+        -1,
+        -0.4,
+        0
+      ],
+      "source": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_left_box_plate.stl"
+    },
+    "rear_box": {
+      "name": "Rear Electrical Box",
+      "plate": "Example Plate 12",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "Page 40",
+      "explode": [
+        0,
+        -0.8,
+        0
+      ],
+      "source": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_rear_box.stl"
+    },
+    "rear_box_plate": {
+      "name": "Rear Box Cover Plate",
+      "plate": "Example Plate 12",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "Page 40",
+      "explode": [
+        0,
+        -1.3,
+        0
+      ],
+      "source": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_rear_box_plate.stl"
+    },
+    "left_big_knob": {
+      "name": "Left Big Knob",
+      "plate": "Example Plate 03",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "Page 47",
+      "explode": [
+        -0.8,
+        -0.1,
+        0
+      ],
+      "source": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_left_big_knob.stl"
+    },
+    "left_small_knob": {
+      "name": "Left Small Knob",
+      "plate": "Example Plate 03",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "Page 47",
+      "explode": [
+        -0.8,
+        0.1,
+        0
+      ],
+      "source": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_left_small_knob.stl"
+    },
+    "right_big_knob": {
+      "name": "Right Big Knob",
+      "plate": "Example Plate 03",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "Page 47",
+      "explode": [
+        0.8,
+        -0.1,
+        0
+      ],
+      "source": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_right_big_knob.stl"
+    },
+    "right_little_knob": {
+      "name": "Right Little Knob",
+      "plate": "Example Plate 03",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "Page 47",
+      "explode": [
+        0.8,
+        0.1,
+        0
+      ],
+      "source": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_right_little_knob.stl"
+    },
+    "rear_fitting": {
+      "name": "Rear Brass Fitting",
+      "plate": "Example Plate 02",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "Page 48",
+      "explode": [
+        0.5,
+        -0.9,
+        0.2
+      ],
+      "source": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_rear_fitting.stl"
+    },
+    "heat_sink": {
+      "name": "Finned Heat Sink",
+      "plate": "Example Plate 02",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "Page 46",
+      "explode": [
+        0.8,
+        0,
+        0
+      ],
+      "source": "q-pack\\WAND\\MISC\\HEAT_SINK\\Q-pack-TacoShell_MK4_heat_sink.stl"
+    },
+    "Rack": {
+      "name": "Wand Underside Rack",
+      "plate": "Example Plate 13",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 41",
+      "explode": [
+        0,
+        0,
+        -0.6
+      ],
+      "source": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_Rack_ELSA.stl"
+    },
+    "V-hook": {
+      "name": "Wand Docking V-Hook",
+      "plate": "Example Plate 13",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 51",
+      "explode": [
+        0,
+        0,
+        -1.1
+      ],
+      "source": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_V-hook.stl"
+    },
+    "Rear_tube": {
+      "name": "Rear Tube Mount",
+      "plate": "Example Plate 13",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 41",
+      "explode": [
+        0,
+        -0.7,
+        -0.4
+      ],
+      "source": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_Rear_tube.stl"
+    },
+    "Base_plate": {
+      "name": "Bottom Base Plate",
+      "plate": "Example Plate 11",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 41",
+      "explode": [
+        0,
+        0,
+        -0.3
+      ],
+      "source": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_Base_plate.stl"
+    },
+    "Body_to_fronGrip": {
+      "name": "Front Grip Connector",
+      "plate": "Example Plate 11",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "Page 38",
+      "explode": [
+        0,
+        0.4,
+        0
+      ],
+      "source": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_Body_to_fronGrip.stl"
+    },
+    "Body_to_fronGrip_inner_tube": {
+      "name": "Front Inner Sleeve Tube",
+      "plate": "Example Plate 11",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "Page 38",
+      "explode": [
+        0,
+        0.7,
+        0
+      ],
+      "source": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_Body_to_fronGrip_inner_tube.stl"
+    },
+    "Gun_body": {
+      "name": "Main Wand TacoShell Body",
+      "plate": "Future Plate (Wand Body)",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "Page 37",
+      "explode": [
+        0,
+        0,
+        0
+      ],
+      "source": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_Gun_body.stl"
+    },
+    "Back_ear": {
+      "name": "Front Barrel Back Ear",
+      "plate": "Future Plate (Front Details)",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "Page 43",
+      "explode": [
+        0.3,
+        0.8,
+        0
+      ],
+      "source": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_Back_ear.stl"
+    },
+    "Front_Barrel_22mm": {
+      "name": "Front Barrel (22mm)",
+      "plate": "Future Plate (Front Barrel)",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "Page 43",
+      "explode": [
+        0,
+        1.2,
+        0
+      ],
+      "source": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_Front_Barrel_22mm.stl"
+    },
+    "b_handle_01": {
+      "name": "Back Handle Section 1",
+      "plate": "Future Plate (Back Handle)",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "Page 41",
+      "explode": [
+        -0.2,
+        -0.6,
+        0.3
+      ],
+      "source": "q-pack\\WAND\\BACK\\Q-pack-TacoShell_MK4_b_handle_01.stl"
+    },
+    "b_handle_02": {
+      "name": "Back Handle Section 2",
+      "plate": "Future Plate (Back Handle)",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "Page 41",
+      "explode": [
+        -0.2,
+        -1.1,
+        0.3
+      ],
+      "source": "q-pack\\WAND\\BACK\\Q-pack-TacoShell_MK4_b_handle_02.stl"
+    },
+    "b_handle_03": {
+      "name": "Back Handle End Cap",
+      "plate": "Future Plate (Back Handle)",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "Page 41",
+      "explode": [
+        -0.2,
+        -1.6,
+        0.3
+      ],
+      "source": "q-pack\\WAND\\BACK\\Q-pack-TacoShell_MK4_b_handle_03_type1.stl"
+    }
+  },
+  "plates": [
+    {
+      "id": "all",
+      "name": "All Assembly Parts",
+      "count": "22 Parts",
+      "status": "all",
+      "desc": "22-object wand prototype"
+    },
+    {
+      "id": "plate13",
+      "name": "Example Plate 13: Docking & V-Hook",
+      "count": "3 Parts",
+      "status": "pending",
+      "desc": "Example grouping; not a print-ready project",
+      "keys": [
+        "Rack",
+        "V-hook",
+        "Rear_tube"
+      ]
+    },
+    {
+      "id": "plate12",
+      "name": "Example Plate 12: Rear Boxes",
+      "count": "4 Parts",
+      "status": "pending",
+      "desc": "Example grouping; not a print-ready project",
+      "keys": [
+        "left_box",
+        "left_box_plate",
+        "rear_box",
+        "rear_box_plate"
+      ]
+    },
+    {
+      "id": "plate11",
+      "name": "Example Plate 11: Base & Connectors",
+      "count": "3 Parts",
+      "status": "pending",
+      "desc": "Example grouping; not a print-ready project",
+      "keys": [
+        "Base_plate",
+        "Body_to_fronGrip",
+        "Body_to_fronGrip_inner_tube"
+      ]
+    },
+    {
+      "id": "knobs",
+      "name": "Example Group: Knobs & Heatsink",
+      "count": "6 Parts",
+      "status": "pending",
+      "desc": "Example grouping; not a print-ready project",
+      "keys": [
+        "left_big_knob",
+        "left_small_knob",
+        "right_big_knob",
+        "right_little_knob",
+        "rear_fitting",
+        "heat_sink"
+      ]
+    },
+    {
+      "id": "unprinted",
+      "name": "Future Plates: Body & Handles",
+      "count": "6 Parts",
+      "status": "pending",
+      "desc": "Example grouping; not a print-ready project",
+      "keys": [
+        "Gun_body",
+        "Back_ear",
+        "Front_Barrel_22mm",
+        "b_handle_01",
+        "b_handle_02",
+        "b_handle_03"
+      ]
+    }
+  ],
+  "note": "22-object wand prototype, not a complete print BOM. Rack uses the ELSA source variant; barrel diameter and small details are provisional. Verify against your chosen build."
+}

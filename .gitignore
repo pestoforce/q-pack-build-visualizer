@@ -1,0 +1,12 @@
+node_modules/
+__pycache__/
+*.pyc
+playwright-report/
+test-results/
+q-pack/
+private/
+*.pdf
+*.pem
+*.key
+.env
+.env.*

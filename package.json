@@ -1,0 +1,13 @@
+{
+  "name": "q-pack-build-visualizer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Unofficial Q-Pack assembly viewer with private builder progress",
+  "scripts": {
+    "validate": "node scripts/validate.cjs",
+    "test": "node tests/browser.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.64.0"
+  }
+}

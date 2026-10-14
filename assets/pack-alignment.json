@@ -1,0 +1,2054 @@
+[
+  {
+    "key": "pack_Dale_RH_50_01",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\RESISTORS\\Q-pack-TacoShell_MK4_Dale_RH-50.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        25.434892654418945,
+        175.13623046875,
+        74.22268676757812
+      ],
+      [
+        41.53489303588867,
+        225.13623046875,
+        104.4674301147461
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_PH_25_without_ring_01",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\RESISTORS\\Q-pack-TacoShell_MK4_PH-25-without_ring.stl",
+    "rotation_rad": [
+      0,
+      1.5707963267948966,
+      0
+    ],
+    "translation_mm": [
+      48.0,
+      245.0,
+      55.0
+    ],
+    "bounds_mm": [
+      [
+        48.0,
+        234.0,
+        46.0
+      ],
+      [
+        68.9993667602539,
+        256.0,
+        64.0
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_Sage_RH_25_01",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\RESISTORS\\Q-pack-TacoShell_MK4_Sage-RH-25.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -350,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -16.758819580078125,
+        325.07470703125,
+        64.52999877929688
+      ],
+      [
+        10.671173095703125,
+        352.07470703125,
+        78.39923095703125
+      ]
+    ],
+    "alignment": "Booster side detail; dry-fit pending."
+  },
+  {
+    "key": "pack_Clamp_X2_01",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\RIBBON_CLAMP\\Q-pack-TacoShell_MK4_Clamp_X2.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0.0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -140.474853515625,
+        43.40754699707031,
+        75.51000213623047
+      ],
+      [
+        -64.57554626464844,
+        128.09243774414062,
+        78.51000213623047
+      ]
+    ],
+    "alignment": "Illustrative second-clamp routing; dry-fit pending."
+  },
+  {
+    "key": "pack_Clamp_X2_02",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\RIBBON_CLAMP\\Q-pack-TacoShell_MK4_Clamp_X2.stl",
+    "rotation_rad": [
+      0,
+      0,
+      3.141592653589793
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        64.57555389404297,
+        -128.09243774414062,
+        75.51000213623047
+      ],
+      [
+        140.474853515625,
+        -43.407535552978516,
+        78.51000213623047
+      ]
+    ],
+    "alignment": "Illustrative second-clamp routing; dry-fit pending."
+  },
+  {
+    "key": "pack_Booster_Plug_L_XL_XXL_01",
+    "source": "q-pack\\SHELL\\BOOSTER_TUBE\\Q-pack-TacoShell_MK4_Booster_Plug_L_XL_XXL.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -107.34912109375,
+        468.3630065917969,
+        79.45109558105469
+      ],
+      [
+        -50.353511810302734,
+        503.3630065917969,
+        136.4488983154297
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_ION_ARM_CAP_L_XL_XXL_GB1_01",
+    "source": "q-pack\\SHELL\\ION_ARM\\Q-pack-TacoShell_MK4_ION_ARM_CAP_L_XL_XXL-GB1.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -145.40499877929688,
+        425.4630126953125,
+        216.1999969482422
+      ],
+      [
+        -119.90499877929688,
+        495.26300048828125,
+        229.0
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_EDA_Disks_Flat_x2_01",
+    "source": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_EDA_Disks-Flat_x2.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      150,
+      450,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -113.85000610351562,
+        325.25201416015625,
+        141.1999969482422
+      ],
+      [
+        -85.35000610351562,
+        353.74798583984375,
+        146.1999969482422
+      ]
+    ],
+    "alignment": "Top-shell disk placement; dry-fit pending."
+  },
+  {
+    "key": "pack_EDA_Disks_Flat_x2_02",
+    "source": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_EDA_Disks-Flat_x2.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      200,
+      450,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -63.850006103515625,
+        325.25201416015625,
+        141.1999969482422
+      ],
+      [
+        -35.350006103515625,
+        353.74798583984375,
+        146.1999969482422
+      ]
+    ],
+    "alignment": "Top-shell disk placement; dry-fit pending."
+  },
+  {
+    "key": "pack_SynchGen_01_L_XL_01",
+    "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_SynchGen_01_L_XL.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        10.81149959564209,
+        170.686767578125,
+        0.0
+      ],
+      [
+        98.69612121582031,
+        305.0224304199219,
+        75.5
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_SynchGen_02_L_01",
+    "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_SynchGen_02_L.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -34.299190521240234,
+        4.40016508102417,
+        0.0
+      ],
+      [
+        154.27342224121094,
+        192.01345825195312,
+        75.5
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_SynchGen_03_L_01",
+    "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_SynchGen_03_L.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -21.65544891357422,
+        -165.0078582763672,
+        0.0
+      ],
+      [
+        154.44387817382812,
+        30.005252838134766,
+        75.5
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_SynchGen_04_L_01",
+    "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_SynchGen_04_L.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -154.41497802734375,
+        -152.5916290283203,
+        0.0
+      ],
+      [
+        6.239958763122559,
+        7.427679061889648,
+        75.5
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_SynchGen_05_L_01",
+    "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_SynchGen_05_L.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -154.16787719726562,
+        -35.661216735839844,
+        0.0
+      ],
+      [
+        0.0,
+        150.5,
+        75.5
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Clippard_Base_GB1_01",
+    "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_Clippard_Base_GB1.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        11.76413631439209,
+        135.02792358398438,
+        75.5
+      ],
+      [
+        99.7641372680664,
+        223.01536560058594,
+        91.69999694824219
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_VacHose_base_01",
+    "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_VacHose_base.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        12.577628135681152,
+        242.5266876220703,
+        75.5
+      ],
+      [
+        69.57762908935547,
+        299.5185546875,
+        87.25
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_VacHose_mount_01",
+    "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_VacHose_mount.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        12.582438468933105,
+        242.52381896972656,
+        87.25
+      ],
+      [
+        69.57762908935547,
+        299.5213928222656,
+        141.25
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Injector_Block_GB1_01",
+    "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_Injector_Block_GB1.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -183.01441955566406,
+        -154.83523559570312,
+        0.0
+      ],
+      [
+        -148.18814086914062,
+        -117.79945373535156,
+        68.0
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Wand_loom_panel_GB1_01",
+    "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_Wand_loom_panel_GB1.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        148.36984252929688,
+        -158.9434814453125,
+        0.0
+      ],
+      [
+        186.84857177734375,
+        -117.1884765625,
+        68.0
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Center_Cover_L_01_01",
+    "source": "q-pack\\SHELL\\CENTER_COVER\\Q-pack-TacoShell_MK4_Center_Cover_L_01.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -350,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -144.69088745117188,
+        52.26933288574219,
+        0.0
+      ],
+      [
+        -26.7550048828125,
+        195.06300354003906,
+        12.5
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Center_Cover_L_02_sharp_corner_01",
+    "source": "q-pack\\SHELL\\CENTER_COVER\\Q-pack-TacoShell_MK4_Center_Cover_L_02_sharp_corner.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -700,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -54.69085693359375,
+        140.21112060546875,
+        -0.001386999967508018
+      ],
+      [
+        54.868408203125,
+        333.6689453125,
+        32.5
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Center_Cover_L_03_01",
+    "source": "q-pack\\SHELL\\CENTER_COVER\\Q-pack-TacoShell_MK4_Center_Cover_L_03.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -350,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        28.236846923828125,
+        118.82159423828125,
+        0.0
+      ],
+      [
+        120.84500122070312,
+        332.6064147949219,
+        12.5
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Filler_Tube_L_XL_XXL_01",
+    "source": "q-pack\\SHELL\\CENTER_COVER\\Q-pack-TacoShell_MK4_Filler_Tube_L_XL_XXL.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -103.4300537109375,
+        144.7660675048828,
+        12.5
+      ],
+      [
+        -66.5300521850586,
+        181.66607666015625,
+        120.44999694824219
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Beamline_L_XL_XXL_01",
+    "source": "q-pack\\SHELL\\CENTER_COVER\\Q-pack-TacoShell_MK4_Beamline_L_XL_XXL.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -29.661476135253906,
+        155.04493713378906,
+        32.5
+      ],
+      [
+        7.238524436950684,
+        191.94493103027344,
+        140.4499969482422
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Booster_box_01_L_01",
+    "source": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_Booster_box_01_L.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -350,
+      -630,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -129.89999389648438,
+        184.20001220703125,
+        0.0
+      ],
+      [
+        -18.79998779296875,
+        383.0999755859375,
+        141.1999969482422
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Booster_box_02_L_01",
+    "source": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_Booster_box_02_L.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -350,
+      -630,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -159.6999969482422,
+        383.0999755859375,
+        0.0
+      ],
+      [
+        -18.799224853515625,
+        485.49560546875,
+        76.19999694824219
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_PowerCell_L_01",
+    "source": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_PowerCell_L.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -350,
+      -280,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -183.89999389648438,
+        245.53253173828125,
+        0.0
+      ],
+      [
+        -129.89999389648438,
+        383.0999755859375,
+        104.80000305175781
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01",
+    "source": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_Crank_Gen_And_Gun_Mount_L_XL_XXL.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -550,
+      80,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -20.0902099609375,
+        299.8468017578125,
+        0.0
+      ],
+      [
+        176.4000244140625,
+        494.153564453125,
+        121.54169464111328
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Powercell_Lens_01",
+    "source": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_Powercell_Lens.stl",
+    "rotation_rad": [
+      0,
+      1.5707963267948966,
+      0
+    ],
+    "translation_mm": [
+      -185.25,
+      319.1112365722656,
+      61.0
+    ],
+    "bounds_mm": [
+      [
+        -185.25,
+        268.8999938964844,
+        50.0
+      ],
+      [
+        -182.75,
+        375.1000061035156,
+        73.0
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_Booster_Tube_PART1_L_01",
+    "source": "q-pack\\SHELL\\BOOSTER_TUBE\\Q-pack-TacoShell_MK4_Booster_Tube_PART1_L.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      90,
+      -700,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -110.603515625,
+        340.7825927734375,
+        76.19999694824219
+      ],
+      [
+        -47.103515625,
+        498.363037109375,
+        139.6999969482422
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Booster_Tube_PART2_L_01",
+    "source": "q-pack\\SHELL\\BOOSTER_TUBE\\Q-pack-TacoShell_MK4_Booster_Tube_PART2_L.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      -700,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -110.60350799560547,
+        246.08251953125,
+        76.19999694824219
+      ],
+      [
+        -47.103511810302734,
+        344.7825927734375,
+        139.6999969482422
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Booster_Frame_L_XL_XXL_GB1_01",
+    "source": "q-pack\\SHELL\\BOOSTER_FRAME\\Q-pack-TacoShell_MK4_Booster_Frame_L_XL_XXL_GB1.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -78.30657196044922,
+      351.55548095703125,
+      118.0
+    ],
+    "bounds_mm": [
+      [
+        -119.18464660644531,
+        288.0,
+        121.5
+      ],
+      [
+        -38.81535339355469,
+        434.0,
+        136.19503784179688
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_Injector_Bracket_L_XL_XXL_01",
+    "source": "q-pack\\SHELL\\INJECTORS\\Q-pack-TacoShell_MK4_Injector_Bracket_L_XL_XXL.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -142.69088745117188,
+        117.7467269897461,
+        12.5
+      ],
+      [
+        -109.19086456298828,
+        147.91513061523438,
+        82.5
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Injectors_L_XL_XXL_GB1_01",
+    "source": "q-pack\\SHELL\\INJECTORS\\Q-pack-TacoShell_MK4_Injectors_L_XL_XXL_GB1.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      140.5,
+      353.5,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -183.89999389648438,
+        120.39999389648438,
+        1.0
+      ],
+      [
+        -143.89999389648438,
+        285.3999938964844,
+        93.69999694824219
+      ]
+    ],
+    "alignment": "Illustrative injector/bracket placement; dry-fit pending."
+  },
+  {
+    "key": "pack_Ion_Arm_L_XL_XXL_GB1_01",
+    "source": "q-pack\\SHELL\\ION_ARM\\Q-pack-TacoShell_MK4_Ion_Arm_L_XL_XXL_GB1.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -167.65499877929688,
+        427.3630065917969,
+        76.19999694824219
+      ],
+      [
+        -120.65499877929688,
+        493.3630065917969,
+        216.1999969482422
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_HGA_L_XL_XXL_01",
+    "source": "q-pack\\SHELL\\HGA\\Q-pack-TacoShell_MK4_HGA_L_XL_XXL.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -145.3,
+      260,
+      52.965
+    ],
+    "bounds_mm": [
+      [
+        -191.89999389648438,
+        358.54345703125,
+        76.19725036621094
+      ],
+      [
+        -129.90000915527344,
+        422.04345703125,
+        139.6864013671875
+      ]
+    ],
+    "alignment": "Illustrative HGA shoulder placement; dry-fit pending."
+  },
+  {
+    "key": "pack_PPD_Type_1_01",
+    "source": "q-pack\\SHELL\\PPD\\Q-pack-TacoShell_MK4_PPD_Type_1.stl",
+    "rotation_rad": [
+      1.5707963267948966,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -79.0,
+      59.76942443847656,
+      168.875
+    ],
+    "bounds_mm": [
+      [
+        -94.875,
+        182.04830932617188,
+        108.00000762939453
+      ],
+      [
+        -63.125,
+        253.95169067382812,
+        139.75001525878906
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_V_Hook_Base_01",
+    "source": "q-pack\\SHELL\\V_HOOK\\Q-pack-TacoShell_MK4_V_Hook_Base.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        168.44500732421875,
+        360.13275146484375,
+        51.599998474121094
+      ],
+      [
+        174.94500732421875,
+        410.9327392578125,
+        102.4000015258789
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_V_Hook_Track_GB1_01",
+    "source": "q-pack\\SHELL\\V_HOOK\\Q-pack-TacoShell_MK4_V_Hook_Track_GB1.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        174.94500732421875,
+        355.54119873046875,
+        50.07645797729492
+      ],
+      [
+        184.44500732421875,
+        418.50994873046875,
+        107.888427734375
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Cyclotron_NOT_REMOVABLE_L_01_01",
+    "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_NOT REMOVABLE_L_01.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -915,
+      430,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -0.0096435546875,
+        -23.4588623046875,
+        75.5
+      ],
+      [
+        131.0,
+        131.0,
+        124.5
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+    "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_NOT REMOVABLE_L_02.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -915,
+      430,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -23.4588623046875,
+        -131.0,
+        75.5
+      ],
+      [
+        131.0,
+        0.0,
+        124.5
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Cyclotron_NOT_REMOVABLE_L_03_01",
+    "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_NOT REMOVABLE_L_03.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -915,
+      430,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -131.0,
+        -131.0,
+        75.5
+      ],
+      [
+        -0.00958251953125,
+        23.4588623046875,
+        124.5
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Cyclotron_NOT_REMOVABLE_L_04_01",
+    "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_NOT REMOVABLE_L_04.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -915,
+      430,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -131.0,
+        0.0,
+        75.5
+      ],
+      [
+        23.4588623046875,
+        131.0,
+        124.5
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_NFilter_non_remove_ver_01",
+    "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_NFilter-non-remove_ver.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        10.626999855041504,
+        -142.8792724609375,
+        75.5
+      ],
+      [
+        86.82695007324219,
+        -66.68099975585938,
+        163.5
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Cyclotron_Window_Bottom_x2_L_XL_XXL_01",
+    "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Bottom_x2_L_XL_XXL.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -68.87411499023438,
+        -66.67726135253906,
+        121.5
+      ],
+      [
+        -9.378310203552246,
+        -7.179359436035156,
+        127.5
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Cyclotron_Window_Bottom_x2_L_XL_XXL_02",
+    "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Bottom_x2_L_XL_XXL.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      78.25,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        9.375885009765625,
+        -66.67726135253906,
+        121.5
+      ],
+      [
+        68.87168884277344,
+        -7.179359436035156,
+        127.5
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Cyclotron_Window_Top_x2_L_XL_XXL_01",
+    "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Top_x2_L_XL_XXL.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        20.571516036987305,
+        18.56814193725586,
+        121.5
+      ],
+      [
+        84.3170166015625,
+        82.3158950805664,
+        127.5
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Cyclotron_Window_Top_x2_L_XL_XXL_02",
+    "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Top_x2_L_XL_XXL.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -104.89,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -84.3184814453125,
+        18.56814193725586,
+        121.5
+      ],
+      [
+        -20.572982788085938,
+        82.3158950805664,
+        127.5
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Cyclotron_Window_Lens_x4_L_XL_XXL_01",
+    "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Lens_x4_L_XL_XXL.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -220.0591583251953,
+      0.0079803466796875,
+      16.300003051757812
+    ],
+    "bounds_mm": [
+      [
+        27.051803588867188,
+        25.05089569091797,
+        121.5
+      ],
+      [
+        77.84822082519531,
+        75.84910583496094,
+        125.5
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_Cyclotron_Window_Lens_x4_L_XL_XXL_02",
+    "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Lens_x4_L_XL_XXL.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -324.95916748046875,
+      0.0079803466796875,
+      16.300003051757812
+    ],
+    "bounds_mm": [
+      [
+        -77.84820556640625,
+        25.05089569091797,
+        121.5
+      ],
+      [
+        -27.051788330078125,
+        75.84910583496094,
+        125.5
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_Cyclotron_Window_Lens_x4_L_XL_XXL_03",
+    "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Lens_x4_L_XL_XXL.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -311.629150390625,
+      -87.37202453613281,
+      16.300003051757812
+    ],
+    "bounds_mm": [
+      [
+        -64.5181884765625,
+        -62.32910919189453,
+        121.5
+      ],
+      [
+        -13.721771240234375,
+        -11.530899047851562,
+        125.5
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_Cyclotron_Window_Lens_x4_L_XL_XXL_04",
+    "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Lens_x4_L_XL_XXL.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -233.38916015625,
+      -87.37202453613281,
+      16.300003051757812
+    ],
+    "bounds_mm": [
+      [
+        13.7218017578125,
+        -62.32910919189453,
+        121.5
+      ],
+      [
+        64.51821899414062,
+        -11.530899047851562,
+        125.5
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_Bumper_01_L_01",
+    "source": "q-pack\\SHELL\\BUMPER\\Q-pack-TacoShell_MK4_Bumper_01_L.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      915,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -174.17996215820312,
+        -38.0,
+        0.0
+      ],
+      [
+        14.859443664550781,
+        38.0,
+        160.0
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Bumper_02_L_01",
+    "source": "q-pack\\SHELL\\BUMPER\\Q-pack-TacoShell_MK4_Bumper_02_L.3mf",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      915,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -15.38746452331543,
+        -38.0,
+        0.0
+      ],
+      [
+        174.3185577392578,
+        38.0,
+        160.0
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Bumper_Spacer_01",
+    "source": "q-pack\\SHELL\\BUMPER\\Q-pack-TacoShell_MK4_Bumper_Spacer.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -70,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -76.99881744384766,
+        -7.0,
+        124.5
+      ],
+      [
+        -63.0,
+        7.0,
+        137.5
+      ]
+    ],
+    "alignment": "Illustrative bumper supports on the cyclotron top; dry-fit pending."
+  },
+  {
+    "key": "pack_Bumper_Spacer_02",
+    "source": "q-pack\\SHELL\\BUMPER\\Q-pack-TacoShell_MK4_Bumper_Spacer.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      70,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        63.001182556152344,
+        -7.0,
+        124.5
+      ],
+      [
+        77.0,
+        7.0,
+        137.5
+      ]
+    ],
+    "alignment": "Illustrative bumper supports on the cyclotron top; dry-fit pending."
+  },
+  {
+    "key": "pack_Shockmount_full_GB1_01",
+    "source": "q-pack\\SHELL\\BUMPER\\Q-pack-TacoShell_MK4_Shockmount_full_GB1.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0.0017261505126953125,
+      0.0,
+      160.0
+    ],
+    "bounds_mm": [
+      [
+        -19.04827308654785,
+        -19.049137115478516,
+        159.5
+      ],
+      [
+        19.04827308654785,
+        19.049137115478516,
+        203.0
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_crank_knob_01",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\CRANK_KNOBS\\Q-pack-TacoShell_MK4_crank_knob.stl",
+    "rotation_rad": [
+      0,
+      1.5707963267948966,
+      0
+    ],
+    "translation_mm": [
+      103.39952850341797,
+      339.0,
+      218.0
+    ],
+    "bounds_mm": [
+      [
+        103.4000015258789,
+        428.4100036621094,
+        71.54600524902344
+      ],
+      [
+        137.6820068359375,
+        459.5899963378906,
+        114.45399475097656
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_clippard_body_screws_01",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_701-331\\Q-pack-TacoShell_MK4_clippard_body_screws.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      63.65,
+      194.22,
+      2.8
+    ],
+    "bounds_mm": [
+      [
+        30.35000228881836,
+        159.005615234375,
+        91.70000457763672
+      ],
+      [
+        81.11412048339844,
+        198.00286865234375,
+        143.40000915527344
+      ]
+    ],
+    "alignment": "Illustrative valve on GB1 Clippard base."
+  },
+  {
+    "key": "pack_clippard_r331_top_01",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_701-331\\Q-pack-TacoShell_MK4_clippard_r331_top.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      63.65,
+      194.22,
+      2.8
+    ],
+    "bounds_mm": [
+      [
+        39.50239562988281,
+        161.77059936523438,
+        138.90000915527344
+      ],
+      [
+        72.0,
+        194.2694091796875,
+        153.60000610351562
+      ]
+    ],
+    "alignment": "Illustrative R331 valve selection; not finalized."
+  },
+  {
+    "key": "pack_clippard_r331_cap_corrected_01",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_701-331\\Q-pack-TacoShell_MK4_clippard_r331_cap_corrected.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      13.749996185302734,
+      151.91998291015625,
+      -1.4799957275390625
+    ],
+    "bounds_mm": [
+      [
+        46.450042724609375,
+        168.62005615234375,
+        153.60000610351562
+      ],
+      [
+        65.04995727539062,
+        187.21994018554688,
+        168.5500030517578
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_Clippard_Hex_01",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_ELBOW_HEX\\Q-pack-TacoShell_MK4_Clippard_Hex.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -139.8775634765625,
+      215.5772705078125,
+      5.5500030517578125
+    ],
+    "bounds_mm": [
+      [
+        -156.6890411376953,
+        382.60589599609375,
+        140.0
+      ],
+      [
+        -143.3109588623047,
+        399.39410400390625,
+        158.6999969482422
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_Clippard_Hex_02",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_ELBOW_HEX\\Q-pack-TacoShell_MK4_Clippard_Hex.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bounds_mm": [
+      [
+        -16.81147575378418,
+        167.0286102294922,
+        134.4499969482422
+      ],
+      [
+        -3.4333925247192383,
+        183.8168487548828,
+        153.14999389648438
+      ]
+    ],
+    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+  },
+  {
+    "key": "pack_Clippard_elbow_square_01",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_ELBOW_SQUARE\\Q-pack-TacoShell_MK4_Clippard_elbow_square.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -135.03125,
+      465.0,
+      229.0
+    ],
+    "bounds_mm": [
+      [
+        -139.7937469482422,
+        460.23748779296875,
+        229.0
+      ],
+      [
+        -125.5062484741211,
+        469.76251220703125,
+        246.88720703125
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_legris_elbow_GEN1_full_body_01",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_full_body.stl",
+    "rotation_rad": [
+      1.5707963267948966,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -161.0,
+      399.82501220703125,
+      172.35000610351562
+    ],
+    "bounds_mm": [
+      [
+        -166.35000610351562,
+        380.1750183105469,
+        128.0
+      ],
+      [
+        -155.64999389648438,
+        399.82501220703125,
+        151.0500030517578
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_legris_elbow_GEN1_full_body_02",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_full_body.stl",
+    "rotation_rad": [
+      1.5707963267948966,
+      0,
+      0
+    ],
+    "translation_mm": [
+      105.0,
+      -62.17500305175781,
+      153.35000610351562
+    ],
+    "bounds_mm": [
+      [
+        99.6500015258789,
+        -81.82500457763672,
+        109.00000762939453
+      ],
+      [
+        110.3499984741211,
+        -62.17499923706055,
+        132.0500030517578
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_legris_elbow_GEN1_full_body_03",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_full_body.stl",
+    "rotation_rad": [
+      1.5707963267948966,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -145.0,
+      469.82501220703125,
+      249.35000610351562
+    ],
+    "bounds_mm": [
+      [
+        -150.35000610351562,
+        450.1750183105469,
+        205.0
+      ],
+      [
+        -139.64999389648438,
+        469.82501220703125,
+        228.0500030517578
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_legris_elbow_GEN1_Nut_01",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_Nut.stl",
+    "rotation_rad": [
+      1.5707963267948966,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -161.0,
+      370.8999938964844,
+      111.5
+    ],
+    "bounds_mm": [
+      [
+        -166.62916564941406,
+        388.1000061035156,
+        105.0
+      ],
+      [
+        -155.37083435058594,
+        401.8999938964844,
+        118.0
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_legris_elbow_GEN1_Nut_02",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_Nut.stl",
+    "rotation_rad": [
+      1.5707963267948966,
+      0,
+      0
+    ],
+    "translation_mm": [
+      105.0,
+      -91.0999984741211,
+      92.5
+    ],
+    "bounds_mm": [
+      [
+        99.37083435058594,
+        -73.9000015258789,
+        86.0
+      ],
+      [
+        110.62916564941406,
+        -60.099998474121094,
+        99.0
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_legris_elbow_GEN1_Nut_03",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_Nut.stl",
+    "rotation_rad": [
+      1.5707963267948966,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -145.0,
+      440.8999938964844,
+      188.5
+    ],
+    "bounds_mm": [
+      [
+        -150.62916564941406,
+        458.1000061035156,
+        182.0
+      ],
+      [
+        -139.37083435058594,
+        471.8999938964844,
+        195.0
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_Legris_Straight_01",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_STRAIGHT\\Q-pack-TacoShell_MK4_Legris_Straight.stl",
+    "rotation_rad": [
+      0,
+      1.5707963267948966,
+      0
+    ],
+    "translation_mm": [
+      -18.799999237060547,
+      207.0,
+      91.0
+    ],
+    "bounds_mm": [
+      [
+        -18.799999237060547,
+        200.64913940429688,
+        85.5
+      ],
+      [
+        1.7000008821487427,
+        213.35086059570312,
+        96.5
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_Legris_Straight_02",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_STRAIGHT\\Q-pack-TacoShell_MK4_Legris_Straight.stl",
+    "rotation_rad": [
+      0,
+      1.5707963267948966,
+      0
+    ],
+    "translation_mm": [
+      -18.799999237060547,
+      234.0,
+      91.0
+    ],
+    "bounds_mm": [
+      [
+        -18.799999237060547,
+        227.64913940429688,
+        85.5
+      ],
+      [
+        1.7000008821487427,
+        240.35086059570312,
+        96.5
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_Adaptaflex_elbow_full_body_01",
+    "source": "q-pack\\SHELL\\ACCESSORIES\\ADAPTAFLEX\\Q-pack-TacoShell_MK4_Adaptaflex_elbow_full_body.stl",
+    "rotation_rad": [
+      0,
+      0,
+      1.5707963267948966
+    ],
+    "translation_mm": [
+      166.0,
+      -124.99834442138672,
+      38.0
+    ],
+    "bounds_mm": [
+      [
+        154.5,
+        -164.49835205078125,
+        34.0
+      ],
+      [
+        177.5,
+        -115.50165557861328,
+        72.0
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_Alice_Frame_Round_Spacer_25mm_01",
+    "source": "q-pack\\SHELL\\MOTHERBOARD\\Q-pack-TacoShell_MK4_Alice_Frame_Round_Spacer_25mm.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -150.17559814453125,
+      92.299072265625,
+      0.0
+    ],
+    "bounds_mm": [
+      [
+        -85.9990005493164,
+        19.000503540039062,
+        -28.0
+      ],
+      [
+        -64.0009994506836,
+        40.99950408935547,
+        -3.0
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_Alice_Frame_Round_Spacer_25mm_02",
+    "source": "q-pack\\SHELL\\MOTHERBOARD\\Q-pack-TacoShell_MK4_Alice_Frame_Round_Spacer_25mm.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -0.17559814453125,
+      92.299072265625,
+      0.0
+    ],
+    "bounds_mm": [
+      [
+        64.0009994506836,
+        19.000503540039062,
+        -28.0
+      ],
+      [
+        85.9990005493164,
+        40.99950408935547,
+        -3.0
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  },
+  {
+    "key": "pack_Alice_Frame_UpperSpacer_25mm_01",
+    "source": "q-pack\\SHELL\\MOTHERBOARD\\Q-pack-TacoShell_MK4_Alice_Frame_UpperSpacer_25mm.stl",
+    "rotation_rad": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      -154.3000030517578,
+      472.90008544921875,
+      -26.75
+    ],
+    "bounds_mm": [
+      [
+        -12.699996948242188,
+        341.90008544921875,
+        -26.75
+      ],
+      [
+        12.699996948242188,
+        418.09991455078125,
+        0.0
+      ]
+    ],
+    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+  }
+]

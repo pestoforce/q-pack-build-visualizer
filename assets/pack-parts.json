@@ -1,0 +1,1553 @@
+{
+  "parts": {
+    "pack_Dale_RH_50_01": {
+      "name": "Dale RH-50",
+      "plate": "Example Plate 05: Resistor Replicas",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "MK4 V1.1 PDF p. 33",
+      "explode": [
+        0.22323261896769206,
+        0.1004541015625,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\RESISTORS\\Q-pack-TacoShell_MK4_Dale_RH-50.stl",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_PH_25_without_ring_01": {
+      "name": "PH-25-without ring",
+      "plate": "Example Plate 05: Resistor Replicas",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "MK4 V1.1 PDF p. 33",
+      "explode": [
+        0.3899978892008464,
+        0.25,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\RESISTORS\\Q-pack-TacoShell_MK4_PH-25-without_ring.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Sage_RH_25_01": {
+      "name": "Sage-RH-25",
+      "plate": "Example Plate 05: Resistor Replicas",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "MK4 V1.1 PDF p. 34",
+      "explode": [
+        -0.020292154947916665,
+        0.5619156901041666,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\RESISTORS\\Q-pack-TacoShell_MK4_Sage-RH-25.stl",
+      "alignment": "Booster side detail; dry-fit pending.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Clamp_X2_01": {
+      "name": "Clamp X2 (1/2)",
+      "plate": "Example Plate 08: Ribbon Clamps",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "MK4 V1.1 PDF p. 8",
+      "explode": [
+        -0.6835013326009115,
+        -0.28083335876464843,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\RIBBON_CLAMP\\Q-pack-TacoShell_MK4_Clamp_X2.stl",
+      "alignment": "Illustrative second-clamp routing; dry-fit pending.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Clamp_X2_02": {
+      "name": "Clamp X2 (2/2)",
+      "plate": "Example Plate 08: Ribbon Clamps",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "MK4 V1.1 PDF p. 8",
+      "explode": [
+        0.6835013580322266,
+        -0.8,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\RIBBON_CLAMP\\Q-pack-TacoShell_MK4_Clamp_X2.stl",
+      "alignment": "Illustrative second-clamp routing; dry-fit pending.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Booster_Plug_L_XL_XXL_01": {
+      "name": "Booster Plug",
+      "plate": "Example Plate 07: Ion Cap & Booster Plug",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "MK4 V1.1 PDF p. 16",
+      "explode": [
+        -0.5256754430135091,
+        0.8,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\BOOSTER_TUBE\\Q-pack-TacoShell_MK4_Booster_Plug_L_XL_XXL.stl",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_ION_ARM_CAP_L_XL_XXL_GB1_01": {
+      "name": "ION ARM CAP -GB1",
+      "plate": "Example Plate 07: Ion Cap & Booster Plug",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "MK4 V1.1 PDF pp. 18-19",
+      "explode": [
+        -0.8843666585286458,
+        0.8,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ION_ARM\\Q-pack-TacoShell_MK4_ION_ARM_CAP_L_XL_XXL-GB1.stl",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_EDA_Disks_Flat_x2_01": {
+      "name": "EDA Disks-Flat x2 (1/2)",
+      "plate": "Example Plate 06: EDA Disks",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "MK4 V1.1 PDF p. 14",
+      "explode": [
+        -0.6640000406901042,
+        0.565,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_EDA_Disks-Flat_x2.stl",
+      "alignment": "Top-shell disk placement; dry-fit pending.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_EDA_Disks_Flat_x2_02": {
+      "name": "EDA Disks-Flat x2 (2/2)",
+      "plate": "Example Plate 06: EDA Disks",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "MK4 V1.1 PDF p. 14",
+      "explode": [
+        -0.33066670735677084,
+        0.565,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_EDA_Disks-Flat_x2.stl",
+      "alignment": "Top-shell disk placement; dry-fit pending.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_SynchGen_01_L_XL_01": {
+      "name": "SynchGen 01 L XL",
+      "plate": "Future: Synchronous Generator / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 9-10",
+      "explode": [
+        0.36502540270487466,
+        0.22618199666341146,
+        0.2
+      ],
+      "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_SynchGen_01_L_XL.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_SynchGen_02_L_01": {
+      "name": "SynchGen 02 L",
+      "plate": "Future: Synchronous Generator / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 9-10",
+      "explode": [
+        0.39991410573323566,
+        -0.23931062777837117,
+        0.2
+      ],
+      "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_SynchGen_02_L.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_SynchGen_03_L_01": {
+      "name": "SynchGen 03 L",
+      "plate": "Future: Synchronous Generator / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 9-10",
+      "explode": [
+        0.4426280975341797,
+        -0.7916710090637207,
+        0.2
+      ],
+      "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_SynchGen_03_L.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_SynchGen_04_L_01": {
+      "name": "SynchGen 04 L",
+      "plate": "Future: Synchronous Generator / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 9-10",
+      "explode": [
+        -0.4939167308807373,
+        -0.8,
+        0.2
+      ],
+      "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_SynchGen_04_L.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_SynchGen_05_L_01": {
+      "name": "SynchGen 05 L",
+      "plate": "Future: Synchronous Generator / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 9-10",
+      "explode": [
+        -0.5138929239908854,
+        -0.37526869455973305,
+        0.2
+      ],
+      "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_SynchGen_05_L.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Clippard_Base_GB1_01": {
+      "name": "Clippard Base GB1",
+      "plate": "Future: Synchronous Generator / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 9-10",
+      "explode": [
+        0.3717609119415283,
+        0.030072148640950522,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_Clippard_Base_GB1.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_VacHose_base_01": {
+      "name": "VacHose base",
+      "plate": "Future: Synchronous Generator / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 9-10",
+      "explode": [
+        0.2738508574167887,
+        0.3367420705159505,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_VacHose_base.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_VacHose_mount_01": {
+      "name": "VacHose mount",
+      "plate": "Future: Synchronous Generator / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 9-10",
+      "explode": [
+        0.2738668918609619,
+        0.3367420196533203,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_VacHose_mount.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Injector_Block_GB1_01": {
+      "name": "Injector Block GB1",
+      "plate": "Future: Synchronous Generator / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 9-10",
+      "explode": [
+        -1,
+        -0.8,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_Injector_Block_GB1.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Wand_loom_panel_GB1_01": {
+      "name": "Wand loom panel GB1",
+      "plate": "Future: Synchronous Generator / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 9-10",
+      "explode": [
+        1,
+        -0.8,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_Wand_loom_panel_GB1.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Center_Cover_L_01_01": {
+      "name": "Center Cover L 01",
+      "plate": "Future: Center Cover / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 11-12",
+      "explode": [
+        -0.5714863077799479,
+        -0.15444610595703126,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\CENTER_COVER\\Q-pack-TacoShell_MK4_Center_Cover_L_01.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Center_Cover_L_02_sharp_corner_01": {
+      "name": "Center Cover L 02 sharp corner",
+      "plate": "Future: Center Cover / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "MK4 V1.1 PDF p. 11",
+      "explode": [
+        0.0005918375651041667,
+        0.22313344319661457,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\CENTER_COVER\\Q-pack-TacoShell_MK4_Center_Cover_L_02_sharp_corner.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Center_Cover_L_03_01": {
+      "name": "Center Cover L 03",
+      "plate": "Future: Center Cover / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 11-12",
+      "explode": [
+        0.49693949381510416,
+        0.18571334838867187,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\CENTER_COVER\\Q-pack-TacoShell_MK4_Center_Cover_L_03.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Filler_Tube_L_XL_XXL_01": {
+      "name": "Filler Tube",
+      "plate": "Future: Center Cover / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 11-12",
+      "explode": [
+        -0.566533686319987,
+        -0.022613093058268228,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\CENTER_COVER\\Q-pack-TacoShell_MK4_Filler_Tube_L_XL_XXL.stl",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Beamline_L_XL_XXL_01": {
+      "name": "Beamline",
+      "plate": "Future: Center Cover / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 11-12",
+      "explode": [
+        -0.07474317232767741,
+        0.0116497802734375,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\CENTER_COVER\\Q-pack-TacoShell_MK4_Beamline_L_XL_XXL.stl",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Booster_box_01_L_01": {
+      "name": "Booster box 01 L",
+      "plate": "Future: Top Shell / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 13-14",
+      "explode": [
+        -0.49566660563151044,
+        0.37883331298828127,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_Booster_box_01_L.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Booster_box_02_L_01": {
+      "name": "Booster box 02 L",
+      "plate": "Future: Top Shell / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 13-14",
+      "explode": [
+        -0.5949974060058594,
+        0.8,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_Booster_box_02_L.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_PowerCell_L_01": {
+      "name": "PowerCell L",
+      "plate": "Future: Top Shell / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 13-14",
+      "explode": [
+        -1,
+        0.4810541788736979,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_PowerCell_L.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01": {
+      "name": "Crank Gen And Gun Mount",
+      "plate": "Future: Top Shell / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 13-14",
+      "explode": [
+        0.52103271484375,
+        0.7566672770182291,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_Crank_Gen_And_Gun_Mount_L_XL_XXL.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Powercell_Lens_01": {
+      "name": "Powercell Lens",
+      "plate": "Future: Top Shell / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 13-14",
+      "explode": [
+        -1,
+        0.5066666666666667,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_Powercell_Lens.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Booster_Tube_PART1_L_01": {
+      "name": "Booster Tube PART1 L",
+      "plate": "Future: Booster Tube / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 16-17",
+      "explode": [
+        -0.5256901041666666,
+        0.8,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\BOOSTER_TUBE\\Q-pack-TacoShell_MK4_Booster_Tube_PART1_L.stl",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Booster_Tube_PART2_L_01": {
+      "name": "Booster Tube PART2 L",
+      "plate": "Future: Booster Tube / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 16-17",
+      "explode": [
+        -0.525690066019694,
+        0.4181085205078125,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\BOOSTER_TUBE\\Q-pack-TacoShell_MK4_Booster_Tube_PART2_L.stl",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Booster_Frame_L_XL_XXL_GB1_01": {
+      "name": "Booster Frame  GB1",
+      "plate": "Future: Booster Frame / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "MK4 V1.1 PDF p. 17",
+      "explode": [
+        -0.5266666666666666,
+        0.6366666666666667,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\BOOSTER_FRAME\\Q-pack-TacoShell_MK4_Booster_Frame_L_XL_XXL_GB1.3mf",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Injector_Bracket_L_XL_XXL_01": {
+      "name": "Injector Bracket",
+      "plate": "Future: Injectors / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 15",
+      "explode": [
+        -0.8396058400472005,
+        -0.12389690399169923,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\INJECTORS\\Q-pack-TacoShell_MK4_Injector_Bracket_L_XL_XXL.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Injectors_L_XL_XXL_GB1_01": {
+      "name": "Injectors  GB1",
+      "plate": "Future: Injectors / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 15",
+      "explode": [
+        -1,
+        0.10966664632161459,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\INJECTORS\\Q-pack-TacoShell_MK4_Injectors_L_XL_XXL_GB1.3mf",
+      "alignment": "Illustrative injector/bracket placement; dry-fit pending.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Ion_Arm_L_XL_XXL_GB1_01": {
+      "name": "Ion Arm  GB1",
+      "plate": "Future: Ion Arm / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 18-19",
+      "explode": [
+        -0.9610333251953125,
+        0.8,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ION_ARM\\Q-pack-TacoShell_MK4_Ion_Arm_L_XL_XXL_GB1.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_HGA_L_XL_XXL_01": {
+      "name": "HGA",
+      "plate": "Example Plate 09: GB1 HGA",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "MK4 V1.1 PDF p. 20",
+      "explode": [
+        -1,
+        0.7343115234375,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\HGA\\Q-pack-TacoShell_MK4_HGA_L_XL_XXL.stl",
+      "alignment": "Illustrative HGA shoulder placement; dry-fit pending.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_PPD_Type_1_01": {
+      "name": "PPD Type 1",
+      "plate": "Future: Ppd / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 21",
+      "explode": [
+        -0.5266666666666666,
+        0.16,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\PPD\\Q-pack-TacoShell_MK4_PPD_Type_1.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_V_Hook_Base_01": {
+      "name": "V Hook Base",
+      "plate": "Future: V Hook / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 22",
+      "explode": [
+        1,
+        0.7184424845377604,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\V_HOOK\\Q-pack-TacoShell_MK4_V_Hook_Base.stl",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_V_Hook_Track_GB1_01": {
+      "name": "V Hook Track GB1",
+      "plate": "Future: V Hook / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 22",
+      "explode": [
+        1,
+        0.7234185791015625,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\V_HOOK\\Q-pack-TacoShell_MK4_V_Hook_Track_GB1.stl",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Cyclotron_NOT_REMOVABLE_L_01_01": {
+      "name": "Cyclotron NOT REMOVABLE L 01",
+      "plate": "Future: Cyclotron / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 24-25",
+      "explode": [
+        0.436634521484375,
+        -0.38743143717447914,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_NOT REMOVABLE_L_01.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Cyclotron_NOT_REMOVABLE_L_02_01": {
+      "name": "Cyclotron NOT REMOVABLE L 02",
+      "plate": "Future: Cyclotron / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 24-25",
+      "explode": [
+        0.358470458984375,
+        -0.785,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_NOT REMOVABLE_L_02.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Cyclotron_NOT_REMOVABLE_L_03_01": {
+      "name": "Cyclotron NOT REMOVABLE L 03",
+      "plate": "Future: Cyclotron / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 24-25",
+      "explode": [
+        -0.4366986083984375,
+        -0.7459018961588542,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_NOT REMOVABLE_L_03.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Cyclotron_NOT_REMOVABLE_L_04_01": {
+      "name": "Cyclotron NOT REMOVABLE L 04",
+      "plate": "Future: Cyclotron / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 24-25",
+      "explode": [
+        -0.358470458984375,
+        -0.34833333333333333,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_NOT REMOVABLE_L_04.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_NFilter_non_remove_ver_01": {
+      "name": "NFilter-non-remove ver",
+      "plate": "Future: Cyclotron / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 24-25",
+      "explode": [
+        0.32484649976094565,
+        -0.8,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_NFilter-non-remove_ver.stl",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Cyclotron_Window_Bottom_x2_L_XL_XXL_01": {
+      "name": "Cyclotron Window Bottom x2 (1/2)",
+      "plate": "Example Plate 10: Cyclotron Rings",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "MK4 V1.1 PDF pp. 24-25",
+      "explode": [
+        -0.26084141731262206,
+        -0.6897610346476237,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Bottom_x2_L_XL_XXL.stl",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Cyclotron_Window_Bottom_x2_L_XL_XXL_02": {
+      "name": "Cyclotron Window Bottom x2 (2/2)",
+      "plate": "Example Plate 10: Cyclotron Rings",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "MK4 V1.1 PDF pp. 24-25",
+      "explode": [
+        0.2608252461751302,
+        -0.6897610346476237,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Bottom_x2_L_XL_XXL.stl",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Cyclotron_Window_Top_x2_L_XL_XXL_01": {
+      "name": "Cyclotron Window Top x2 (1/2)",
+      "plate": "Example Plate 10: Cyclotron Rings",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "MK4 V1.1 PDF pp. 24-25",
+      "explode": [
+        0.34962844212849936,
+        -0.39852660497029624,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Top_x2_L_XL_XXL.stl",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Cyclotron_Window_Top_x2_L_XL_XXL_02": {
+      "name": "Cyclotron Window Top x2 (2/2)",
+      "plate": "Example Plate 10: Cyclotron Rings",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "MK4 V1.1 PDF pp. 24-25",
+      "explode": [
+        -0.3496382141113281,
+        -0.39852660497029624,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Top_x2_L_XL_XXL.stl",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Cyclotron_Window_Lens_x4_L_XL_XXL_01": {
+      "name": "Cyclotron Window Lens x4 (1/4)",
+      "plate": "Future: Cyclotron / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 24-25",
+      "explode": [
+        0.349666748046875,
+        -0.3984999974568685,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Lens_x4_L_XL_XXL.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Cyclotron_Window_Lens_x4_L_XL_XXL_02": {
+      "name": "Cyclotron Window Lens x4 (2/4)",
+      "plate": "Future: Cyclotron / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 24-25",
+      "explode": [
+        -0.3496666463216146,
+        -0.3984999974568685,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Lens_x4_L_XL_XXL.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Cyclotron_Window_Lens_x4_L_XL_XXL_03": {
+      "name": "Cyclotron Window Lens x4 (3/4)",
+      "plate": "Future: Cyclotron / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 24-25",
+      "explode": [
+        -0.26079986572265623,
+        -0.6897666803995768,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Lens_x4_L_XL_XXL.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Cyclotron_Window_Lens_x4_L_XL_XXL_04": {
+      "name": "Cyclotron Window Lens x4 (4/4)",
+      "plate": "Future: Cyclotron / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 24-25",
+      "explode": [
+        0.2608000691731771,
+        -0.6897666803995768,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Lens_x4_L_XL_XXL.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Bumper_01_L_01": {
+      "name": "Bumper 01 L",
+      "plate": "Future: Bumper / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 26-27",
+      "explode": [
+        -0.5310683949788412,
+        -0.5666666666666667,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\BUMPER\\Q-pack-TacoShell_MK4_Bumper_01_L.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Bumper_02_L_01": {
+      "name": "Bumper 02 L",
+      "plate": "Future: Bumper / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 26-27",
+      "explode": [
+        0.529770310719808,
+        -0.5666666666666667,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\BUMPER\\Q-pack-TacoShell_MK4_Bumper_02_L.3mf",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Bumper_Spacer_01": {
+      "name": "Bumper Spacer (1/2)",
+      "plate": "Future: Bumper / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 26-27",
+      "explode": [
+        -0.4666627248128255,
+        -0.5666666666666667,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\BUMPER\\Q-pack-TacoShell_MK4_Bumper_Spacer.stl",
+      "alignment": "Illustrative bumper supports on the cyclotron top; dry-fit pending.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Bumper_Spacer_02": {
+      "name": "Bumper Spacer (2/2)",
+      "plate": "Future: Bumper / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 26-27",
+      "explode": [
+        0.4666706085205078,
+        -0.5666666666666667,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\BUMPER\\Q-pack-TacoShell_MK4_Bumper_Spacer.stl",
+      "alignment": "Illustrative bumper supports on the cyclotron top; dry-fit pending.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Shockmount_full_GB1_01": {
+      "name": "Shockmount full GB1",
+      "plate": "Future: Bumper / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 26-27",
+      "explode": [
+        0.0,
+        -0.5666666666666667,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\BUMPER\\Q-pack-TacoShell_MK4_Shockmount_full_GB1.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_crank_knob_01": {
+      "name": "crank knob",
+      "plate": "Future: Accessories / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-36",
+      "explode": [
+        0.803606694539388,
+        0.8,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\CRANK_KNOBS\\Q-pack-TacoShell_MK4_crank_knob.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_clippard_body_screws_01": {
+      "name": "clippard body screws",
+      "plate": "Future: Accessories / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-36",
+      "explode": [
+        0.37154707590738933,
+        0.02834747314453125,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_701-331\\Q-pack-TacoShell_MK4_clippard_body_screws.stl",
+      "alignment": "Illustrative valve on GB1 Clippard base.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_clippard_r331_top_01": {
+      "name": "clippard r331 top",
+      "plate": "Future: Accessories / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-36",
+      "explode": [
+        0.37167465209960937,
+        0.02673334757486979,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_701-331\\Q-pack-TacoShell_MK4_clippard_r331_top.stl",
+      "alignment": "Illustrative R331 valve selection; not finalized.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_clippard_r331_cap_corrected_01": {
+      "name": "clippard r331 cap corrected",
+      "plate": "Future: Accessories / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-36",
+      "explode": [
+        0.37166666666666665,
+        0.026399993896484376,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_701-331\\Q-pack-TacoShell_MK4_clippard_r331_cap_corrected.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Clippard_Hex_01": {
+      "name": "Clippard Hex (1/2)",
+      "plate": "Future: Accessories / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-36",
+      "explode": [
+        -1,
+        0.7366666666666667,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_ELBOW_HEX\\Q-pack-TacoShell_MK4_Clippard_Hex.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Clippard_Hex_02": {
+      "name": "Clippard Hex (2/2)",
+      "plate": "Future: Accessories / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-36",
+      "explode": [
+        -0.06748289426167806,
+        0.018075764973958332,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_ELBOW_HEX\\Q-pack-TacoShell_MK4_Clippard_Hex.stl",
+      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Clippard_elbow_square_01": {
+      "name": "Clippard elbow square",
+      "plate": "Future: Accessories / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-36",
+      "explode": [
+        -0.8843333180745443,
+        0.8,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_ELBOW_SQUARE\\Q-pack-TacoShell_MK4_Clippard_elbow_square.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_legris_elbow_GEN1_full_body_01": {
+      "name": "legris elbow GEN1 full body (1/3)",
+      "plate": "Future: Accessories / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-36",
+      "explode": [
+        -1,
+        0.7333333841959635,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_full_body.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_legris_elbow_GEN1_full_body_02": {
+      "name": "legris elbow GEN1 full body (2/3)",
+      "plate": "Future: Accessories / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-36",
+      "explode": [
+        0.7,
+        -0.8,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_full_body.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_legris_elbow_GEN1_full_body_03": {
+      "name": "legris elbow GEN1 full body (3/3)",
+      "plate": "Future: Accessories / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-36",
+      "explode": [
+        -0.9666666666666667,
+        0.8,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_full_body.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_legris_elbow_GEN1_Nut_01": {
+      "name": "legris elbow GEN1 Nut (1/3)",
+      "plate": "Future: Accessories / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-36",
+      "explode": [
+        -1,
+        0.75,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_Nut.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_legris_elbow_GEN1_Nut_02": {
+      "name": "legris elbow GEN1 Nut (2/3)",
+      "plate": "Future: Accessories / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-36",
+      "explode": [
+        0.7,
+        -0.79,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_Nut.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_legris_elbow_GEN1_Nut_03": {
+      "name": "legris elbow GEN1 Nut (3/3)",
+      "plate": "Future: Accessories / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-36",
+      "explode": [
+        -0.9666666666666667,
+        0.8,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_Nut.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Legris_Straight_01": {
+      "name": "Legris Straight (1/2)",
+      "plate": "Future: Accessories / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-36",
+      "explode": [
+        -0.05699999451637268,
+        0.12333333333333334,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_STRAIGHT\\Q-pack-TacoShell_MK4_Legris_Straight.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Legris_Straight_02": {
+      "name": "Legris Straight (2/2)",
+      "plate": "Future: Accessories / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-36",
+      "explode": [
+        -0.05699999451637268,
+        0.21333333333333335,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_STRAIGHT\\Q-pack-TacoShell_MK4_Legris_Straight.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Adaptaflex_elbow_full_body_01": {
+      "name": "Adaptaflex elbow full body",
+      "plate": "Future: Accessories / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-36",
+      "explode": [
+        1,
+        -0.8,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\ADAPTAFLEX\\Q-pack-TacoShell_MK4_Adaptaflex_elbow_full_body.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Alice_Frame_Round_Spacer_25mm_01": {
+      "name": "Alice Frame Round Spacer 25mm (1/2)",
+      "plate": "Future: Motherboard / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 37",
+      "explode": [
+        -0.5,
+        -0.4666666539510091,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\MOTHERBOARD\\Q-pack-TacoShell_MK4_Alice_Frame_Round_Spacer_25mm.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Alice_Frame_Round_Spacer_25mm_02": {
+      "name": "Alice Frame Round Spacer 25mm (2/2)",
+      "plate": "Future: Motherboard / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 37",
+      "explode": [
+        0.5,
+        -0.4666666539510091,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\MOTHERBOARD\\Q-pack-TacoShell_MK4_Alice_Frame_Round_Spacer_25mm.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    },
+    "pack_Alice_Frame_UpperSpacer_25mm_01": {
+      "name": "Alice Frame UpperSpacer 25mm",
+      "plate": "Future: Motherboard / Not assigned",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 37",
+      "explode": [
+        0.0,
+        0.7,
+        0.9
+      ],
+      "source": "q-pack\\SHELL\\MOTHERBOARD\\Q-pack-TacoShell_MK4_Alice_Frame_UpperSpacer_25mm.stl",
+      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "assumption": "GB1 fixed L visualization selection; verify before printing."
+    }
+  },
+  "plates": [
+    {
+      "id": "all",
+      "name": "All Pack Parts",
+      "count": "76 Parts",
+      "status": "all",
+      "desc": "GB1 fixed cyclotron / L split shell"
+    },
+    {
+      "id": "plate05",
+      "name": "Example Plate 05: Resistor Replicas",
+      "keys": [
+        "pack_Dale_RH_50_01",
+        "pack_PH_25_without_ring_01",
+        "pack_Sage_RH_25_01"
+      ],
+      "status": "pending",
+      "desc": "Example print grouping; not a slicer project",
+      "count": "3 Parts"
+    },
+    {
+      "id": "plate06",
+      "name": "Example Plate 06: EDA Disks",
+      "keys": [
+        "pack_EDA_Disks_Flat_x2_01",
+        "pack_EDA_Disks_Flat_x2_02"
+      ],
+      "status": "pending",
+      "desc": "Example print grouping; not a slicer project",
+      "count": "2 Parts"
+    },
+    {
+      "id": "plate07",
+      "name": "Example Plate 07: Ion Cap & Booster Plug",
+      "keys": [
+        "pack_Booster_Plug_L_XL_XXL_01",
+        "pack_ION_ARM_CAP_L_XL_XXL_GB1_01"
+      ],
+      "status": "pending",
+      "desc": "Example print grouping; not a slicer project",
+      "count": "2 Parts"
+    },
+    {
+      "id": "plate08",
+      "name": "Example Plate 08: Ribbon Clamps",
+      "keys": [
+        "pack_Clamp_X2_01",
+        "pack_Clamp_X2_02"
+      ],
+      "status": "pending",
+      "desc": "Example print grouping; not a slicer project",
+      "count": "2 Parts"
+    },
+    {
+      "id": "plate09",
+      "name": "Example Plate 09: GB1 HGA",
+      "keys": [
+        "pack_HGA_L_XL_XXL_01"
+      ],
+      "status": "pending",
+      "desc": "Example print grouping; not a slicer project",
+      "count": "1 Parts"
+    },
+    {
+      "id": "plate10",
+      "name": "Example Plate 10: Cyclotron Rings",
+      "keys": [
+        "pack_Cyclotron_Window_Bottom_x2_L_XL_XXL_01",
+        "pack_Cyclotron_Window_Bottom_x2_L_XL_XXL_02",
+        "pack_Cyclotron_Window_Top_x2_L_XL_XXL_01",
+        "pack_Cyclotron_Window_Top_x2_L_XL_XXL_02"
+      ],
+      "status": "pending",
+      "desc": "Example print grouping; not a slicer project",
+      "count": "4 Parts"
+    },
+    {
+      "id": "future_accessories",
+      "name": "Future: Accessories",
+      "keys": [
+        "pack_crank_knob_01",
+        "pack_clippard_body_screws_01",
+        "pack_clippard_r331_top_01",
+        "pack_clippard_r331_cap_corrected_01",
+        "pack_Clippard_Hex_01",
+        "pack_Clippard_Hex_02",
+        "pack_Clippard_elbow_square_01",
+        "pack_legris_elbow_GEN1_full_body_01",
+        "pack_legris_elbow_GEN1_full_body_02",
+        "pack_legris_elbow_GEN1_full_body_03",
+        "pack_legris_elbow_GEN1_Nut_01",
+        "pack_legris_elbow_GEN1_Nut_02",
+        "pack_legris_elbow_GEN1_Nut_03",
+        "pack_Legris_Straight_01",
+        "pack_Legris_Straight_02",
+        "pack_Adaptaflex_elbow_full_body_01"
+      ],
+      "status": "pending",
+      "desc": "Planning group; not a slicer project",
+      "count": "16 Parts"
+    },
+    {
+      "id": "future_booster_frame",
+      "name": "Future: Booster Frame",
+      "keys": [
+        "pack_Booster_Frame_L_XL_XXL_GB1_01"
+      ],
+      "status": "pending",
+      "desc": "Planning group; not a slicer project",
+      "count": "1 Parts"
+    },
+    {
+      "id": "future_booster_tube",
+      "name": "Future: Booster Tube",
+      "keys": [
+        "pack_Booster_Tube_PART1_L_01",
+        "pack_Booster_Tube_PART2_L_01"
+      ],
+      "status": "pending",
+      "desc": "Planning group; not a slicer project",
+      "count": "2 Parts"
+    },
+    {
+      "id": "future_bumper",
+      "name": "Future: Bumper",
+      "keys": [
+        "pack_Bumper_01_L_01",
+        "pack_Bumper_02_L_01",
+        "pack_Bumper_Spacer_01",
+        "pack_Bumper_Spacer_02",
+        "pack_Shockmount_full_GB1_01"
+      ],
+      "status": "pending",
+      "desc": "Planning group; not a slicer project",
+      "count": "5 Parts"
+    },
+    {
+      "id": "future_center_cover",
+      "name": "Future: Center Cover",
+      "keys": [
+        "pack_Center_Cover_L_01_01",
+        "pack_Center_Cover_L_02_sharp_corner_01",
+        "pack_Center_Cover_L_03_01",
+        "pack_Filler_Tube_L_XL_XXL_01",
+        "pack_Beamline_L_XL_XXL_01"
+      ],
+      "status": "pending",
+      "desc": "Planning group; not a slicer project",
+      "count": "5 Parts"
+    },
+    {
+      "id": "future_cyclotron",
+      "name": "Future: Cyclotron",
+      "keys": [
+        "pack_Cyclotron_NOT_REMOVABLE_L_01_01",
+        "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "pack_Cyclotron_NOT_REMOVABLE_L_03_01",
+        "pack_Cyclotron_NOT_REMOVABLE_L_04_01",
+        "pack_NFilter_non_remove_ver_01",
+        "pack_Cyclotron_Window_Lens_x4_L_XL_XXL_01",
+        "pack_Cyclotron_Window_Lens_x4_L_XL_XXL_02",
+        "pack_Cyclotron_Window_Lens_x4_L_XL_XXL_03",
+        "pack_Cyclotron_Window_Lens_x4_L_XL_XXL_04"
+      ],
+      "status": "pending",
+      "desc": "Planning group; not a slicer project",
+      "count": "9 Parts"
+    },
+    {
+      "id": "future_injectors",
+      "name": "Future: Injectors",
+      "keys": [
+        "pack_Injector_Bracket_L_XL_XXL_01",
+        "pack_Injectors_L_XL_XXL_GB1_01"
+      ],
+      "status": "pending",
+      "desc": "Planning group; not a slicer project",
+      "count": "2 Parts"
+    },
+    {
+      "id": "future_ion_arm",
+      "name": "Future: Ion Arm",
+      "keys": [
+        "pack_Ion_Arm_L_XL_XXL_GB1_01"
+      ],
+      "status": "pending",
+      "desc": "Planning group; not a slicer project",
+      "count": "1 Parts"
+    },
+    {
+      "id": "future_motherboard",
+      "name": "Future: Motherboard",
+      "keys": [
+        "pack_Alice_Frame_Round_Spacer_25mm_01",
+        "pack_Alice_Frame_Round_Spacer_25mm_02",
+        "pack_Alice_Frame_UpperSpacer_25mm_01"
+      ],
+      "status": "pending",
+      "desc": "Planning group; not a slicer project",
+      "count": "3 Parts"
+    },
+    {
+      "id": "future_ppd",
+      "name": "Future: Ppd",
+      "keys": [
+        "pack_PPD_Type_1_01"
+      ],
+      "status": "pending",
+      "desc": "Planning group; not a slicer project",
+      "count": "1 Parts"
+    },
+    {
+      "id": "future_synchronous_generator",
+      "name": "Future: Synchronous Generator",
+      "keys": [
+        "pack_SynchGen_01_L_XL_01",
+        "pack_SynchGen_02_L_01",
+        "pack_SynchGen_03_L_01",
+        "pack_SynchGen_04_L_01",
+        "pack_SynchGen_05_L_01",
+        "pack_Clippard_Base_GB1_01",
+        "pack_VacHose_base_01",
+        "pack_VacHose_mount_01",
+        "pack_Injector_Block_GB1_01",
+        "pack_Wand_loom_panel_GB1_01"
+      ],
+      "status": "pending",
+      "desc": "Planning group; not a slicer project",
+      "count": "10 Parts"
+    },
+    {
+      "id": "future_top_shell",
+      "name": "Future: Top Shell",
+      "keys": [
+        "pack_Booster_box_01_L_01",
+        "pack_Booster_box_02_L_01",
+        "pack_PowerCell_L_01",
+        "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01",
+        "pack_Powercell_Lens_01"
+      ],
+      "status": "pending",
+      "desc": "Planning group; not a slicer project",
+      "count": "5 Parts"
+    },
+    {
+      "id": "future_v_hook",
+      "name": "Future: V Hook",
+      "keys": [
+        "pack_V_Hook_Base_01",
+        "pack_V_Hook_Track_GB1_01"
+      ],
+      "status": "pending",
+      "desc": "Planning group; not a slicer project",
+      "count": "2 Parts"
+    }
+  ],
+  "note": "76 planned printed pack pieces. Small-detail placements and provisional variants are illustrative. Hardware, backboard, frame, hoses and labels are not modeled. Example plate groups are not print-ready projects."
+}

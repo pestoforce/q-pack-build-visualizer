@@ -1,0 +1,681 @@
+{
+  "source_commit": "bc617e8382c8ad7aa2102e489f50e1aad1dc3a70",
+  "pack": [
+    {
+      "source_path": "q-pack\\SHELL\\ACCESSORIES\\RESISTORS\\Q-pack-TacoShell_MK4_Dale_RH-50.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.25",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\ACCESSORIES\\RESISTORS\\Q-pack-TacoShell_MK4_PH-25-without_ring.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.25",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\ACCESSORIES\\RESISTORS\\Q-pack-TacoShell_MK4_Sage-RH-25.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.25",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\ACCESSORIES\\RIBBON_CLAMP\\Q-pack-TacoShell_MK4_Clamp_X2.stl",
+      "quantity": 2,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\BOOSTER_TUBE\\Q-pack-TacoShell_MK4_Booster_Plug_L_XL_XXL.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\ION_ARM\\Q-pack-TacoShell_MK4_ION_ARM_CAP_L_XL_XXL-GB1.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_EDA_Disks-Flat_x2.stl",
+      "quantity": 2,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_SynchGen_01_L_XL.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_SynchGen_02_L.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_SynchGen_03_L.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_SynchGen_04_L.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_SynchGen_05_L.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_Clippard_Base_GB1.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_VacHose_base.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_VacHose_mount.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_Injector_Block_GB1.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\SYNCHRONOUS_GENERATOR\\Q-pack-TacoShell_MK4_Wand_loom_panel_GB1.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\CENTER_COVER\\Q-pack-TacoShell_MK4_Center_Cover_L_01.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\CENTER_COVER\\Q-pack-TacoShell_MK4_Center_Cover_L_02_sharp_corner.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\CENTER_COVER\\Q-pack-TacoShell_MK4_Center_Cover_L_03.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\CENTER_COVER\\Q-pack-TacoShell_MK4_Filler_Tube_L_XL_XXL.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\CENTER_COVER\\Q-pack-TacoShell_MK4_Beamline_L_XL_XXL.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_Booster_box_01_L.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_Booster_box_02_L.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_PowerCell_L.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_Crank_Gen_And_Gun_Mount_L_XL_XXL.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_Powercell_Lens.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\BOOSTER_TUBE\\Q-pack-TacoShell_MK4_Booster_Tube_PART1_L.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\BOOSTER_TUBE\\Q-pack-TacoShell_MK4_Booster_Tube_PART2_L.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\BOOSTER_FRAME\\Q-pack-TacoShell_MK4_Booster_Frame_L_XL_XXL_GB1.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\INJECTORS\\Q-pack-TacoShell_MK4_Injector_Bracket_L_XL_XXL.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\INJECTORS\\Q-pack-TacoShell_MK4_Injectors_L_XL_XXL_GB1.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\ION_ARM\\Q-pack-TacoShell_MK4_Ion_Arm_L_XL_XXL_GB1.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\HGA\\Q-pack-TacoShell_MK4_HGA_L_XL_XXL.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\PPD\\Q-pack-TacoShell_MK4_PPD_Type_1.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\V_HOOK\\Q-pack-TacoShell_MK4_V_Hook_Base.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\V_HOOK\\Q-pack-TacoShell_MK4_V_Hook_Track_GB1.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_NOT REMOVABLE_L_01.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_NOT REMOVABLE_L_02.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_NOT REMOVABLE_L_03.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_NOT REMOVABLE_L_04.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_NFilter-non-remove_ver.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Bottom_x2_L_XL_XXL.stl",
+      "quantity": 2,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Top_x2_L_XL_XXL.stl",
+      "quantity": 2,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\CYCLOTRON\\Q-pack-TacoShell_MK4_Cyclotron_Window_Lens_x4_L_XL_XXL.stl",
+      "quantity": 4,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\BUMPER\\Q-pack-TacoShell_MK4_Bumper_01_L.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\BUMPER\\Q-pack-TacoShell_MK4_Bumper_02_L.3mf",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\BUMPER\\Q-pack-TacoShell_MK4_Bumper_Spacer.stl",
+      "quantity": 2,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\BUMPER\\Q-pack-TacoShell_MK4_Shockmount_full_GB1.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\ACCESSORIES\\CRANK_KNOBS\\Q-pack-TacoShell_MK4_crank_knob.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_701-331\\Q-pack-TacoShell_MK4_clippard_body_screws.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_701-331\\Q-pack-TacoShell_MK4_clippard_r331_top.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_701-331\\Q-pack-TacoShell_MK4_clippard_r331_cap_corrected.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_ELBOW_HEX\\Q-pack-TacoShell_MK4_Clippard_Hex.stl",
+      "quantity": 2,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_ELBOW_SQUARE\\Q-pack-TacoShell_MK4_Clippard_elbow_square.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_full_body.stl",
+      "quantity": 3,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_Nut.stl",
+      "quantity": 3,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_STRAIGHT\\Q-pack-TacoShell_MK4_Legris_Straight.stl",
+      "quantity": 2,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\ACCESSORIES\\ADAPTAFLEX\\Q-pack-TacoShell_MK4_Adaptaflex_elbow_full_body.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.12"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\MOTHERBOARD\\Q-pack-TacoShell_MK4_Alice_Frame_Round_Spacer_25mm.stl",
+      "quantity": 2,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    },
+    {
+      "source_path": "q-pack\\SHELL\\MOTHERBOARD\\Q-pack-TacoShell_MK4_Alice_Frame_UpperSpacer_25mm.stl",
+      "quantity": 1,
+      "nozzle_mm": "0.4",
+      "layer_mm": "0.2"
+    }
+  ],
+  "wand": [
+    {
+      "key": "left_box",
+      "source_path": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_left_box.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "left_box_plate",
+      "source_path": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_left_box_plate.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "rear_box_plate",
+      "source_path": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_rear_box_plate.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "rear_box",
+      "source_path": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_rear_box.stl",
+      "rotation_rad": [
+        1.5707963267948966,
+        0,
+        0
+      ],
+      "translation_mm": [
+        -94.86,
+        -61.5,
+        -29.51
+      ]
+    },
+    {
+      "key": "left_big_knob",
+      "source_path": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_left_big_knob.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "left_small_knob",
+      "source_path": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_left_small_knob.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "right_big_knob",
+      "source_path": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_right_big_knob.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "right_little_knob",
+      "source_path": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_right_little_knob.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "rear_fitting",
+      "source_path": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_rear_fitting.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "heat_sink",
+      "source_path": "q-pack\\WAND\\MISC\\HEAT_SINK\\Q-pack-TacoShell_MK4_heat_sink.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "Rear_tube",
+      "source_path": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_Rear_tube.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "V-hook",
+      "source_path": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_V-hook.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "Rack",
+      "source_path": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_Rack_ELSA.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "Base_plate",
+      "source_path": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_Base_plate.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "Body_to_fronGrip",
+      "source_path": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_Body_to_fronGrip.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "Body_to_fronGrip_inner_tube",
+      "source_path": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_Body_to_fronGrip_inner_tube.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "Gun_body",
+      "source_path": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_Gun_body.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "Back_ear",
+      "source_path": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_Back_ear.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "Front_Barrel_22mm",
+      "source_path": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_Front_Barrel_22mm.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "b_handle_01",
+      "source_path": "q-pack\\WAND\\BACK\\Q-pack-TacoShell_MK4_b_handle_01.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "b_handle_02",
+      "source_path": "q-pack\\WAND\\BACK\\Q-pack-TacoShell_MK4_b_handle_02.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "b_handle_03",
+      "source_path": "q-pack\\WAND\\BACK\\Q-pack-TacoShell_MK4_b_handle_03_type1.stl",
+      "rotation_rad": [
+        0,
+        0,
+        0
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghostbusters Q-Pack MK4 — 3D Build Visualizer</title>
+  <!-- Three.js and loaders -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="progress.js"></script>
+  <style>
+    :root {
+      --bg-dark: #0f1219;
+      --panel-bg: rgba(18, 23, 34, 0.85);
+      --border-color: rgba(64, 84, 119, 0.45);
+      --accent-green: #2ecc71;
+      --accent-gold: #f39c12;
+      --accent-blue: #3498db;
+      --accent-ghost: #7f8c8d;
+      --text-main: #ecf0f1;
+      --text-muted: #95a5a6;
+      --font-mono: 'Consolas', 'Courier New', monospace;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body, html { width: 100%; height: 100%; overflow: hidden; background: var(--bg-dark); font-family: var(--font-sans); color: var(--text-main); }
+
+    #canvas-container { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+
+    /* Top HUD Header */
+    #header {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      right: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      background: var(--panel-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      z-index: 10;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    }
+
+    .title-group h1 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .badge-icon {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent-green);
+      box-shadow: 0 0 10px var(--accent-green);
+    }
+    .subtitle {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* Overall Stats Badge */
+    .stats-group {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+    }
+    .stat-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 6px 14px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .stat-pill strong { color: #fff; }
+    .assembly-switch { display: flex; gap: 6px; margin-top: 6px; }
+    .assembly-note { padding: 10px 14px; font-size: 0.72rem; color: var(--text-muted); border-bottom: 1px solid var(--border-color); }
+    #insp-placement, #insp-assumption { margin-top: 12px; font-size: 0.75rem; line-height: 1.5; color: var(--text-muted); }
+
+    /* Left Sidebar: Plates & Assembly Hierarchy */
+    #sidebar {
+      position: absolute;
+      top: 122px;
+      left: 16px;
+      bottom: 16px;
+      width: 320px;
+      background: var(--panel-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+    }
+
+    .sidebar-header {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border-color);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .plate-list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .plate-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 8px;
+      padding: 10px 12px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .plate-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateX(2px);
+    }
+    .plate-card.active {
+      border-color: var(--accent-gold);
+      background: rgba(243, 156, 18, 0.12);
+      box-shadow: 0 0 15px rgba(243, 156, 18, 0.2);
+    }
+
+    .plate-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    .plate-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      font-family: var(--font-mono);
+    }
+    .plate-status {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+    .status-printed { background: rgba(46, 204, 113, 0.2); color: var(--accent-green); border: 1px solid var(--accent-green); }
+    .status-current { background: rgba(243, 156, 18, 0.25); color: var(--accent-gold); border: 1px solid var(--accent-gold); animation: pulse 2s infinite; }
+    .status-sliced  { background: rgba(52, 152, 219, 0.2); color: var(--accent-blue); border: 1px solid var(--accent-blue); }
+    .status-pending { background: rgba(127, 140, 141, 0.2); color: var(--accent-ghost); border: 1px solid var(--accent-ghost); }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(243, 156, 18, 0.5); }
+      70% { box-shadow: 0 0 0 8px rgba(243, 156, 18, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(243, 156, 18, 0); }
+    }
+
+    .plate-desc {
+      font-size: 0.82rem;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+    .plate-parts-sub {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    /* Right HUD Card: Part Inspector */
+    #inspector {
+      position: absolute;
+      top: 122px;
+      right: 16px;
+      width: 310px;
+      background: var(--panel-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 16px;
+      z-index: 10;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      display: none;
+    }
+    #inspector.visible { display: block; }
+
+    .inspector-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .inspector-close {
+      cursor: pointer;
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+    .inspector-close:hover { color: #fff; }
+
+    .prop-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      margin-bottom: 8px;
+    }
+    .prop-label { color: var(--text-muted); }
+    .prop-val { font-family: var(--font-mono); font-weight: 600; text-align: right; }
+
+    /* Bottom Control Bar */
+    #bottom-bar {
+      position: absolute;
+      bottom: 16px;
+      left: 352px;
+      right: 16px;
+      min-height: 60px;
+      background: var(--panel-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 10px 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 10;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    }
+
+    .control-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: var(--text-main);
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+    .btn.active {
+      background: var(--accent-gold);
+      color: #000;
+      border-color: var(--accent-gold);
+    }
+
+    /* Exploded View Slider */
+    .slider-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+    .slider {
+      -webkit-appearance: none;
+      width: 140px;
+      height: 6px;
+      border-radius: 3px;
+      background: rgba(255, 255, 255, 0.1);
+      outline: none;
+    }
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--accent-gold);
+      cursor: pointer;
+      box-shadow: 0 0 10px var(--accent-gold);
+    }
+
+    /* Legend Overlay */
+    .legend {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+    }
+    .legend-item { display: flex; align-items: center; gap: 6px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; }
+    .dot-printed { background: var(--accent-green); box-shadow: 0 0 6px var(--accent-green); }
+    .dot-current { background: var(--accent-gold); box-shadow: 0 0 6px var(--accent-gold); }
+    .dot-sliced  { background: var(--accent-blue); box-shadow: 0 0 6px var(--accent-blue); }
+    .dot-ghost   { background: var(--accent-ghost); }
+
+    /* Loading Overlay */
+    #loader {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: var(--bg-dark);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+      transition: opacity 0.5s ease;
+    }
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      border-top: 3px solid var(--accent-gold);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 16px;
+    }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    @media (max-width: 1400px) {
+      .stats-group { gap: 8px; font-size: 0.75rem; }
+      .stat-pill { padding: 6px 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <div style="font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-muted);">INITIALIZING 3D BUILD ASSEMBLY...</div>
+  </div>
+
+  <!-- 3D Canvas -->
+  <div id="canvas-container"></div>
+
+  <!-- Top HUD Header -->
+  <div id="header">
+    <div class="title-group">
+      <h1><span class="badge-icon"></span> GHOSTBUSTERS Q-PACK MK4</h1>
+      <div class="subtitle">Unofficial builder tool · <a href="https://github.com/pestoforce/q-pack-build-visualizer#sources-and-guides" style="color: var(--accent-gold);">Sources, guides & videos</a></div>
+      <div class="assembly-switch">
+        <button class="btn" id="assembly-pack" onclick="switchAssembly('pack')">Proton Pack</button>
+        <button class="btn" id="assembly-wand" onclick="switchAssembly('wand')">Wand</button>
+        <button class="btn" onclick="exportProgress()">Export Progress</button>
+        <button class="btn" onclick="document.getElementById('progress-import').click()">Import Progress</button>
+        <input type="file" accept=".json,application/json" id="progress-import" hidden onchange="importProgress(this)">
+      </div>
+    </div>
+    <div class="stats-group">
+      <div class="stat-pill">
+        <span id="assembly-status-label">Pack Printed:</span>
+        <strong id="assembly-status" style="color: var(--accent-green);">Loading...</strong>
+      </div>
+      <div class="stat-pill">
+        <span>Modeled Pieces:</span>
+        <strong id="total-status" style="color: #fff;">Loading...</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left Sidebar: Plates -->
+  <div id="sidebar">
+    <div class="sidebar-header">
+      <span>Print Plates</span>
+      <button class="btn" style="padding: 2px 8px; font-size: 0.7rem;" onclick="resetFilter()">Reset</button>
+    </div>
+    <div class="assembly-note" id="assembly-note"></div>
+    <div class="assembly-note" id="progress-message" role="status">Progress is private to this browser. Export to back it up or hand it to an AI agent.</div>
+    <div style="padding: 8px 14px;">
+      <button class="btn" onclick="markActivePlatePrinted()">Mark highlighted group printed</button>
+    </div>
+    <div class="plate-list" id="plate-list-container">
+      <!-- Generated dynamically -->
+    </div>
+  </div>
+
+  <!-- Right HUD Inspector -->
+  <div id="inspector">
+    <div class="inspector-title">
+      <span id="insp-name">Part Details</span>
+      <span class="inspector-close" onclick="closeInspector()">&times;</span>
+    </div>
+    <div class="prop-row">
+      <span class="prop-label">Plate / Job:</span>
+      <span class="prop-val" id="insp-plate">-</span>
+    </div>
+    <div class="prop-row">
+      <span class="prop-label">Status:</span>
+      <span class="prop-val" id="insp-status">-</span>
+    </div>
+    <div class="prop-row">
+      <span class="prop-label">Filament / Material:</span>
+      <span class="prop-val" id="insp-material">PETG Black</span>
+    </div>
+    <div class="prop-row">
+      <span class="prop-label">Nozzle & Layers:</span>
+      <span class="prop-val" id="insp-layer">0.25mm / 0.12mm</span>
+    </div>
+    <div class="prop-row">
+      <span class="prop-label">Guide Reference:</span>
+      <span class="prop-val" id="insp-guide">MK4 Guide V1.1</span>
+    </div>
+    <div class="prop-row" style="margin-top: 10px;">
+      <span class="prop-label">Assembly Focus:</span>
+    </div>
+    <button class="btn" style="width: 100%; margin-top: 6px; justify-content: center;" onclick="focusSelectedPart()">Focus Camera</button>
+    <div id="insp-placement"></div>
+    <div id="insp-assumption"></div>
+    <a id="insp-source" href="#" target="_blank" rel="noopener noreferrer" style="display:block; margin-top:12px; color:var(--accent-gold);">Original Q-Pack source file</a>
+    <label for="part-status" style="display:block; margin-top:12px;">Build status</label>
+    <select id="part-status" onchange="savePartStatus(this.value)" style="width:100%; margin-top:6px; padding:8px;"></select>
+    <div style="font-size:0.72rem; margin-top:8px;">Printed does not mean fit-checked or assembled.</div>
+  </div>
+
+  <!-- Bottom Toolbar -->
+  <div id="bottom-bar">
+    <div class="control-group">
+      <div class="slider-container">
+        <span>Exploded View:</span>
+        <input type="range" min="0" max="100" value="0" class="slider" id="explodeSlider" oninput="onExplodeChange(this.value)">
+        <span id="explodeVal" style="font-family: var(--font-mono); width: 35px;">0%</span>
+      </div>
+      <button class="btn" id="btn-ghost" onclick="toggleGhostShell()">Hide Ghost Shell</button>
+      <button class="btn" id="btn-solid" onclick="toggleSolidPreview()">Solid Preview</button>
+    </div>
+
+    <!-- Camera Presets -->
+    <div class="control-group">
+      <button class="btn" data-view="iso" onclick="setCameraView('iso', this)">Isometric</button>
+      <button class="btn" data-view="docking" onclick="setCameraView('docking', this)">Docking / Underside</button>
+      <button class="btn" data-view="rear" onclick="setCameraView('rear', this)">Rear Boxes</button>
+      <button class="btn" data-view="side" onclick="setCameraView('side', this)">Side / Knobs</button>
+      <button class="btn" data-view="front" onclick="setCameraView('front', this)">Front Grip</button>
+    </div>
+
+    <!-- Legend -->
+    <div class="legend">
+      <div class="legend-item"><div class="dot dot-printed"></div> Printed (fit pending)</div>
+      <div class="legend-item" id="legend-sliced"><div class="dot dot-sliced"></div> Queued / Printing</div>
+      <div class="legend-item"><div class="dot dot-ghost"></div> Ghost Unprinted</div>
+    </div>
+  </div>
+
+  <script>
+    // Three.js setup
+    let scene, camera, renderer, controls, raycaster, mouse;
+    let loadedModel = null;
+    let meshObjects = {};
+    let initialPositions = {};
+    let selectedMesh = null;
+    let showGhost = true;
+    let pointerStartX = 0, pointerStartY = 0;
+    let PART_DATABASE = {}, PLATES = [];
+    let activeAssembly = 'wand', activeFilter = 'all', loadVersion = 0;
+    let solidPreview = false;
+    const STORAGE_KEY = 'q-pack-build-progress-v1:' + new URL('.', location.href).pathname;
+    let catalogs = {}, progress = { version: 1, parts: { pack: {}, wand: {} } }, progressReady = false;
+    let grid, assemblyCenter = new THREE.Vector3(), assemblySize = 600;
+    const selectedMaterial = new THREE.MeshStandardMaterial({ color: 0xffffff, emissive: 0x00d2d3, emissiveIntensity: 0.7, roughness: 0.2 });
+    const plateMaterial = new THREE.MeshStandardMaterial({ color: 0xffa502, emissive: 0xff6348, emissiveIntensity: 0.5, roughness: 0.25, metalness: 0.3 });
+    const dimMaterial = new THREE.MeshStandardMaterial({ color: 0x334155, transparent: true, opacity: 0.12, depthWrite: false });
+
+    const container = document.getElementById('canvas-container');
+    let progressLoad;
+
+    function notifyProgress(message, isError = false) {
+      const element = document.getElementById('progress-message');
+      element.textContent = message;
+      element.style.color = isError ? '#e74c3c' : '';
+    }
+
+    async function loadProgress() {
+      if (progressLoad) return progressLoad;
+      progressLoad = (async () => {
+        const responses = await Promise.all(['assets/pack-parts.json', 'assets/wand-parts.json', 'progress.json']
+          .map(url => fetch(url, { cache: 'no-cache' })));
+        responses.forEach(response => {
+          if (!response.ok) throw new Error(`Catalog/progress HTTP ${response.status}: ${response.url}`);
+        });
+        const [pack, wand, fileProgress] = await Promise.all(responses.map(response => response.json()));
+        catalogs = { pack, wand };
+        progress = BuildProgress.validate(fileProgress, catalogs);
+        try {
+          const stored = localStorage.getItem(STORAGE_KEY);
+          if (stored) {
+            progress = BuildProgress.validate(JSON.parse(stored), catalogs);
+            notifyProgress('Loaded this browser\'s progress. Import replaces it with an AI-edited/exported file.');
+          }
+        } catch (error) {
+          notifyProgress(`Browser progress could not be loaded: ${error.message}. Loaded progress.json instead; export before changing anything.`, true);
+        }
+        progressReady = true;
+        const select = document.getElementById('part-status');
+        Object.entries(BuildProgress.stages).forEach(([value, label]) => {
+          const option = document.createElement('option');
+          option.value = value;
+          option.textContent = label;
+          select.appendChild(option);
+        });
+      })();
+      try {
+        await progressLoad;
+      } catch (error) {
+        progressLoad = null;
+        throw error;
+      }
+    }
+
+    function partStage(kind, key) {
+      return progress.parts[kind][key]?.status || 'pending';
+    }
+
+    function refreshProgress() {
+      Object.entries(meshObjects).forEach(([key, mesh]) => {
+        const stage = partStage(activeAssembly, key);
+        mesh.userData.status = BuildProgress.visualStatus(stage);
+        mesh.userData.stage = BuildProgress.stages[stage];
+        const material = mesh.userData.origMaterial;
+        material.color.setHex({ printed: 0x27ae60, sliced: 0x2980b9, pending: 0x7f8c8d }[mesh.userData.status]);
+        material.transparent = mesh.userData.status === 'pending' && !solidPreview;
+        material.opacity = material.transparent ? 0.28 : 1;
+        material.depthWrite = !material.transparent;
+        material.needsUpdate = true;
+      });
+      const count = kind => Object.keys(catalogs[kind].parts).filter(key => BuildProgress.complete.has(partStage(kind, key))).length;
+      const currentTotal = Object.keys(catalogs[activeAssembly].parts).length;
+      const currentPrinted = count(activeAssembly);
+      const total = Object.keys(catalogs.pack.parts).length + Object.keys(catalogs.wand.parts).length;
+      document.getElementById('assembly-status').textContent = `${currentPrinted} / ${currentTotal} (${(100 * currentPrinted / currentTotal).toFixed(1)}%)`;
+      document.getElementById('total-status').textContent = `${count('pack') + count('wand')} / ${total}`;
+      PLATES.forEach(plate => {
+        if (!plate.keys) return;
+        plate.status = plate.keys.every(key => BuildProgress.complete.has(partStage(activeAssembly, key))) ? 'printed' :
+          plate.keys.some(key => ['sliced', 'printing'].includes(partStage(activeAssembly, key))) ? 'sliced' : 'pending';
+      });
+      renderSidebar();
+      updateAppearance();
+      if (selectedMesh) {
+        document.getElementById('insp-status').textContent = selectedMesh.userData.stage;
+        document.getElementById('part-status').value = partStage(activeAssembly, selectedMesh.userData.key);
+      }
+    }
+
+    function storeProgress(next) {
+      const validated = BuildProgress.validate(next, catalogs);
+      // Persist before updating the view; blocked storage must not look saved.
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(validated));
+      progress = validated;
+      refreshProgress();
+      notifyProgress('Saved in this browser. Export Progress to back up or give the file to an AI agent.');
+    }
+
+    function savePartStatus(status) {
+      if (!selectedMesh || !progressReady) return;
+      const key = selectedMesh.userData.key;
+      const next = JSON.parse(JSON.stringify(progress));
+      next.parts[activeAssembly][key] = { ...next.parts[activeAssembly][key], status, updated_at: new Date().toISOString() };
+      try { storeProgress(next); }
+      catch (error) {
+        document.getElementById('part-status').value = partStage(activeAssembly, key);
+        notifyProgress(`Progress was NOT saved: ${error.message}`, true);
+      }
+    }
+
+    function markActivePlatePrinted() {
+      const plate = PLATES.find(p => p.id === activeFilter);
+      if (!progressReady || !plate?.keys) {
+        notifyProgress('Choose a specific plate/group before marking pieces printed.', true);
+        return;
+      }
+      if (!confirm(`Mark ${plate.keys.length} pieces in "${plate.name}" printed? Inspection and fit remain pending. Already fit-checked/assembled/finished pieces keep their status.`)) return;
+      const next = JSON.parse(JSON.stringify(progress));
+      plate.keys.forEach(key => {
+        const old = next.parts[activeAssembly][key];
+        if (old && ['fit_checked', 'assembled', 'finished'].includes(old.status)) return;
+        next.parts[activeAssembly][key] = { ...old, status: 'printed', updated_at: new Date().toISOString() };
+      });
+      try { storeProgress(next); }
+      catch (error) { notifyProgress(`Group progress was NOT saved: ${error.message}`, true); }
+    }
+
+    function exportProgress() {
+      if (!progressReady) {
+        notifyProgress('Progress is not loaded yet.', true);
+        return;
+      }
+      const blob = new Blob([JSON.stringify(progress, null, 2) + '\n'], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'progress.json';
+      link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    async function importProgress(input) {
+      const file = input.files[0];
+      if (!file) return;
+      try {
+        if (!progressReady) throw new Error('Wait for the assembly to load.');
+        if (file.size > 1024 * 1024) throw new Error('Progress file exceeds 1 MB.');
+        const next = BuildProgress.validate(JSON.parse(await file.text()), catalogs);
+        if (!confirm('Replace this browser\'s progress with the imported file? Export first to preserve existing changes.')) return;
+        storeProgress(next);
+      } catch (error) { notifyProgress(`Import rejected; progress unchanged: ${error.message}`, true); }
+      finally { input.value = ''; }
+    }
+
+    function init() {
+      scene = new THREE.Scene();
+      scene.background = new THREE.Color(0x0e1117);
+
+      camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 3000);
+      camera.position.set(-240, 180, 260);
+
+      renderer = new THREE.WebGLRenderer({ antialias: true });
+      renderer.setPixelRatio(window.devicePixelRatio);
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.shadowMap.enabled = true;
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.1;
+      container.appendChild(renderer.domElement);
+
+      controls = new THREE.OrbitControls(camera, renderer.domElement);
+      controls.target.set(0, 30, 0);
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.05;
+      controls.maxDistance = 1200;
+      controls.minDistance = 30;
+
+      // Lights
+      const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
+      scene.add(ambientLight);
+
+      const dirLight = new THREE.DirectionalLight(0xfff5e6, 1.4);
+      dirLight.position.set(200, 300, 250);
+      dirLight.castShadow = true;
+      scene.add(dirLight);
+
+      const fillLight = new THREE.DirectionalLight(0xaaccff, 0.6);
+      fillLight.position.set(-200, -100, -200);
+      scene.add(fillLight);
+
+      // Ground grid
+      grid = new THREE.GridHelper(1000, 40, 0x223344, 0x15202b);
+      grid.position.y = -35;
+      scene.add(grid);
+
+      raycaster = new THREE.Raycaster();
+      mouse = new THREE.Vector2();
+
+      window.addEventListener('resize', onWindowResize, false);
+
+      // Track pointer to distinguish orbit drag vs click
+      renderer.domElement.addEventListener('pointerdown', (e) => {
+        pointerStartX = e.clientX;
+        pointerStartY = e.clientY;
+      });
+
+      renderer.domElement.addEventListener('pointerup', onPointerClick);
+
+      const requested = new URLSearchParams(location.search).get('assembly');
+      switchAssembly(requested === 'wand' ? 'wand' : 'pack');
+      animate();
+    }
+
+    function renderSidebar() {
+      const container = document.getElementById('plate-list-container');
+      container.innerHTML = "";
+      PLATES.forEach(p => {
+        const card = document.createElement('div');
+        card.className = `plate-card ${p.id === activeFilter ? 'active' : ''}`;
+        card.id = `card-${p.id}`;
+        card.onclick = () => filterByPlate(p.id);
+
+        let badgeClass = 'status-pending';
+        let badgeText = 'Pending';
+        if (p.status === 'printed') { badgeClass = 'status-printed'; badgeText = 'Printed'; }
+        if (p.status === 'current') { badgeClass = 'status-current'; badgeText = 'Ready'; }
+        if (p.status === 'sliced')  { badgeClass = 'status-sliced'; badgeText = 'Queued'; }
+        if (p.status === 'all')     { badgeClass = ''; badgeText = 'Overview'; }
+
+        card.innerHTML = `
+          <div class="plate-card-top">
+            <span class="plate-tag">${p.name}</span>
+            ${badgeText ? `<span class="plate-status ${badgeClass}">${badgeText}</span>` : ''}
+          </div>
+          <div class="plate-desc">${p.desc}</div>
+          <div class="plate-parts-sub">${p.count}</div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function disposeModel(model) {
+      const geometries = new Set(), materials = new Set();
+      model.traverse(child => {
+        if (!child.isMesh) return;
+        geometries.add(child.geometry);
+        const current = Array.isArray(child.material) ? child.material : [child.material];
+        current.forEach(material => materials.add(material));
+        if (child.userData.origMaterial) materials.add(child.userData.origMaterial);
+      });
+      geometries.forEach(geometry => geometry.dispose());
+      materials.forEach(material => {
+        if (![selectedMaterial, plateMaterial, dimMaterial].includes(material)) material.dispose();
+      });
+    }
+
+    async function switchAssembly(kind) {
+      const version = ++loadVersion;
+      const overlay = document.getElementById('loader');
+      overlay.style.display = 'flex';
+      overlay.style.opacity = '1';
+      overlay.innerHTML = '<div class="spinner"></div><div>LOADING ' + kind.toUpperCase() + ' ASSEMBLY...</div>';
+      closeInspector();
+      if (loadedModel) {
+        scene.remove(loadedModel);
+        disposeModel(loadedModel);
+        loadedModel = null;
+      }
+      meshObjects = {};
+      initialPositions = {};
+      activeAssembly = kind;
+      activeFilter = 'all';
+      showGhost = true;
+      solidPreview = false;
+      document.getElementById('btn-ghost').textContent = 'Hide Ghost Shell';
+      document.getElementById('btn-ghost').classList.remove('active');
+      document.getElementById('btn-solid').classList.remove('active');
+      document.getElementById('explodeSlider').value = '0';
+      document.getElementById('explodeVal').textContent = '0%';
+      let incomingModel = null;
+      try {
+        await loadProgress();
+        const metadata = catalogs[kind];
+        if (version !== loadVersion) return;
+        PART_DATABASE = metadata.parts;
+        PLATES = metadata.plates;
+        renderSidebar();
+        document.getElementById('assembly-note').textContent = metadata.note;
+        const isPack = kind === 'pack';
+        document.getElementById('assembly-status-label').textContent = isPack ? 'Pack Printed:' : 'Wand Printed:';
+        ['pack', 'wand'].forEach(id => document.getElementById(`assembly-${id}`).classList.toggle('active', id === kind));
+        const labels = isPack ? ['Isometric', 'Wand Dock / Right', 'Backboard Side', 'Left Shoulder', 'Pack Face'] :
+          ['Isometric', 'Docking / Underside', 'Rear Boxes', 'Side / Knobs', 'Front Grip'];
+        document.querySelectorAll('[data-view]').forEach((button, i) => button.textContent = labels[i]);
+        const gltf = await new THREE.GLTFLoader().loadAsync(`assets/${kind}_assembly.glb`);
+        incomingModel = gltf.scene;
+        if (version !== loadVersion) {
+          disposeModel(incomingModel);
+          return;
+        }
+        incomingModel.rotation.x = isPack ? Math.PI / 2 : 0;
+        const keys = Object.keys(PART_DATABASE);
+        const objects = {}, positions = {}, importedMaterials = new Set();
+        incomingModel.traverse(child => {
+          if (!child.isMesh) return;
+          const names = [child.name, child.parent ? child.parent.name : '']
+            .map(name => name.replace(/^Q-pack-TacoShell_MK4_/, ''));
+          const key = child.userData.part_key || keys.find(k => names.includes(k));
+          if (!key || !PART_DATABASE[key]) throw new Error(`Unmapped mesh: ${child.name}`);
+          if (objects[key]) throw new Error(`Duplicate part key: ${key}`);
+          const originals = Array.isArray(child.material) ? child.material : [child.material];
+          originals.forEach(material => importedMaterials.add(material));
+          const info = PART_DATABASE[key];
+          child.name = key;
+          child.userData = { ...info, key };
+          const color = { printed: 0x27ae60, current: 0xf39c12, sliced: 0x2980b9, pending: 0x7f8c8d }[info.status];
+          child.material = new THREE.MeshStandardMaterial({
+            color, roughness: 0.4, metalness: 0.15,
+            transparent: info.status === 'pending', opacity: info.status === 'pending' ? 0.28 : 1,
+            depthWrite: info.status !== 'pending'
+          });
+          child.userData.origMaterial = child.material;
+          objects[key] = child;
+          positions[key] = child.position.clone();
+        });
+        importedMaterials.forEach(material => material.dispose());
+        if (Object.keys(objects).length !== keys.length) throw new Error('Model/catalog part count mismatch');
+        PLATES.forEach(plate => {
+          if (plate.keys && plate.keys.some(key => !objects[key])) throw new Error(`Unmapped plate: ${plate.id}`);
+        });
+        loadedModel = incomingModel;
+        meshObjects = objects;
+        initialPositions = positions;
+        scene.add(loadedModel);
+        loadedModel.updateMatrixWorld(true);
+        const bounds = new THREE.Box3().setFromObject(loadedModel);
+        assemblyCenter = bounds.getCenter(new THREE.Vector3());
+        const size = bounds.getSize(new THREE.Vector3());
+        assemblySize = Math.max(size.x, size.y, size.z);
+        grid.position.y = bounds.min.y - 10;
+        grid.scale.setScalar(isPack ? 1 : 0.6);
+        controls.maxDistance = isPack ? 3000 : 1200;
+        camera.far = isPack ? 6000 : 3000;
+        camera.updateProjectionMatrix();
+        setCameraView('iso');
+        refreshProgress();
+        const url = new URL(location.href);
+        url.searchParams.set('assembly', kind);
+        history.replaceState(null, '', url);
+        overlay.style.display = 'none';
+      } catch (err) {
+        if (incomingModel) {
+          scene.remove(incomingModel);
+          disposeModel(incomingModel);
+        }
+        if (version !== loadVersion) return;
+        meshObjects = {};
+        initialPositions = {};
+        console.error('Assembly load failed:', err);
+        overlay.replaceChildren();
+        const message = document.createElement('div');
+        message.style.color = '#e74c3c';
+        message.textContent = `Failed to load ${kind} assembly: ${err.message}`;
+        const retry = document.createElement('button');
+        retry.className = 'btn';
+        retry.textContent = 'Retry';
+        retry.onclick = () => switchAssembly(kind);
+        overlay.append(message, retry);
+      }
+    }
+
+    function onPointerClick(event) {
+      // If dragged more than 6px, it was an orbit/pan, not a click
+      if (Math.hypot(event.clientX - pointerStartX, event.clientY - pointerStartY) > 6) return;
+
+      mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+      mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+      raycaster.setFromCamera(mouse, camera);
+      const intersects = raycaster.intersectObjects(Object.values(meshObjects).filter(mesh => mesh.visible), true);
+
+      if (intersects.length > 0) {
+        selectPart(intersects[0].object);
+      } else {
+        // Deselect when clicking empty space
+        closeInspector();
+      }
+    }
+
+    function selectPart(mesh) {
+      selectedMesh = mesh;
+      const info = mesh.userData || {};
+      updateAppearance();
+
+      // Show inspector
+      const insp = document.getElementById('inspector');
+      insp.classList.add('visible');
+      document.getElementById('insp-name').innerText = info.name || mesh.name;
+      document.getElementById('insp-plate').innerText = info.plate || "Unknown";
+      document.getElementById('insp-status').innerText = info.stage || "Pending";
+      document.getElementById('insp-material').innerText = info.mat || "PETG Black";
+      document.getElementById('insp-layer').innerText = info.layer || "0.25mm / 0.12mm";
+      document.getElementById('insp-guide').innerText = info.guide || "MK4 Guide";
+      document.getElementById('insp-placement').textContent = info.alignment || '';
+      document.getElementById('insp-assumption').textContent = info.assumption || '';
+      const sourcePath = info.source.split('\\').slice(1).map(encodeURIComponent).join('/');
+      document.getElementById('insp-source').href = `https://github.com/mr-kiou/q-pack/blob/bc617e8382c8ad7aa2102e489f50e1aad1dc3a70/${sourcePath}`;
+      document.getElementById('part-status').value = partStage(activeAssembly, info.key);
+    }
+
+    function closeInspector() {
+      selectedMesh = null;
+      document.getElementById('inspector').classList.remove('visible');
+      updateAppearance();
+    }
+
+    function focusSelectedPart() {
+      if (!selectedMesh) return;
+      const box = new THREE.Box3().setFromObject(selectedMesh);
+      const center = box.getCenter(new THREE.Vector3());
+      controls.target.copy(center);
+      controls.update();
+    }
+
+    function filterByPlate(plateId) {
+      const plate = PLATES.find(p => p.id === plateId);
+      if (!plate) return;
+      closeInspector();
+      activeFilter = plateId;
+      document.querySelectorAll('.plate-card').forEach(c => c.classList.remove('active'));
+      const activeCard = document.getElementById(`card-${plateId}`);
+      if (activeCard) activeCard.classList.add('active');
+
+      updateAppearance();
+    }
+
+    function updateAppearance() {
+      const plate = PLATES.find(p => p.id === activeFilter);
+      Object.entries(meshObjects).forEach(([key, mesh]) => {
+        const member = plate && plate.keys && plate.keys.includes(key);
+        mesh.visible = showGhost || mesh.userData.status !== 'pending' || !!member;
+        mesh.material = mesh === selectedMesh ? selectedMaterial :
+          activeFilter === 'all' ? mesh.userData.origMaterial : member ? plateMaterial : dimMaterial;
+        if (mesh.userData.status === 'pending') {
+          const material = mesh.userData.origMaterial;
+          material.transparent = !solidPreview;
+          material.opacity = solidPreview ? 1 : 0.28;
+          material.depthWrite = solidPreview;
+          material.needsUpdate = true;
+        }
+      });
+    }
+
+    function resetFilter() {
+      filterByPlate('all');
+      closeInspector();
+    }
+
+    function onExplodeChange(val) {
+      document.getElementById('explodeVal').innerText = `${val}%`;
+      const factor = (val / 100.0) * (activeAssembly === 'pack' ? 230.0 : 120.0);
+
+      Object.keys(meshObjects).forEach(name => {
+        const mesh = meshObjects[name];
+        const initPos = initialPositions[name];
+        const info = PART_DATABASE[name];
+        if (initPos && info && info.explode) {
+          // glTF coordinates: Blender X -> X, Blender Z -> Y, Blender Y -> -Z
+          mesh.position.set(
+            initPos.x + info.explode[0] * factor,
+            initPos.y + info.explode[2] * factor,
+            initPos.z - info.explode[1] * factor
+          );
+        }
+      });
+    }
+
+    function toggleGhostShell() {
+      showGhost = !showGhost;
+      const btn = document.getElementById('btn-ghost');
+      btn.innerText = showGhost ? "Hide Ghost Shell" : "Show Ghost Shell";
+      btn.classList.toggle('active', !showGhost);
+
+      updateAppearance();
+      if (selectedMesh && !selectedMesh.visible) closeInspector();
+    }
+
+    function toggleSolidPreview() {
+      solidPreview = !solidPreview;
+      document.getElementById('btn-solid').classList.toggle('active', solidPreview);
+      updateAppearance();
+    }
+
+    function setCameraView(preset, button) {
+      document.querySelectorAll('[data-view]').forEach(b => b.classList.toggle('active', b === button || (!button && b.dataset.view === preset)));
+
+      if (activeAssembly === 'pack') {
+        const vectors = { iso: [-1.0, 0.7, 2.0], docking: [2.2, 0.1, 0.3],
+          rear: [0, 0.1, -2.2], side: [-2.2, 0.1, 0.3], front: [0, 0, 2.2] };
+        const vector = vectors[preset];
+        controls.target.copy(assemblyCenter);
+        const distance = assemblySize * Math.max(1, 1 / camera.aspect);
+        camera.position.copy(assemblyCenter).add(new THREE.Vector3(...vector).multiplyScalar(distance));
+      } else if (preset === 'iso') {
+        camera.position.set(-240, 180, 260);
+        controls.target.set(0, 30, 0);
+      } else if (preset === 'docking') {
+        camera.position.set(40, -180, 40);
+        controls.target.set(0, -10, 0);
+      } else if (preset === 'rear') {
+        camera.position.set(-60, 90, 360);
+        controls.target.set(0, 30, 80);
+      } else if (preset === 'side') {
+        camera.position.set(-340, 50, 40);
+        controls.target.set(-20, 30, 10);
+      } else if (preset === 'front') {
+        camera.position.set(40, 60, -360);
+        controls.target.set(0, 30, -100);
+      }
+      controls.update();
+    }
+
+    function onWindowResize() {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+
+    init();
+  </script>
+</body>
+</html>
