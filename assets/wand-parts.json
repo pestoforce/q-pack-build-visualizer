@@ -2,7 +2,7 @@
   "parts": {
     "left_box": {
       "name": "Left Box",
-      "plate": "Example Plate 12",
+      "plate": "Example Plate 12: Rear Boxes",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -17,7 +17,7 @@
     },
     "left_box_plate": {
       "name": "Left Box Cover Plate",
-      "plate": "Example Plate 12",
+      "plate": "Example Plate 12: Rear Boxes",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -32,7 +32,7 @@
     },
     "rear_box": {
       "name": "Rear Electrical Box",
-      "plate": "Example Plate 12",
+      "plate": "Example Plate 12: Rear Boxes",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -47,7 +47,7 @@
     },
     "rear_box_plate": {
       "name": "Rear Box Cover Plate",
-      "plate": "Example Plate 12",
+      "plate": "Example Plate 12: Rear Boxes",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -62,7 +62,7 @@
     },
     "left_big_knob": {
       "name": "Left Big Knob",
-      "plate": "Example Plate 03",
+      "plate": "Example Group: Knobs & Heatsink",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -77,7 +77,7 @@
     },
     "left_small_knob": {
       "name": "Left Small Knob",
-      "plate": "Example Plate 03",
+      "plate": "Example Group: Knobs & Heatsink",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -92,7 +92,7 @@
     },
     "right_big_knob": {
       "name": "Right Big Knob",
-      "plate": "Example Plate 03",
+      "plate": "Example Group: Knobs & Heatsink",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -107,7 +107,7 @@
     },
     "right_little_knob": {
       "name": "Right Little Knob",
-      "plate": "Example Plate 03",
+      "plate": "Example Group: Knobs & Heatsink",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -122,7 +122,7 @@
     },
     "rear_fitting": {
       "name": "Rear Brass Fitting",
-      "plate": "Example Plate 02",
+      "plate": "Example Group: Knobs & Heatsink",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -137,7 +137,7 @@
     },
     "heat_sink": {
       "name": "Finned Heat Sink",
-      "plate": "Example Plate 02",
+      "plate": "Example Group: Knobs & Heatsink",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -152,7 +152,7 @@
     },
     "Rack": {
       "name": "Wand Underside Rack",
-      "plate": "Example Plate 13",
+      "plate": "Example Plate 13: Docking & V-Hook",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -167,7 +167,7 @@
     },
     "V-hook": {
       "name": "Wand Docking V-Hook",
-      "plate": "Example Plate 13",
+      "plate": "Example Plate 13: Docking & V-Hook",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -182,7 +182,7 @@
     },
     "Rear_tube": {
       "name": "Rear Tube Mount",
-      "plate": "Example Plate 13",
+      "plate": "Example Plate 13: Docking & V-Hook",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -197,7 +197,7 @@
     },
     "Base_plate": {
       "name": "Bottom Base Plate",
-      "plate": "Example Plate 11",
+      "plate": "Example Plate 11: Base & Connectors",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -212,7 +212,7 @@
     },
     "Body_to_fronGrip": {
       "name": "Front Grip Connector",
-      "plate": "Example Plate 11",
+      "plate": "Example Plate 11: Base & Connectors",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -227,7 +227,7 @@
     },
     "Body_to_fronGrip_inner_tube": {
       "name": "Front Inner Sleeve Tube",
-      "plate": "Example Plate 11",
+      "plate": "Example Plate 11: Base & Connectors",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -242,7 +242,7 @@
     },
     "Gun_body": {
       "name": "Main Wand TacoShell Body",
-      "plate": "Future Plate (Wand Body)",
+      "plate": "Future Plates: Body & Handles",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -257,7 +257,7 @@
     },
     "Back_ear": {
       "name": "Front Barrel Back Ear",
-      "plate": "Future Plate (Front Details)",
+      "plate": "Future Plates: Body & Handles",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -272,7 +272,7 @@
     },
     "Front_Barrel_22mm": {
       "name": "Front Barrel (22mm)",
-      "plate": "Future Plate (Front Barrel)",
+      "plate": "Future Plates: Body & Handles",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -287,7 +287,7 @@
     },
     "b_handle_01": {
       "name": "Back Handle Section 1",
-      "plate": "Future Plate (Back Handle)",
+      "plate": "Future Plates: Body & Handles",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -302,7 +302,7 @@
     },
     "b_handle_02": {
       "name": "Back Handle Section 2",
-      "plate": "Future Plate (Back Handle)",
+      "plate": "Future Plates: Body & Handles",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -317,7 +317,7 @@
     },
     "b_handle_03": {
       "name": "Back Handle End Cap",
-      "plate": "Future Plate (Back Handle)",
+      "plate": "Future Plates: Body & Handles",
       "status": "pending",
       "stage": "Not printed",
       "mat": "Material not specified",
@@ -329,15 +329,304 @@
         0.3
       ],
       "source": "q-pack\\WAND\\BACK\\Q-pack-TacoShell_MK4_b_handle_03_type1.stl"
+    },
+    "front_Grip": {
+      "name": "Front Grip",
+      "plate": "Future Plates: Body & Handles",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 44",
+      "explode": [
+        0,
+        1,
+        0
+      ],
+      "source": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_front_Grip.stl",
+      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "assumption": "Illustrative assembly placement; choose barrel and tip variants to suit the actual acrylic tube."
+    },
+    "Grey_tip": {
+      "name": "Grey Tip",
+      "plate": "Future Plates: Body & Handles",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 44-46",
+      "explode": [
+        0,
+        1.8,
+        0
+      ],
+      "source": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_Grey_tip.stl",
+      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "assumption": "Illustrative assembly placement; choose barrel and tip variants to suit the actual acrylic tube."
+    },
+    "Metal_tip": {
+      "name": "Metal-look Tip",
+      "plate": "Future Plates: Body & Handles",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 44-46",
+      "explode": [
+        0,
+        2.2,
+        0
+      ],
+      "source": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_Metal_tip.stl",
+      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "assumption": "Illustrative assembly placement; choose barrel and tip variants to suit the actual acrylic tube."
+    },
+    "front_tube": {
+      "name": "Front Body Tube",
+      "plate": "Example Plate 11: Base & Connectors",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 38-39",
+      "explode": [
+        0,
+        0.6,
+        0
+      ],
+      "source": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_front_tube.stl",
+      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "assumption": "Illustrative assembly placement; verify against the original guide."
+    },
+    "front_knob": {
+      "name": "Front Knob",
+      "plate": "Example Group: Knobs & Heatsink",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 47-48",
+      "explode": [
+        -0.8,
+        0.4,
+        0
+      ],
+      "source": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_front_knob.stl",
+      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "assumption": "Illustrative assembly placement; verify against the original guide."
+    },
+    "top_knob_V2": {
+      "name": "Top Knob V2",
+      "plate": "Example Group: Knobs & Heatsink",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 47-48",
+      "explode": [
+        0,
+        0,
+        0.8
+      ],
+      "source": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_top_knob_V2.stl",
+      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "assumption": "Illustrative assembly placement; verify against the original guide."
+    },
+    "banjo_main_1": {
+      "name": "Banjo Body 1",
+      "plate": "Example Group: Banjos",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 49",
+      "explode": [
+        -1.2,
+        -0.3,
+        0
+      ],
+      "source": "q-pack\\WAND\\MISC\\BANJOS\\Q-pack-TacoShell_MK4_banjo_main.stl",
+      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "assumption": "Illustrative assembly placement; verify against the original guide."
+    },
+    "banjo_main_2": {
+      "name": "Banjo Body 2",
+      "plate": "Example Group: Banjos",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 49",
+      "explode": [
+        -1.2,
+        0.3,
+        0
+      ],
+      "source": "q-pack\\WAND\\MISC\\BANJOS\\Q-pack-TacoShell_MK4_banjo_main.stl",
+      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "assumption": "Illustrative assembly placement; verify against the original guide."
+    },
+    "banjo_fake_screw_1": {
+      "name": "Banjo Decorative Screw 1",
+      "plate": "Example Group: Banjos",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 49",
+      "explode": [
+        -1.8,
+        -0.3,
+        0
+      ],
+      "source": "q-pack\\WAND\\MISC\\BANJOS\\Q-pack-TacoShell_MK4_banjo_fake_screw.stl",
+      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "assumption": "Illustrative assembly placement; verify against the original guide."
+    },
+    "banjo_fake_screw_2": {
+      "name": "Banjo Decorative Screw 2",
+      "plate": "Example Group: Banjos",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 49",
+      "explode": [
+        -1.8,
+        0.3,
+        0
+      ],
+      "source": "q-pack\\WAND\\MISC\\BANJOS\\Q-pack-TacoShell_MK4_banjo_fake_screw.stl",
+      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "assumption": "Illustrative assembly placement; verify against the original guide."
+    },
+    "hat_front": {
+      "name": "Front Orange Indicator Cover",
+      "plate": "Example Group: Indicator Covers & Retaining Plugs",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 50",
+      "explode": [
+        -1,
+        0.5,
+        0
+      ],
+      "source": "q-pack\\WAND\\LENS\\hat.stl",
+      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "assumption": "Separate physical cover or retaining plug; guide colors are descriptive, not a material setting. Status colors are not filament colors."
+    },
+    "hat_body": {
+      "name": "Body Clear Indicator Cover",
+      "plate": "Example Group: Indicator Covers & Retaining Plugs",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 50",
+      "explode": [
+        0,
+        0,
+        1
+      ],
+      "source": "q-pack\\WAND\\LENS\\hat.stl",
+      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "assumption": "Separate physical cover or retaining plug; guide colors are descriptive, not a material setting. Status colors are not filament colors."
+    },
+    "hat_plug_front": {
+      "name": "Front Hidden Retaining Plug",
+      "plate": "Example Group: Indicator Covers & Retaining Plugs",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 50",
+      "explode": [
+        -0.5,
+        0.5,
+        0
+      ],
+      "source": "q-pack\\WAND\\LENS\\hat_plug.stl",
+      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "assumption": "Separate physical cover or retaining plug; guide colors are descriptive, not a material setting. Status colors are not filament colors."
+    },
+    "hat_plug_body": {
+      "name": "Body Hidden Retaining Plug",
+      "plate": "Example Group: Indicator Covers & Retaining Plugs",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 50",
+      "explode": [
+        0,
+        0,
+        0.5
+      ],
+      "source": "q-pack\\WAND\\LENS\\hat_plug.stl",
+      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "assumption": "Separate physical cover or retaining plug; guide colors are descriptive, not a material setting. Status colors are not filament colors."
+    },
+    "long_hat_inside_body": {
+      "name": "Long Orange Indicator Cover",
+      "plate": "Example Group: Indicator Covers & Retaining Plugs",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 50",
+      "explode": [
+        -1.2,
+        0.3,
+        0.3
+      ],
+      "source": "q-pack\\WAND\\LENS\\long_hat_inside_body.stl",
+      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "assumption": "Separate physical cover or retaining plug; guide colors are descriptive, not a material setting. Status colors are not filament colors."
+    },
+    "long_sloblow_red": {
+      "name": "Red Slo-Blo Cover",
+      "plate": "Example Group: Indicator Covers & Retaining Plugs",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 50",
+      "explode": [
+        -1.2,
+        -0.3,
+        0.3
+      ],
+      "source": "q-pack\\WAND\\LENS\\long_sloblow.stl",
+      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "assumption": "Separate physical cover or retaining plug; guide colors are descriptive, not a material setting. Status colors are not filament colors."
+    },
+    "long_sloblow_clear": {
+      "name": "Clear Slo-Blo Cover",
+      "plate": "Example Group: Indicator Covers & Retaining Plugs",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF p. 50",
+      "explode": [
+        0.3,
+        0.3,
+        1.2
+      ],
+      "source": "q-pack\\WAND\\LENS\\long_sloblow.stl",
+      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "assumption": "Separate physical cover or retaining plug; guide colors are descriptive, not a material setting. Status colors are not filament colors."
     }
   },
   "plates": [
     {
       "id": "all",
       "name": "All Assembly Parts",
-      "count": "22 Parts",
+      "count": "39 Planned Pieces",
       "status": "all",
-      "desc": "22-object wand prototype"
+      "desc": "39 planned wand pieces; illustrative placements and provisional variants"
     },
     {
       "id": "plate13",
@@ -367,19 +656,20 @@
     {
       "id": "plate11",
       "name": "Example Plate 11: Base & Connectors",
-      "count": "3 Parts",
+      "count": "4 Parts",
       "status": "pending",
       "desc": "Example grouping; not a print-ready project",
       "keys": [
         "Base_plate",
         "Body_to_fronGrip",
-        "Body_to_fronGrip_inner_tube"
+        "Body_to_fronGrip_inner_tube",
+        "front_tube"
       ]
     },
     {
       "id": "knobs",
       "name": "Example Group: Knobs & Heatsink",
-      "count": "6 Parts",
+      "count": "8 Parts",
       "status": "pending",
       "desc": "Example grouping; not a print-ready project",
       "keys": [
@@ -388,13 +678,15 @@
         "right_big_knob",
         "right_little_knob",
         "rear_fitting",
-        "heat_sink"
+        "heat_sink",
+        "front_knob",
+        "top_knob_V2"
       ]
     },
     {
       "id": "unprinted",
       "name": "Future Plates: Body & Handles",
-      "count": "6 Parts",
+      "count": "9 Parts",
       "status": "pending",
       "desc": "Example grouping; not a print-ready project",
       "keys": [
@@ -403,9 +695,41 @@
         "Front_Barrel_22mm",
         "b_handle_01",
         "b_handle_02",
-        "b_handle_03"
+        "b_handle_03",
+        "front_Grip",
+        "Grey_tip",
+        "Metal_tip"
       ]
+    },
+    {
+      "id": "banjos",
+      "name": "Example Group: Banjos",
+      "status": "pending",
+      "desc": "Example grouping; not a print-ready project",
+      "keys": [
+        "banjo_main_1",
+        "banjo_main_2",
+        "banjo_fake_screw_1",
+        "banjo_fake_screw_2"
+      ],
+      "count": "4 Parts"
+    },
+    {
+      "id": "lenses",
+      "name": "Example Group: Indicator Covers & Retaining Plugs",
+      "status": "pending",
+      "desc": "Example grouping; not a print-ready project",
+      "keys": [
+        "hat_front",
+        "hat_body",
+        "hat_plug_front",
+        "hat_plug_body",
+        "long_hat_inside_body",
+        "long_sloblow_red",
+        "long_sloblow_clear"
+      ],
+      "count": "7 Parts"
     }
   ],
-  "note": "22-object wand prototype, not a complete print BOM. Rack uses the ELSA source variant; barrel diameter and small details are provisional. Verify against your chosen build."
+  "note": "39 planned printed wand pieces, including separate indicator covers and hidden retaining plugs; not a complete physical-build BOM. Rack uses the ELSA source variant. The standard 22mm barrel and Metal_tip meshes are provisional alternatives; GBFans tubes have separately named matching sources. Verify actual tube dimensions and chosen variants. Added detail placements are illustrative, not CAD-fit verified."
 }

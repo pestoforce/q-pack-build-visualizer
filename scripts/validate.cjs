@@ -5,9 +5,18 @@ const BuildProgress = require('../progress.js');
 const root = path.resolve(__dirname, '..');
 const read = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
 const catalogs = { pack: read('assets/pack-parts.json'), wand: read('assets/wand-parts.json') };
+const wandManifest = read('scripts/build-manifest.json').wand;
+assert.deepEqual(new Set(wandManifest.map(p => p.key)), new Set(Object.keys(catalogs.wand.parts)));
+assert.equal(wandManifest.length, Object.keys(catalogs.wand.parts).length);
+for (const part of wandManifest) {
+  assert.equal(part.source_path, catalogs.wand.parts[part.key].source);
+  assert.equal(part.rotation_rad.length, 3);
+  assert.equal(part.translation_mm.length, 3);
+  assert.ok([...part.rotation_rad, ...part.translation_mm].every(Number.isFinite));
+}
 for (const [kind, catalog] of Object.entries(catalogs)) {
   const keys = Object.keys(catalog.parts);
-  assert.equal(keys.length, kind === 'pack' ? 76 : 22);
+  assert.equal(keys.length, kind === 'pack' ? 76 : 39);
   const bytes = fs.readFileSync(path.join(root, 'assets', `${kind}_assembly.glb`));
   assert.equal(bytes.toString('ascii', 0, 4), 'glTF');
   const gltf = JSON.parse(bytes.toString('utf8', 20, 20 + bytes.readUInt32LE(12)));
@@ -34,4 +43,4 @@ assert.throws(() => BuildProgress.validate({ version: 1, parts: { pack: { unknow
 assert.throws(() => BuildProgress.validate({ version: 1, parts: { pack: {}, wand: { rear_box: { status: 'accepted' } } } }, catalogs));
 assert.equal(BuildProgress.visualStatus('needs_rework'), 'pending');
 assert.equal(BuildProgress.visualStatus('assembled'), 'printed');
-console.log('Catalogs, 98 unique meshes, plate coverage, blank defaults, progress format, and JavaScript validated.');
+console.log('Catalogs, 115 unique meshes, wand regeneration manifest, plate coverage, blank defaults, progress format, and JavaScript validated.');

@@ -779,7 +779,7 @@
         const labels = isPack ? ['Isometric', 'Wand Dock / Right', 'Backboard Side', 'Left Shoulder', 'Pack Face'] :
           ['Isometric', 'Docking / Underside', 'Rear Boxes', 'Side / Knobs', 'Front Grip'];
         document.querySelectorAll('[data-view]').forEach((button, i) => button.textContent = labels[i]);
-        const gltf = await new THREE.GLTFLoader().loadAsync(`assets/${kind}_assembly.glb`);
+        const gltf = await new THREE.GLTFLoader().loadAsync(`assets/${kind}_assembly.glb${isPack ? '' : '?v=39-pieces'}`);
         incomingModel = gltf.scene;
         if (version !== loadVersion) {
           disposeModel(incomingModel);

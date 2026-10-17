@@ -37,7 +37,7 @@ To start over, import the repository's blank `progress.json`.
 
 Statuses: `pending`, `sliced`, `printing`, `printed`, `fit_checked`, `assembled`,
 `finished`, `needs_rework`. Green means printed or a later stage, **not** an
-automatic fit/assembly approval. Counts include only the **98 modeled pieces**,
+automatic fit/assembly approval. Counts include only the **115 modeled pieces**,
 not the entire physical build. Failed/rework pieces do not earn print credit.
 
 ## Tracking your build with an AI agent
@@ -97,10 +97,18 @@ the guide's printed numbering. Electronics are optional and not represented.
 ## Model coverage and limitations
 
 Pack: **76 nominal printed pieces**, GB1 fixed cyclotron/bumper and actual L split
-shell sections. Wand: **22-object prototype**, not a complete wand BOM.
+shell sections. Wand: **39 planned printed pieces**, including separate indicator
+covers, hidden retaining plugs, both banjo bodies and their decorative screws.
+The extra pieces receive their own stable IDs, status controls, and exploded offsets.
+Existing 22-piece progress exports remain compatible; newly modeled pieces start pending.
 Major shell offsets are matched to assembled CAD references. Small-detail
 placements are illustrative and labeled in the inspector. The wand's rack uses
-the ELSA source variant; barrel diameter and cosmetic choices remain provisional.
+the ELSA source variant; the displayed standard `Front_Barrel_22mm` and `Metal_tip`
+are provisional, not a guaranteed fit for purchased tubing. The source also has
+`Front_Barrel_Gbfan` and `metal_tip_gbfan` alternatives for GBFans tubing; choose
+matching variants after checking the actual tube. Indicator names describe guide
+colors, not filament settings or a builder's material orders. Status colors are
+not filament colors.
 
 Example plate groups are not print-ready slicer projects or universal plate
 numbers. These poses are **assembly poses, not print-bed orientations**.
