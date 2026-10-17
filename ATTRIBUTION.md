@@ -11,7 +11,7 @@ Original Q-Pack MK4/MK4.1 models by **Marc Carabelli (tacobelli)** and
 - License: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Included license: [assets/LICENSE-CC-BY-NC-SA-4.0.txt](assets/LICENSE-CC-BY-NC-SA-4.0.txt)
 
-`assets/` model files, derived geometry/alignment catalogs, and
+`assets/` model files, rendered assembly images, derived geometry/alignment catalogs, and
 `scripts/build-manifest.json` retain **CC BY-NC-SA 4.0**, including attribution,
 noncommercial use, and ShareAlike obligations. Do not treat these as MIT assets.
 

@@ -13,7 +13,18 @@ for (const part of wandManifest) {
   assert.equal(part.rotation_rad.length, 3);
   assert.equal(part.translation_mm.length, 3);
   assert.ok([...part.rotation_rad, ...part.translation_mm].every(Number.isFinite));
+  for (const variant of Object.values(part.variants || {})) {
+    assert.ok(variant.source_path.startsWith('q-pack\\WAND\\FRONT\\'));
+    assert.equal(variant.rotation_rad.length, 3);
+    assert.equal(variant.translation_mm.length, 3);
+    assert.ok([...variant.rotation_rad, ...variant.translation_mm].every(Number.isFinite));
+  }
 }
+const wandPose = key => wandManifest.find(p => p.key === key);
+assert.deepEqual(wandPose('front_Grip').translation_mm, [-109.22, 221.8, -98.41]);
+assert.deepEqual(wandPose('Front_Barrel_22mm').variants.gbfans.translation_mm, [0, -220, 0]);
+assert.deepEqual(wandPose('Metal_tip').variants.gbfans.translation_mm, [0, 0, 0]);
+assert.deepEqual(wandPose('top_knob_V2').translation_mm, [-24, .9, 92]);
 for (const [kind, catalog] of Object.entries(catalogs)) {
   const keys = Object.keys(catalog.parts);
   assert.equal(keys.length, kind === 'pack' ? 76 : 39);

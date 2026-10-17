@@ -25,6 +25,12 @@ part to inspect it. Plate cards highlight example groups. Empty-canvas clicks
 deselect. Camera presets, an exploded slider, ghost visibility, and **Solid
 Preview** help inspect the assembly.
 
+**Assembled wand render** opens a finished-appearance reference with neutral prop
+finishes rather than progress colors. The translucent tube in the interactive
+wand is a separate, non-printed acrylic reference; it does not earn print credit
+and hides during exploded view. Its nominal size is 7/8-inch OD by 6 inches long.
+Insertion depth is illustrative and the inside diameter is not modeled.
+
 Select a part and change its **Build status**, or select a specific group and use
 **Mark highlighted group printed**. Group completion requires confirmation and
 does not downgrade fit-checked, assembled, or finished pieces.
@@ -104,7 +110,11 @@ Existing 22-piece progress exports remain compatible; newly modeled pieces start
 Major shell offsets are matched to assembled CAD references. Small-detail
 placements are illustrative and labeled in the inspector. The wand's rack uses
 the ELSA source variant; the displayed standard `Front_Barrel_22mm` and `Metal_tip`
-are provisional, not a guaranteed fit for purchased tubing. The source also has
+are not a guaranteed fit for purchased tubing. Their poses now use the barrel axis
+and mounting features rather than bounding-box centers; the front grip is seated
+under the barrel, and tip rings, knobs and covers no longer use spaced-out
+placeholder locations. Exact internal receiver-core seating remains illustrative.
+The source also has
 `Front_Barrel_Gbfan` and `metal_tip_gbfan` alternatives for GBFans tubing; choose
 matching variants after checking the actual tube. Indicator names describe guide
 colors, not filament settings or a builder's material orders. Status colors are
@@ -134,6 +144,18 @@ external source path, fail on missing geometry, and never edit `progress.json`.
 The pack script uses the checked-in catalog alongside the source manifest;
 adding geometry requires updating both. Outputs overwrite `assets/*_assembly.glb`
 and pack alignment data. Preserve asset attribution/license when sharing remixes.
+
+For a GBFans front assembly, generate a separate model without changing stable
+tracking IDs or the public default variants:
+
+```powershell
+& 'C:\Program Files\Blender Foundation\Blender 4.3\blender.exe' --background --python .\scripts\build_wand.py -- --source .\q-pack --front-variant gbfans --output .\wand-gbfans.glb
+& 'C:\Program Files\Blender Foundation\Blender 4.3\blender.exe' --background --python .\scripts\render_wand.py -- --model .\wand-gbfans.glb --output .\wand-reference.png
+```
+
+The checked-in `assets/wand_assembled_reference.png` is generated from the default
+model with the same renderer. Finish colors, tube insertion and missing purchased
+hardware are illustrative, not assembly instructions or proof of physical fit.
 
 ## Development
 

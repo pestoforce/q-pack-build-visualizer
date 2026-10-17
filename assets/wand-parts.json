@@ -283,7 +283,8 @@
         1.2,
         0
       ],
-      "source": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_Front_Barrel_22mm.stl"
+      "source": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_Front_Barrel_22mm.stl",
+      "alignment": "Source barrel/receiver axis registered at X15.78/Z22.22 mm; front grip and tip poses reconciled with assembly references. Physical mating fit remains unverified."
     },
     "b_handle_01": {
       "name": "Back Handle Section 1",
@@ -344,7 +345,7 @@
         0
       ],
       "source": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_front_Grip.stl",
-      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "alignment": "Source barrel/receiver axis registered at X15.78/Z22.22 mm; front grip and tip poses reconciled with assembly references. Physical mating fit remains unverified.",
       "assumption": "Illustrative assembly placement; choose barrel and tip variants to suit the actual acrylic tube."
     },
     "Grey_tip": {
@@ -361,7 +362,7 @@
         0
       ],
       "source": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_Grey_tip.stl",
-      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "alignment": "Source barrel/receiver axis registered at X15.78/Z22.22 mm; front grip and tip poses reconciled with assembly references. Physical mating fit remains unverified.",
       "assumption": "Illustrative assembly placement; choose barrel and tip variants to suit the actual acrylic tube."
     },
     "Metal_tip": {
@@ -378,7 +379,7 @@
         0
       ],
       "source": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_Metal_tip.stl",
-      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "alignment": "Source barrel/receiver axis registered at X15.78/Z22.22 mm; front grip and tip poses reconciled with assembly references. Physical mating fit remains unverified.",
       "assumption": "Illustrative assembly placement; choose barrel and tip variants to suit the actual acrylic tube."
     },
     "front_tube": {
@@ -395,7 +396,7 @@
         0
       ],
       "source": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_front_tube.stl",
-      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "alignment": "Illustrative internal receiver-core placement; hidden in assembled view. Exact seating is not CAD-fit verified.",
       "assumption": "Illustrative assembly placement; verify against the original guide."
     },
     "front_knob": {
@@ -412,7 +413,7 @@
         0
       ],
       "source": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_front_knob.stl",
-      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "alignment": "Placed at source-model mounting features, not spaced-out placeholders. Physical mating fit remains unverified.",
       "assumption": "Illustrative assembly placement; verify against the original guide."
     },
     "top_knob_V2": {
@@ -429,7 +430,7 @@
         0.8
       ],
       "source": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_top_knob_V2.stl",
-      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "alignment": "Placed at source-model mounting features, not spaced-out placeholders. Physical mating fit remains unverified.",
       "assumption": "Illustrative assembly placement; verify against the original guide."
     },
     "banjo_main_1": {
@@ -446,7 +447,7 @@
         0
       ],
       "source": "q-pack\\WAND\\MISC\\BANJOS\\Q-pack-TacoShell_MK4_banjo_main.stl",
-      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "alignment": "Placed at source-model mounting features, not spaced-out placeholders. Physical mating fit remains unverified.",
       "assumption": "Illustrative assembly placement; verify against the original guide."
     },
     "banjo_main_2": {
@@ -463,7 +464,7 @@
         0
       ],
       "source": "q-pack\\WAND\\MISC\\BANJOS\\Q-pack-TacoShell_MK4_banjo_main.stl",
-      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "alignment": "Placed at source-model mounting features, not spaced-out placeholders. Physical mating fit remains unverified.",
       "assumption": "Illustrative assembly placement; verify against the original guide."
     },
     "banjo_fake_screw_1": {
@@ -480,7 +481,7 @@
         0
       ],
       "source": "q-pack\\WAND\\MISC\\BANJOS\\Q-pack-TacoShell_MK4_banjo_fake_screw.stl",
-      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "alignment": "Placed at source-model mounting features, not spaced-out placeholders. Physical mating fit remains unverified.",
       "assumption": "Illustrative assembly placement; verify against the original guide."
     },
     "banjo_fake_screw_2": {
@@ -497,7 +498,7 @@
         0
       ],
       "source": "q-pack\\WAND\\MISC\\BANJOS\\Q-pack-TacoShell_MK4_banjo_fake_screw.stl",
-      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "alignment": "Placed at source-model mounting features, not spaced-out placeholders. Physical mating fit remains unverified.",
       "assumption": "Illustrative assembly placement; verify against the original guide."
     },
     "hat_front": {
@@ -514,7 +515,7 @@
         0
       ],
       "source": "q-pack\\WAND\\LENS\\hat.stl",
-      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "alignment": "Placed at source-model mounting features, not spaced-out placeholders. Physical mating fit remains unverified.",
       "assumption": "Separate physical cover or retaining plug; guide colors are descriptive, not a material setting. Status colors are not filament colors."
     },
     "hat_body": {
@@ -531,7 +532,7 @@
         1
       ],
       "source": "q-pack\\WAND\\LENS\\hat.stl",
-      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "alignment": "Placed at source-model mounting features, not spaced-out placeholders. Physical mating fit remains unverified.",
       "assumption": "Separate physical cover or retaining plug; guide colors are descriptive, not a material setting. Status colors are not filament colors."
     },
     "hat_plug_front": {
@@ -548,7 +549,7 @@
         0
       ],
       "source": "q-pack\\WAND\\LENS\\hat_plug.stl",
-      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "alignment": "Placed at source-model mounting features, not spaced-out placeholders. Physical mating fit remains unverified.",
       "assumption": "Separate physical cover or retaining plug; guide colors are descriptive, not a material setting. Status colors are not filament colors."
     },
     "hat_plug_body": {
@@ -565,7 +566,7 @@
         0.5
       ],
       "source": "q-pack\\WAND\\LENS\\hat_plug.stl",
-      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "alignment": "Placed at source-model mounting features, not spaced-out placeholders. Physical mating fit remains unverified.",
       "assumption": "Separate physical cover or retaining plug; guide colors are descriptive, not a material setting. Status colors are not filament colors."
     },
     "long_hat_inside_body": {
@@ -582,7 +583,7 @@
         0.3
       ],
       "source": "q-pack\\WAND\\LENS\\long_hat_inside_body.stl",
-      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "alignment": "Placed at source-model mounting features, not spaced-out placeholders. Physical mating fit remains unverified.",
       "assumption": "Separate physical cover or retaining plug; guide colors are descriptive, not a material setting. Status colors are not filament colors."
     },
     "long_sloblow_red": {
@@ -599,7 +600,7 @@
         0.3
       ],
       "source": "q-pack\\WAND\\LENS\\long_sloblow.stl",
-      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "alignment": "Placed at source-model mounting features, not spaced-out placeholders. Physical mating fit remains unverified.",
       "assumption": "Separate physical cover or retaining plug; guide colors are descriptive, not a material setting. Status colors are not filament colors."
     },
     "long_sloblow_clear": {
@@ -616,7 +617,7 @@
         1.2
       ],
       "source": "q-pack\\WAND\\LENS\\long_sloblow.stl",
-      "alignment": "Illustrative assembly placement; mating position is not CAD-fit verified.",
+      "alignment": "Placed at source-model mounting features, not spaced-out placeholders. Physical mating fit remains unverified.",
       "assumption": "Separate physical cover or retaining plug; guide colors are descriptive, not a material setting. Status colors are not filament colors."
     }
   },
@@ -731,5 +732,5 @@
       "count": "7 Parts"
     }
   ],
-  "note": "39 planned printed wand pieces, including separate indicator covers and hidden retaining plugs; not a complete physical-build BOM. Rack uses the ELSA source variant. The standard 22mm barrel and Metal_tip meshes are provisional alternatives; GBFans tubes have separately named matching sources. Verify actual tube dimensions and chosen variants. Added detail placements are illustrative, not CAD-fit verified."
+  "note": "39 planned printed wand pieces. Front cylinder axes and detail mounting features reconciled with source geometry. Assembly preview, not print orientation or physical fit certification. Rack remains the ELSA source variant. Standard and GBFans barrel/tip variants are available in the regeneration manifest. The separate acrylic tube in the finished rendering is a non-printed illustrative reference; insertion and hardware are not physically verified."
 }

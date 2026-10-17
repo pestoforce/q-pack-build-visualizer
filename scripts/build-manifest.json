@@ -630,10 +630,25 @@
         0
       ],
       "translation_mm": [
-        0,
-        0,
-        0
-      ]
+        -0.261,
+        -0.0,
+        -0.111
+      ],
+      "variants": {
+        "gbfans": {
+          "source_path": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_Front_Barrel_Gbfan.stl",
+          "rotation_rad": [
+            0,
+            0,
+            0
+          ],
+          "translation_mm": [
+            0,
+            -220,
+            0
+          ]
+        }
+      }
     },
     {
       "key": "b_handle_01",
@@ -681,238 +696,253 @@
       "key": "front_Grip",
       "source_path": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_front_Grip.stl",
       "rotation_rad": [
-        1.5707964897155762,
-        -0.0,
-        0.0
+        1.5707963267948966,
+        0,
+        0
       ],
       "translation_mm": [
-        -109.22000122070312,
-        208.73500061035156,
-        -92.0
+        -109.22,
+        221.8,
+        -98.41
       ]
     },
     {
       "key": "Grey_tip",
       "source_path": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_Grey_tip.stl",
       "rotation_rad": [
-        1.5707964897155762,
-        -0.0,
-        0.0
+        -1.5707963267948966,
+        0,
+        0
       ],
       "translation_mm": [
-        -100.94912719726562,
-        236.5,
-        -95.62982177734375
+        -100.949127,
+        231.5,
+        140.56982
       ]
     },
     {
       "key": "Metal_tip",
       "source_path": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_Metal_tip.stl",
       "rotation_rad": [
-        0.0,
-        -0.0,
-        0.0
+        -1.5707963267948966,
+        0,
+        0
       ],
       "translation_mm": [
-        -109.22000122070312,
-        154.8477783203125,
-        10.801725387573242
-      ]
+        -120.068267,
+        256.5,
+        112.372206
+      ],
+      "variants": {
+        "gbfans": {
+          "source_path": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_metal_tip_gbfan.stl",
+          "rotation_rad": [
+            0,
+            0,
+            0
+          ],
+          "translation_mm": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
     },
     {
       "key": "front_tube",
       "source_path": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_front_tube.stl",
       "rotation_rad": [
-        1.5707964897155762,
-        -0.0,
-        0.0
+        1.5707963267948966,
+        0,
+        0
       ],
       "translation_mm": [
-        -109.22000122070312,
-        123.0,
-        -82.27999877929688
+        -109.22,
+        50.5,
+        -82.78
       ]
     },
     {
       "key": "front_knob",
       "source_path": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_front_knob.stl",
       "rotation_rad": [
-        1.5707964897155762,
-        -0.0,
-        0.0
+        -1.5707963267948966,
+        0,
+        0
       ],
       "translation_mm": [
-        -5.0,
-        75.66632080078125,
-        11.0
+        -18.5,
+        61.267357,
+        22.22
       ]
     },
     {
       "key": "top_knob_V2",
       "source_path": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_top_knob_V2.stl",
       "rotation_rad": [
-        0.0,
-        -0.0,
-        0.0
+        0,
+        0,
+        0
       ],
       "translation_mm": [
-        -20.0,
-        -15.0,
-        86.05000305175781
+        -24,
+        0.9,
+        92
       ]
     },
     {
       "key": "banjo_main_1",
       "source_path": "q-pack\\WAND\\MISC\\BANJOS\\Q-pack-TacoShell_MK4_banjo_main.stl",
       "rotation_rad": [
-        -0.0,
-        1.570796251296997,
-        0.0
+        0,
+        0,
+        3.141592653589793
       ],
       "translation_mm": [
-        -67.19999694824219,
-        -35.0,
-        32.0
+        15,
+        -115.3,
+        1.5
       ]
     },
     {
       "key": "banjo_main_2",
       "source_path": "q-pack\\WAND\\MISC\\BANJOS\\Q-pack-TacoShell_MK4_banjo_main.stl",
       "rotation_rad": [
-        -0.0,
-        1.570796251296997,
-        0.0
+        0,
+        0,
+        -1.5707963267948966
       ],
       "translation_mm": [
-        -67.19999694824219,
-        -5.0,
-        32.0
+        53.863,
+        -74,
+        35.625
       ]
     },
     {
       "key": "banjo_fake_screw_1",
       "source_path": "q-pack\\WAND\\MISC\\BANJOS\\Q-pack-TacoShell_MK4_banjo_fake_screw.stl",
       "rotation_rad": [
-        -0.0,
-        1.570796251296997,
-        0.0
+        0,
+        0,
+        3.141592653589793
       ],
       "translation_mm": [
-        -72.5,
-        -40.5,
-        32.0
+        15,
+        -115.3,
+        1.5
       ]
     },
     {
       "key": "banjo_fake_screw_2",
       "source_path": "q-pack\\WAND\\MISC\\BANJOS\\Q-pack-TacoShell_MK4_banjo_fake_screw.stl",
       "rotation_rad": [
-        -0.0,
-        1.570796251296997,
-        0.0
+        0,
+        0,
+        -1.5707963267948966
       ],
       "translation_mm": [
-        -72.5,
-        -10.5,
-        32.0
+        53.863,
+        -74,
+        35.625
       ]
     },
     {
       "key": "hat_front",
       "source_path": "q-pack\\WAND\\LENS\\hat.stl",
       "rotation_rad": [
-        -0.0,
-        1.570796251296997,
-        0.0
+        0,
+        0,
+        0
       ],
       "translation_mm": [
-        -8.548230171203613,
-        109.99992370605469,
-        25.0
+        39.995,
+        226.58,
+        26.37
       ]
     },
     {
       "key": "hat_body",
       "source_path": "q-pack\\WAND\\LENS\\hat.stl",
       "rotation_rad": [
-        0.0,
-        -0.0,
-        0.0
+        0,
+        0,
+        0
       ],
       "translation_mm": [
-        15.0,
-        -7.319450378417969e-05,
-        85.45176696777344
+        25,
+        -16.3,
+        83.2
       ]
     },
     {
       "key": "hat_plug_front",
       "source_path": "q-pack\\WAND\\LENS\\hat_plug.stl",
       "rotation_rad": [
-        -0.0,
-        1.570796251296997,
-        0.0
+        0,
+        0,
+        0
       ],
       "translation_mm": [
-        -11.999994277954102,
-        -4.298286437988281,
-        158.81663513183594
+        -93.82163499999999,
+        112.28171400000001,
+        28.37
       ]
     },
     {
       "key": "hat_plug_body",
       "source_path": "q-pack\\WAND\\LENS\\hat_plug.stl",
       "rotation_rad": [
-        0.0,
-        -0.0,
-        0.0
+        0,
+        0,
+        0
       ],
       "translation_mm": [
-        -118.81663513183594,
-        -114.29828643798828,
-        82.0
+        -108.81663499999999,
+        -130.598286,
+        85.2
       ]
     },
     {
       "key": "long_hat_inside_body",
       "source_path": "q-pack\\WAND\\LENS\\long_hat_inside_body.stl",
       "rotation_rad": [
-        -0.0,
-        -1.570796251296997,
-        0.0
+        -1.5707963267948966,
+        0,
+        0
       ],
       "translation_mm": [
-        -33.0,
-        0.0,
-        79.99948120117188
+        24.5,
+        20.8,
+        82
       ]
     },
     {
       "key": "long_sloblow_red",
       "source_path": "q-pack\\WAND\\LENS\\long_sloblow.stl",
       "rotation_rad": [
-        -0.0,
-        -1.570796251296997,
-        0.0
+        0,
+        0,
+        0
       ],
       "translation_mm": [
-        -37.5,
-        -20.0,
-        89.5
+        -5.5,
+        52,
+        45.7
       ]
     },
     {
       "key": "long_sloblow_clear",
       "source_path": "q-pack\\WAND\\LENS\\long_sloblow.stl",
       "rotation_rad": [
-        0.0,
-        -0.0,
-        0.0
+        0,
+        0,
+        0
       ],
       "translation_mm": [
-        36.5,
-        15.0,
-        85.5
+        46.5,
+        5.9,
+        83.2
       ]
     }
   ]

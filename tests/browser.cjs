@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '..');
-const mime = { '.html': 'text/html', '.js': 'application/javascript', '.json': 'application/json', '.glb': 'model/gltf-binary' };
+const mime = { '.html': 'text/html', '.js': 'application/javascript', '.json': 'application/json', '.glb': 'model/gltf-binary', '.png': 'image/png' };
 
 (async () => {
   const server = http.createServer((req, res) => {
@@ -73,6 +73,15 @@ const mime = { '.html': 'text/html', '.js': 'application/javascript', '.json': '
     await page.waitForFunction(() => document.getElementById('total-status').textContent === '1 / 115');
     await page.locator('#assembly-wand').click();
     await loaded('wand');
+    const referenceResponse = await page.request.get(new URL(
+      await page.locator('#wand-reference-link').getAttribute('href'), url).href);
+    assert.ok(referenceResponse.ok());
+    assert.equal(referenceResponse.headers()['content-type'], 'image/png');
+    assert.ok(await page.evaluate(() => {
+      const tube = loadedModel.getObjectByName('acrylic-reference');
+      return tube && tube.visible && !Object.values(meshObjects).includes(tube) &&
+        tube.position.distanceTo(new THREE.Vector3(15.78, 22.22, -196.7)) < .001;
+    }));
     assert.equal(await page.evaluate(() => meshObjects.rear_box.userData.status), 'printed');
     assert.equal(await page.evaluate(() => meshObjects.rear_box_plate.userData.status), 'pending');
     assert.ok(await page.evaluate(() => PLATES.filter(p => p.keys).every(p => {
@@ -89,9 +98,11 @@ const mime = { '.html': 'text/html', '.js': 'application/javascript', '.json': '
       'long_sloblow_red', 'long_sloblow_clear'];
     assert.ok(await page.evaluate(keys => {
       onExplodeChange(100);
+      if (loadedModel.getObjectByName('acrylic-reference').visible) return false;
       const moved = keys.every(key => meshObjects[key].position.distanceTo(initialPositions[key]) > 1);
       onExplodeChange(0);
-      return moved && keys.every(key => meshObjects[key].position.distanceTo(initialPositions[key]) < .001);
+      return moved && loadedModel.getObjectByName('acrylic-reference').visible &&
+        keys.every(key => meshObjects[key].position.distanceTo(initialPositions[key]) < .001);
     }, addedKeys));
     await page.locator('.inspector-close').click();
     await page.evaluate(() => selectPart(meshObjects.hat_plug_front));

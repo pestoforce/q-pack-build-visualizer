@@ -10,11 +10,14 @@ import bpy
 ROOT = Path(__file__).resolve().parent.parent
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--source", type=Path, required=True)
+parser.add_argument("--front-variant", choices=("standard", "gbfans"), default="standard")
+parser.add_argument("--output", type=Path)
 args = parser.parse_args(sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else [])
 source = args.source.resolve()
 manifest = json.loads((ROOT / "scripts" / "build-manifest.json").read_text())
 bpy.ops.wm.read_factory_settings(use_empty=True)
 for part in manifest["wand"]:
+    part = {**part, **part.get("variants", {}).get(args.front_variant, {})}
     path = source.joinpath(*part["source_path"].split("\\")[1:])
     if not path.is_file():
         raise FileNotFoundError(path)
@@ -22,12 +25,14 @@ for part in manifest["wand"]:
     obj = bpy.context.selected_objects[0]
     obj.name = part["key"]
     obj["part_key"] = part["key"]
+    obj["source_variant"] = path.stem.replace("Q-pack-TacoShell_MK4_", "")
     obj.rotation_euler = part["rotation_rad"]
     obj.location = part["translation_mm"]
     mat = bpy.data.materials.new(part["key"] + "_preview")
     mat.diffuse_color = (0.5, 0.5, 0.55, 1)
     obj.data.materials.append(mat)
-bpy.ops.export_scene.gltf(filepath=str(ROOT / "assets" / "wand_assembly.glb"),
+output = args.output.resolve() if args.output else ROOT / "assets" / "wand_assembly.glb"
+bpy.ops.export_scene.gltf(filepath=str(output),
                           export_format="GLB", export_extras=True,
                           export_cameras=False, export_lights=False)
 print(f"Exported {len(manifest['wand'])} wand pieces. Personal progress was not modified.")

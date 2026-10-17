@@ -375,6 +375,7 @@
       <div class="assembly-switch">
         <button class="btn" id="assembly-pack" onclick="switchAssembly('pack')">Proton Pack</button>
         <button class="btn" id="assembly-wand" onclick="switchAssembly('wand')">Wand</button>
+        <a class="btn" id="wand-reference-link" href="assets/wand_assembled_reference.png" target="_blank" rel="noopener noreferrer">Assembled wand render</a>
         <button class="btn" onclick="exportProgress()">Export Progress</button>
         <button class="btn" onclick="document.getElementById('progress-import').click()">Import Progress</button>
         <input type="file" accept=".json,application/json" id="progress-import" hidden onchange="importProgress(this)">
@@ -779,7 +780,7 @@
         const labels = isPack ? ['Isometric', 'Wand Dock / Right', 'Backboard Side', 'Left Shoulder', 'Pack Face'] :
           ['Isometric', 'Docking / Underside', 'Rear Boxes', 'Side / Knobs', 'Front Grip'];
         document.querySelectorAll('[data-view]').forEach((button, i) => button.textContent = labels[i]);
-        const gltf = await new THREE.GLTFLoader().loadAsync(`assets/${kind}_assembly.glb${isPack ? '' : '?v=39-pieces'}`);
+        const gltf = await new THREE.GLTFLoader().loadAsync(`assets/${kind}_assembly.glb${isPack ? '' : '?v=assembled-axis-v2'}`);
         incomingModel = gltf.scene;
         if (version !== loadVersion) {
           disposeModel(incomingModel);
@@ -815,6 +816,18 @@
         PLATES.forEach(plate => {
           if (plate.keys && plate.keys.some(key => !objects[key])) throw new Error(`Unmapped plate: ${plate.id}`);
         });
+        if (!isPack) {
+          // Non-printed reference only; never register it as a tracked part.
+          const tube = new THREE.Mesh(
+            new THREE.CylinderGeometry(11.1125, 11.1125, 152.4, 64, 1, true),
+            new THREE.MeshStandardMaterial({ color: 0xc7e5ec, transparent: true, opacity: 0.35,
+              roughness: 0.4, side: THREE.DoubleSide, depthWrite: false })
+          );
+          tube.name = 'acrylic-reference';
+          tube.rotation.x = Math.PI / 2;
+          tube.position.set(15.78, 22.22, -196.7);
+          incomingModel.add(tube);
+        }
         loadedModel = incomingModel;
         meshObjects = objects;
         initialPositions = positions;
@@ -945,6 +958,8 @@
 
     function onExplodeChange(val) {
       document.getElementById('explodeVal').innerText = `${val}%`;
+      const reference = loadedModel && loadedModel.getObjectByName('acrylic-reference');
+      if (reference) reference.visible = Number(val) === 0;
       const factor = (val / 100.0) * (activeAssembly === 'pack' ? 230.0 : 120.0);
 
       Object.keys(meshObjects).forEach(name => {
