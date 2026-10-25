@@ -150,6 +150,21 @@ def legris_pose(copy):
 
 
 def fitting_placement(name, copy):
+    if name == "Sage-RH-25":
+        source_midpoint = Vector((346.95618, 338.574707, 64.53))
+        source_pitch = Vector((19.84, -18.26, 0))
+        target_pitch = Vector((0, 18.3, -20))
+        base = Matrix(((0, 0, -1), (0, -1, 0), (-1, 0, 0)))
+        correction = (base @ source_pitch).rotation_difference(target_pitch).to_matrix()
+        matrix = correction @ base
+        seat = Vector((-144.655, 460.363, 198.2))
+        return tuple(matrix.to_euler()), tuple(seat - matrix @ source_midpoint), (
+            "Short 25W resistor on the outer stepped side of the ion arm, beside the antenna/booster frame. "
+            "Long axis vertical; mounting face at X=-144.655mm, hole-pair midpoint Y=460.363/Z=198.2mm. "
+            "Original source pitch26.964mm vs shell27.109mm, centered without scaling "
+            "(about0.073mm residual per hole); verify screw clearance. "
+            "Yellow tubing routes from its lower end to the underside Legris elbow. "
+            "Distinct from the long Dale RH-50 on the inward-facing side; not a drilling template.")
     if name in {"legris_elbow_GEN1_full_body", "legris_elbow_GEN1_Nut"}:
         matrix, translation, note = legris_pose(copy)
         if name.endswith("_Nut"):
@@ -215,8 +230,6 @@ def placement(name, copy, mesh):
         return rotation, ((0, 0, 0) if copy == 0 else (78.25, 0, 0)), note
     if name == "Clamp_X2":
         return (0, 0, copy * math.pi), (0, 0, 0), "Illustrative second-clamp routing; dry-fit pending."
-    if name == "Sage-RH-25":
-        return rotation, (-350, 0, 0), "Booster side detail; dry-fit pending."
     if name == "Injectors_L_XL_XXL_GB1":
         return rotation, (153, 318.5, 0), "Both flange holes matched to the PowerCell lower face at Y=250.4 mm."
     if name == "HGA_L_XL_XXL":

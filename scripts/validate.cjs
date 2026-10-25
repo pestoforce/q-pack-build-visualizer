@@ -119,6 +119,13 @@ for (const [stem, axis] of [
 }
 pointAt(packPose('Dale_RH_50_01'), [25.434893, 200.136230, 89.345100]).forEach((v, i) =>
   near(v, [-120.655, 460.363003, 165.2][i], 'RH-50 must mount on the ion arm, not booster box'));
+const shortResistor = packPose('Sage_RH_25_01');
+pointAt(shortResistor, [346.95618, 338.574707, 64.53]).forEach((v, i) =>
+  near(v, [-144.655, 460.363, 198.2][i], 'Short resistor must mount on the outer ion-arm step'));
+near(shortResistor.bounds_mm[1][0], -144.655, 'Short resistor base must contact outer wall');
+assert.ok(shortResistor.bounds_mm[0][0] < -158, 'Short resistor body must project outward, not into ion arm');
+assert.ok(shortResistor.bounds_mm[1][2] - shortResistor.bounds_mm[0][2] > 26,
+  'Short resistor long axis must stand vertically');
 assert.match(packPose('legris_elbow_GEN1_full_body_02').alignment, /illustrative/);
 assert.match(packPose('Adaptaflex_elbow_full_body_01').alignment, /NOT established/);
 assert.deepEqual(wandPose('front_Grip').translation_mm, [-109.22, 221.8, -98.41]);

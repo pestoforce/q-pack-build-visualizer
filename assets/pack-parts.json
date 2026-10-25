@@ -43,12 +43,12 @@
       "layer": "Print settings not specified",
       "guide": "MK4 V1.1 PDF p. 34",
       "explode": [
-        -0.020292154947916665,
-        0.5619156901041666,
+        -1,
+        0.8,
         0.9
       ],
       "source": "q-pack\\SHELL\\ACCESSORIES\\RESISTORS\\Q-pack-TacoShell_MK4_Sage-RH-25.stl",
-      "alignment": "Booster side detail; dry-fit pending.",
+      "alignment": "Short 25W resistor on the outer stepped side of the ion arm, beside the antenna/booster frame. Long axis vertical; mounting face at X=-144.655mm, hole-pair midpoint Y=460.363/Z=198.2mm. Original source pitch26.964mm vs shell27.109mm, centered without scaling (about0.073mm residual per hole); verify screw clearance. Yellow tubing routes from its lower end to the underside Legris elbow. Distinct from the long Dale RH-50 on the inward-facing side; not a drilling template.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_Clamp_X2_01": {

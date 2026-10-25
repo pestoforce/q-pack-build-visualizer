@@ -131,6 +131,10 @@ Their shoulders sit on the front cylinder wall, superseding an earlier top-socke
 assumption. These are not verified HGA mounting holes or drilling templates.
 The Dale RH-50 mounts on the ion-arm side, with the original resistor and shell
 hole pitches preserved (about 0.187 mm residual per hole, not a drilling template).
+The separate short 25W resistor (`Sage_RH_25`) mounts vertically on the outer
+ion-arm step beside the antenna/booster frame, with yellow tubing toward the
+underside Legris. Its screw pair is centered without scaling (about 0.073 mm
+residual per hole); it is not the long blue-tubed RH-50.
 The Adaptaflex represents a provisional lower-right conduit entry only: its exact
 variant and installation site are unverified. Tubing relationships are described
 in the [GBFans tubing reference](https://www.gbfans.com/wiki/equipment/proton-pack/tubing);
