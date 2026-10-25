@@ -17,9 +17,11 @@ import sys
 ROOT = Path(__file__).resolve().parent.parent
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--source", type=Path, required=True, help="Path to a Q-Pack MK4 checkout")
+parser.add_argument("--output-dir", type=Path, default=ROOT / "assets",
+                    help="Existing asset directory containing the pack catalog; progress is preserved")
 args = parser.parse_args(sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else [])
 SOURCE = args.source.resolve()
-OUTPUT = ROOT / "assets"
+OUTPUT = args.output_dir.resolve()
 PREFIX = "Q-pack-TacoShell_MK4_"
 NS = {"c": "http://schemas.microsoft.com/3dmanufacturing/core/2015/02"}
 bpy.ops.wm.read_factory_settings(use_empty=True)
@@ -107,7 +109,7 @@ TRANSLATIONS = {
     "Bumper_02_L": (0, 915, 0),
 }
 NATIVE = {
-    "Dale_RH-50", "Booster_Plug_L_XL_XXL", "ION_ARM_CAP_L_XL_XXL-GB1",
+    "Booster_Plug_L_XL_XXL", "ION_ARM_CAP_L_XL_XXL-GB1",
     "Clippard_Base_GB1", "VacHose_base", "VacHose_mount", "Injector_Block_GB1",
     "Wand_loom_panel_GB1", "Filler_Tube_L_XL_XXL", "Beamline_L_XL_XXL",
     "Injector_Bracket_L_XL_XXL", "Ion_Arm_L_XL_XXL_GB1",
@@ -124,16 +126,89 @@ GUIDES = {
     "ACCESSORIES": "PDF pp. 31-36", "MOTHERBOARD": "PDF p. 37",
 }
 
+def legris_pose(copy):
+    # Body +Y is the mounting spigot; -Z is the compression-nut outlet.
+    hga_normal = Vector((0, 0, 1))
+    sites = [
+        (Vector((123.4, 450.293457, 54.976826)) + hga_normal * 31.75,
+         hga_normal, Vector((0, -1, 0)),
+         "HGA Legris elbow: long mounting stem faces the pack front (+Z); "
+         "compression outlet bends downward (-Y). Shoulder sits on the front cylinder wall "
+         "at X=123.4mm; mounting position is illustrative, not a verified socket or drilling template."),
+        (Vector((112.46094, -36.54078, 99.5)), Vector((.947269, -.320441, 0)).normalized(),
+         Vector((.320441, .947269, 0)).normalized(),
+         "Cyclotron Legris elbow: seated on the lower-right outer wall; general site supported by references, "
+         "but exact drilling position is illustrative, not a modeled socket."),
+        (Vector((-149.655, 427.363, 133.2)), Vector((0, -1, 0)), Vector((0, 0, 1)),
+         "Ion-arm Legris elbow: axis matched to the modeled 9.5mm underside socket."),
+    ]
+    seat, outward, hose, note = sites[copy]
+    x, y, z = outward.cross(hose), -outward, -hose
+    matrix = Matrix((x, y, z)).transposed()
+    translation = seat - matrix @ Vector((0, -24.3, 14.3))
+    return matrix, translation, note + " Stem seating and hose clocking require physical dry-fit."
+
+
+def fitting_placement(name, copy):
+    if name in {"legris_elbow_GEN1_full_body", "legris_elbow_GEN1_Nut"}:
+        matrix, translation, note = legris_pose(copy)
+        if name.endswith("_Nut"):
+            # The separately authored nut's 3.8mm pin seats in the body's outlet.
+            translation += matrix @ Vector((0, -39, 21))
+            note += " Matching compression nut shares the elbow transform; pin inserted 3.8mm into its outlet."
+        return tuple(matrix.to_euler()), tuple(translation), note
+    if name == "Clippard_Hex" and copy == 0:
+        outward = Vector((0, 0, 1))
+        hose = Vector((0, -1, 0))
+        side = Vector((.5, math.sqrt(3)/2, 0))
+        source_basis = Matrix((side, Vector((-side.y, side.x, 0)), Vector((0, 0, 1)))).transposed()
+        target_basis = Matrix((hose, outward.cross(hose), outward)).transposed()
+        matrix = target_basis @ source_basis.transposed()
+        seat = Vector((145.4, 450.293457, 54.976826)) + outward * 31.75
+        translation = seat - matrix @ Vector((-11.211475, 173.494937, 140.45))
+        return tuple(matrix.to_euler()), tuple(translation), (
+            "HGA brass Clippard hex elbow: long mounting stem faces the pack front (+Z); "
+            "side barb bends downward (-Y). Shoulder sits on the front cylinder wall at X=145.4mm; "
+            "mounting position is illustrative, not a verified socket or drilling template. "
+            "Physical seating requires dry-fit.")
+    if name == "Dale_RH-50":
+        source_pitch = Vector((0, 40, 21.44))
+        target_pitch = Vector((0, 40.121993, 22))
+        angle = math.atan2(target_pitch.z, target_pitch.y) - math.atan2(source_pitch.z, source_pitch.y)
+        matrix = Matrix.Rotation(angle, 3, "X")
+        source_midpoint = Vector((25.434893, 200.136230, 89.345100))
+        target_midpoint = Vector((-120.655, 460.363003, 165.2))
+        return tuple(matrix.to_euler()), tuple(target_midpoint - matrix @ source_midpoint), (
+            "Dale RH-50 resistor on the right side of the ion arm, mounting face at X=-120.655mm. "
+            "Mounting-hole pair centered and aligned, not scaled: source pitch45.384mm vs shell45.758mm "
+            "(about0.187mm residual per hole). Blue hose connects its leads to the ion-arm top elbow and PPD. "
+            "Not a drilling template; verify physical screw fit.")
+    if name == "Adaptaflex_elbow_full_body":
+        outward = Vector((.556403, -.830913, 0)).normalized()
+        hose = Vector((0, 0, 1))
+        x, z = -hose, outward
+        matrix = Matrix((x, z.cross(x), z)).transposed()
+        seat = Vector((87.86261, -125.48082, 35))
+        return tuple(matrix.to_euler()), tuple(seat - matrix @ Vector((0, 0, 6))), (
+            "Provisional large wand-hose/conduit elbow on the lower-right synchronous-generator shell. "
+            "Mounting shoulder seated on an exterior surface, not floating beyond the pack. "
+            "Exact Adaptaflex variant, attachment point and hose clocking are NOT established by the guide "
+            "or reference photo; illustrative only, not an installation/drilling template.")
+    return None
+
 
 def placement(name, copy, mesh):
     rotation = (0, 0, 0)
     note = "Source CAD coordinates / matched assembly-layout offset."
+    fitting = fitting_placement(name, copy)
+    if fitting is not None:
+        return fitting
     if name in TRANSLATIONS:
         return rotation, TRANSLATIONS[name], note
     if name in NATIVE:
         return rotation, (0, 0, 0), note
     if name == "EDA_Disks-Flat_x2":
-        return rotation, (150 + copy * 50, 450, 0), "Top-shell disk placement; dry-fit pending."
+        return rotation, (150 + copy * 39.6, 320, 0), "Disk centers matched to the booster screw holes at Z=141.2 mm."
     if name == "Cyclotron_Window_Top_x2_L_XL_XXL":
         return rotation, ((0, 0, 0) if copy == 0 else (-104.89, 0, 0)), note
     if name == "Cyclotron_Window_Bottom_x2_L_XL_XXL":
@@ -143,9 +218,23 @@ def placement(name, copy, mesh):
     if name == "Sage-RH-25":
         return rotation, (-350, 0, 0), "Booster side detail; dry-fit pending."
     if name == "Injectors_L_XL_XXL_GB1":
-        return rotation, (140.5, 353.5, 0), "Illustrative injector/bracket placement; dry-fit pending."
+        return rotation, (153, 318.5, 0), "Both flange holes matched to the PowerCell lower face at Y=250.4 mm."
     if name == "HGA_L_XL_XXL":
-        return rotation, (-145.3, 260, 52.965), "Illustrative HGA shoulder placement; dry-fit pending."
+        return rotation, (150, 320, 0), "HGA base hole coaxial with the right gearbox mounting hole at X=103.4 mm."
+    if name == "PPD_Type_1":
+        # The angled end, not the flat base, mates to the booster shoulder.
+        from mathutils import Euler
+        rotation = (math.pi / 2, math.pi / 2, 0)
+        matrix = Euler(rotation).to_matrix()
+        shoulder = Vector((0, .791215, .611538))
+        shoulder.normalize()
+        cut_point = matrix @ Vector((11.6104641, -50.14656448, -142.89071655))
+        seat = Vector((-32, (shoulder.dot(Vector((-60, 233.960896, 141.2)))
+                            - shoulder.z * 117) / shoulder.y, 117))
+        center_on_cut = Vector((-45, cut_point.y + cut_point.z * shoulder.z / shoulder.y, 0))
+        return rotation, tuple(seat - center_on_cut), "Angled end matched to the booster shoulder plane; lateral seating remains illustrative."
+    if name == "crank_knob":
+        return rotation, (-87.05087, 352.10102, 110.49952), "Knob underside centered over the gearbox front hole; not the HGA side wall."
     if name == "clippard_body_screws":
         return rotation, (63.65, 194.22, 2.8), "Illustrative valve on GB1 Clippard base."
     if name == "clippard_r331_top":
@@ -157,20 +246,12 @@ def placement(name, copy, mesh):
     # Locally authored small details use explicit mating-site anchors.
     anchors = {
         "PH-25-without_ring": ((0, math.pi / 2, 0), (48, 245, 55)),
-        "Booster_Frame_L_XL_XXL_GB1": (rotation, (-79, 361, 121.5)),
-        "Powercell_Lens": ((0, math.pi / 2, 0), (-184, 322, 50)),
-        "PPD_Type_1": ((math.pi / 2, 0, 0), (-79, 218, 108)),
+        "Booster_Frame_L_XL_XXL_GB1": (rotation, (-78.85398, 361, 137)),
+        "Powercell_Lens": (rotation, (-152.8, 317.288736, 101.6)),
         "Shockmount_full_GB1": (rotation, (0, 0, 159.5)),
-        "crank_knob": ((0, math.pi / 2, 0), (103.4, 444, 93)),
         "clippard_r331_cap_corrected": (rotation, (55.75, 177.92, 153.6)),
-        "Clippard_Hex": (rotation, ((-150, 391, 140) if copy == 0 else (-11.21, 173.49, 140.45))),
         "Clippard_elbow_square": (rotation, (-132.65, 465, 229)),
-        "legris_elbow_GEN1_full_body": ((math.pi / 2, 0, 0),
-                                      [(-161, 390, 128), (105, -72, 109), (-145, 460, 205)]),
-        "legris_elbow_GEN1_Nut": ((math.pi / 2, 0, 0),
-                                [(-161, 395, 105), (105, -67, 86), (-145, 465, 182)]),
-        "Legris_Straight": ((0, math.pi / 2, 0), (-18.8, 207 + copy * 27, 91)),
-        "Adaptaflex_elbow_full_body": ((0, 0, math.pi / 2), (166, -140, 34)),
+        "Legris_Straight": ((0, math.pi / 2, 0), (-18.8, 209.4 + copy * 19, 95.2)),
         "Cyclotron_Window_Lens_x4_L_XL_XXL": (rotation,
                                             [(52.45, 50.45, 121.5), (-52.45, 50.45, 121.5),
                                              (-39.12, -36.93, 121.5), (39.12, -36.93, 121.5)]),
@@ -191,7 +272,12 @@ def placement(name, copy, mesh):
     anchor = Vector((center.x, center.y, low.z))
     if name in {"PH-25-without_ring", "Legris_Straight", "crank_knob"}:
         anchor = Vector((low.x, center.y, center.z))
-    return rotation, tuple(Vector(target) - anchor), "Illustrative detail placement / provisional variant; verify during dry-fit."
+    notes = {
+        "Booster_Frame_L_XL_XXL_GB1": "Centered on the booster tube, curved underside raised clear of its surface; longitudinal seating is illustrative.",
+        "Powercell_Lens": "Flat over the PowerCell front aperture at Z=101.6 mm; lens material is not specified by the pose.",
+        "Legris_Straight": "Coaxial with the two booster side sockets at Y=209.4/228.4, Z=95.2 mm; insertion depth is illustrative.",
+    }
+    return rotation, tuple(Vector(target) - anchor), notes.get(name, "Illustrative detail placement / provisional variant; verify during dry-fit.")
 
 
 rows = json.loads((ROOT / "scripts" / "build-manifest.json").read_text())["pack"]

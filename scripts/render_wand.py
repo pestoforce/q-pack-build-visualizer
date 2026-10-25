@@ -1,6 +1,7 @@
 """Render an assembled appearance reference, including an illustrative acrylic tube."""
 
 import argparse
+import json
 import math
 import sys
 from pathlib import Path
@@ -11,6 +12,8 @@ from mathutils import Vector
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--model", type=Path, required=True)
 parser.add_argument("--output", type=Path, required=True)
+parser.add_argument("--acrylic-reference", type=Path,
+                    help="Optional local tube banding and extended-display pose configuration")
 args = parser.parse_args(sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else [])
 bpy.ops.wm.read_factory_settings(use_empty=True)
 bpy.ops.import_scene.gltf(filepath=str(args.model.resolve()))
@@ -31,6 +34,7 @@ silver = material("Metal-look finish", (.5, .53, .57), .7, .27)
 brass = material("Brass-look finish", (.42, .29, .10), .65, .3)
 grey = material("Grey tip", (.17, .19, .21))
 clear = material("Frosted acrylic reference", (.58, .78, .84), roughness=.3)
+reference = json.loads(args.acrylic_reference.read_text(encoding="utf-8")) if args.acrylic_reference else None
 orange = material("Orange cover", (.85, .24, .015), roughness=.25)
 red = material("Red cover", (.55, .018, .012), roughness=.25)
 for obj in [o for o in scene.objects if o.type == "MESH"]:
@@ -52,15 +56,41 @@ for obj in [o for o in scene.objects if o.type == "MESH"]:
         mat = clear
     obj.data.materials.clear()
     obj.data.materials.append(mat)
+    if reference and name == "Metal_tip":
+        obj.location += Vector(reference["metal_tip_offset_mm"])
 
-# An open outer surface avoids inventing the tube's unknown inside diameter.
-bpy.ops.mesh.primitive_cylinder_add(vertices=128, radius=22.225/2, depth=152.4, end_fill_type="NOTHING",
-    location=(15.78, 196.7, 22.22), rotation=(math.pi/2, 0, 0))
-tube = bpy.context.object
-tube.name = "Non-printed acrylic reference"
-tube.data.materials.append(clear)
-for polygon in tube.data.polygons:
-    polygon.use_smooth = len(polygon.vertices) == 4
+if reference:
+    glass = material("Clear acrylic outside surface", (.94, .98, 1), roughness=.06)
+    frost = material("Frosted acrylic bands", (.93, .95, .97), roughness=.65)
+    for mat in (glass, frost):
+        shader = mat.node_tree.nodes.get("Principled BSDF")
+        shader.inputs["Transmission Weight"].default_value = 1
+        shader.inputs["IOR"].default_value = 1.49
+    for segment in reference["segments"]:
+        start, end = segment["start_mm"], segment["end_mm"]
+        radius = reference["outer_radius_mm"]
+        front_radius = radius - reference["bevel_radial_reduction_mm"] if segment.get("bevel") else radius
+        x, z = reference["axis_center_mm"]
+        # Open outer surfaces: the actual tube ID and wall thickness remain unmeasured.
+        bpy.ops.mesh.primitive_cone_add(
+            vertices=128, radius1=radius, radius2=front_radius, depth=end-start,
+            end_fill_type="NOTHING",
+            location=(x, reference["rear_y_mm"]+(start+end)/2, z),
+            rotation=(-math.pi/2, 0, 0))
+        tube = bpy.context.object
+        tube.name = "Acrylic tapered end" if segment.get("bevel") else f"Acrylic {segment['finish']} {start}"
+        tube.data.materials.append(frost if segment["finish"] == "frosted" else glass)
+        for polygon in tube.data.polygons:
+            polygon.use_smooth = True
+else:
+    # An open outer surface avoids inventing the tube's unknown inside diameter.
+    bpy.ops.mesh.primitive_cylinder_add(vertices=128, radius=22.225/2, depth=152.4, end_fill_type="NOTHING",
+        location=(15.78, 196.7, 22.22), rotation=(math.pi/2, 0, 0))
+    tube = bpy.context.object
+    tube.name = "Non-printed acrylic reference"
+    tube.data.materials.append(clear)
+    for polygon in tube.data.polygons:
+        polygon.use_smooth = len(polygon.vertices) == 4
 
 scene.world = bpy.data.worlds.new("Studio")
 scene.world.use_nodes = True

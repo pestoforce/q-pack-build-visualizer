@@ -9,12 +9,12 @@
       "layer": "Print settings not specified",
       "guide": "MK4 V1.1 PDF p. 33",
       "explode": [
-        0.22323261896769206,
-        0.1004541015625,
+        -0.7506999715169271,
+        0.8,
         0.9
       ],
       "source": "q-pack\\SHELL\\ACCESSORIES\\RESISTORS\\Q-pack-TacoShell_MK4_Dale_RH-50.stl",
-      "alignment": "Source CAD coordinates / matched assembly-layout offset.",
+      "alignment": "Dale RH-50 resistor on the right side of the ion arm, mounting face at X=-120.655mm. Mounting-hole pair centered and aligned, not scaled: source pitch45.384mm vs shell45.758mm (about0.187mm residual per hole). Blue hose connects its leads to the ion-arm top elbow and PPD. Not a drilling template; verify physical screw fit.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_PH_25_without_ring_01": {
@@ -129,11 +129,11 @@
       "guide": "MK4 V1.1 PDF p. 14",
       "explode": [
         -0.6640000406901042,
-        0.565,
+        0.13166666666666665,
         0.9
       ],
       "source": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_EDA_Disks-Flat_x2.stl",
-      "alignment": "Top-shell disk placement; dry-fit pending.",
+      "alignment": "Disk centers matched to the booster screw holes at Z=141.2 mm.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_EDA_Disks_Flat_x2_02": {
@@ -145,12 +145,12 @@
       "layer": "Print settings not specified",
       "guide": "MK4 V1.1 PDF p. 14",
       "explode": [
-        -0.33066670735677084,
-        0.565,
+        -0.4,
+        0.13166666666666665,
         0.9
       ],
       "source": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_EDA_Disks-Flat_x2.stl",
-      "alignment": "Top-shell disk placement; dry-fit pending.",
+      "alignment": "Disk centers matched to the booster screw holes at Z=141.2 mm.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_SynchGen_01_L_XL_01": {
@@ -486,11 +486,11 @@
       "guide": "PDF pp. 13-14",
       "explode": [
         -1,
-        0.5066666666666667,
+        0.4909624226888021,
         0.9
       ],
       "source": "q-pack\\SHELL\\TOP_SHELL\\Q-pack-TacoShell_MK4_Powercell_Lens.stl",
-      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "alignment": "Flat over the PowerCell front aperture at Z=101.6 mm; lens material is not specified by the pose.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_Booster_Tube_PART1_L_01": {
@@ -536,12 +536,12 @@
       "layer": "Print settings not specified",
       "guide": "MK4 V1.1 PDF p. 17",
       "explode": [
-        -0.5266666666666666,
+        -0.5256932322184245,
         0.6366666666666667,
         0.9
       ],
       "source": "q-pack\\SHELL\\BOOSTER_FRAME\\Q-pack-TacoShell_MK4_Booster_Frame_L_XL_XXL_GB1.3mf",
-      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "alignment": "Centered on the booster tube, curved underside raised clear of its surface; longitudinal seating is illustrative.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_Injector_Bracket_L_XL_XXL_01": {
@@ -571,11 +571,11 @@
       "guide": "PDF p. 15",
       "explode": [
         -1,
-        0.10966664632161459,
+        -0.007000020345052083,
         0.9
       ],
       "source": "q-pack\\SHELL\\INJECTORS\\Q-pack-TacoShell_MK4_Injectors_L_XL_XXL_GB1.3mf",
-      "alignment": "Illustrative injector/bracket placement; dry-fit pending.",
+      "alignment": "Both flange holes matched to the PowerCell lower face at Y=250.4 mm.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_Ion_Arm_L_XL_XXL_GB1_01": {
@@ -604,12 +604,12 @@
       "layer": "Print settings not specified",
       "guide": "MK4 V1.1 PDF p. 20",
       "explode": [
-        -1,
-        0.7343115234375,
+        0.8959999847412109,
+        0.8,
         0.9
       ],
       "source": "q-pack\\SHELL\\HGA\\Q-pack-TacoShell_MK4_HGA_L_XL_XXL.stl",
-      "alignment": "Illustrative HGA shoulder placement; dry-fit pending.",
+      "alignment": "HGA base hole coaxial with the right gearbox mounting hole at X=103.4 mm.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_PPD_Type_1_01": {
@@ -621,12 +621,12 @@
       "layer": "Print settings not specified",
       "guide": "PDF p. 21",
       "explode": [
-        -0.5266666666666666,
-        0.16,
+        -0.21333328247070313,
+        0.3565966796875,
         0.9
       ],
       "source": "q-pack\\SHELL\\PPD\\Q-pack-TacoShell_MK4_PPD_Type_1.stl",
-      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "alignment": "Angled end matched to the booster shoulder plane; lateral seating remains illustrative.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_V_Hook_Base_01": {
@@ -978,12 +978,12 @@
       "layer": "Print settings not specified",
       "guide": "PDF pp. 31-36",
       "explode": [
-        0.803606694539388,
+        0.25299418131510415,
         0.8,
         0.9
       ],
       "source": "q-pack\\SHELL\\ACCESSORIES\\CRANK_KNOBS\\Q-pack-TacoShell_MK4_crank_knob.stl",
-      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "alignment": "Knob underside centered over the gearbox front hole; not the HGA side wall.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_clippard_body_screws_01": {
@@ -1046,12 +1046,12 @@
       "layer": "Print settings not specified",
       "guide": "PDF pp. 31-36",
       "explode": [
-        -1,
-        0.7366666666666667,
+        0.9693333943684895,
+        0.8,
         0.9
       ],
       "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_ELBOW_HEX\\Q-pack-TacoShell_MK4_Clippard_Hex.stl",
-      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "alignment": "HGA brass Clippard hex elbow: long mounting stem faces the pack front (+Z); side barb bends downward (-Y). Shoulder sits on the front cylinder wall at X=145.4mm; mounting position is illustrative, not a verified socket or drilling template. Physical seating requires dry-fit.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_Clippard_Hex_02": {
@@ -1097,12 +1097,12 @@
       "layer": "Print settings not specified",
       "guide": "PDF pp. 31-36",
       "explode": [
-        -1,
-        0.7333333841959635,
+        0.8226666768391927,
+        0.8,
         0.9
       ],
       "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_full_body.stl",
-      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "alignment": "HGA Legris elbow: long mounting stem faces the pack front (+Z); compression outlet bends downward (-Y). Shoulder sits on the front cylinder wall at X=123.4mm; mounting position is illustrative, not a verified socket or drilling template. Stem seating and hose clocking require physical dry-fit.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_legris_elbow_GEN1_full_body_02": {
@@ -1114,12 +1114,12 @@
       "layer": "Print settings not specified",
       "guide": "PDF pp. 31-36",
       "explode": [
-        0.7,
-        -0.8,
+        0.8157611846923828,
+        -0.6848217837015788,
         0.9
       ],
       "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_full_body.stl",
-      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "alignment": "Cyclotron Legris elbow: seated on the lower-right outer wall; general site supported by references, but exact drilling position is illustrative, not a modeled socket. Stem seating and hose clocking require physical dry-fit.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_legris_elbow_GEN1_full_body_03": {
@@ -1131,12 +1131,12 @@
       "layer": "Print settings not specified",
       "guide": "PDF pp. 31-36",
       "explode": [
-        -0.9666666666666667,
+        -0.9976999918619792,
         0.8,
         0.9
       ],
       "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_full_body.stl",
-      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "alignment": "Ion-arm Legris elbow: axis matched to the modeled 9.5mm underside socket. Stem seating and hose clocking require physical dry-fit.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_legris_elbow_GEN1_Nut_01": {
@@ -1148,12 +1148,12 @@
       "layer": "Print settings not specified",
       "guide": "PDF pp. 31-36",
       "explode": [
-        -1,
-        0.75,
+        0.8226666514078776,
+        0.8,
         0.9
       ],
       "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_Nut.stl",
-      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "alignment": "HGA Legris elbow: long mounting stem faces the pack front (+Z); compression outlet bends downward (-Y). Shoulder sits on the front cylinder wall at X=123.4mm; mounting position is illustrative, not a verified socket or drilling template. Stem seating and hose clocking require physical dry-fit. Matching compression nut shares the elbow transform; pin inserted 3.8mm into its outlet.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_legris_elbow_GEN1_Nut_02": {
@@ -1165,12 +1165,12 @@
       "layer": "Print settings not specified",
       "guide": "PDF pp. 31-36",
       "explode": [
-        0.7,
-        -0.79,
+        0.8779596201578777,
+        -0.648134593963623,
         0.9
       ],
       "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_Nut.stl",
-      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "alignment": "Cyclotron Legris elbow: seated on the lower-right outer wall; general site supported by references, but exact drilling position is illustrative, not a modeled socket. Stem seating and hose clocking require physical dry-fit. Matching compression nut shares the elbow transform; pin inserted 3.8mm into its outlet.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_legris_elbow_GEN1_Nut_03": {
@@ -1182,12 +1182,12 @@
       "layer": "Print settings not specified",
       "guide": "PDF pp. 31-36",
       "explode": [
-        -0.9666666666666667,
+        -0.9976999918619792,
         0.8,
         0.9
       ],
       "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_ELBOW\\GEN_1\\Q-pack-TacoShell_MK4_legris_elbow_GEN1_Nut.stl",
-      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "alignment": "Ion-arm Legris elbow: axis matched to the modeled 9.5mm underside socket. Stem seating and hose clocking require physical dry-fit. Matching compression nut shares the elbow transform; pin inserted 3.8mm into its outlet.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_Legris_Straight_01": {
@@ -1200,11 +1200,11 @@
       "guide": "PDF pp. 31-36",
       "explode": [
         -0.05699999451637268,
-        0.12333333333333334,
+        0.13133331298828124,
         0.9
       ],
       "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_STRAIGHT\\Q-pack-TacoShell_MK4_Legris_Straight.stl",
-      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "alignment": "Coaxial with the two booster side sockets at Y=209.4/228.4, Z=95.2 mm; insertion depth is illustrative.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_Legris_Straight_02": {
@@ -1217,11 +1217,11 @@
       "guide": "PDF pp. 31-36",
       "explode": [
         -0.05699999451637268,
-        0.21333333333333335,
+        0.1946666463216146,
         0.9
       ],
       "source": "q-pack\\SHELL\\ACCESSORIES\\LEGRIS_STRAIGHT\\Q-pack-TacoShell_MK4_Legris_Straight.stl",
-      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "alignment": "Coaxial with the two booster side sockets at Y=209.4/228.4, Z=95.2 mm; insertion depth is illustrative.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_Adaptaflex_elbow_full_body_01": {
@@ -1233,12 +1233,12 @@
       "layer": "Print settings not specified",
       "guide": "PDF pp. 31-36",
       "explode": [
-        1,
+        0.6153757985432943,
         -0.8,
         0.9
       ],
       "source": "q-pack\\SHELL\\ACCESSORIES\\ADAPTAFLEX\\Q-pack-TacoShell_MK4_Adaptaflex_elbow_full_body.stl",
-      "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit.",
+      "alignment": "Provisional large wand-hose/conduit elbow on the lower-right synchronous-generator shell. Mounting shoulder seated on an exterior surface, not floating beyond the pack. Exact Adaptaflex variant, attachment point and hose clocking are NOT established by the guide or reference photo; illustrative only, not an installation/drilling template.",
       "assumption": "GB1 fixed L visualization selection; verify before printing."
     },
     "pack_Alice_Frame_Round_Spacer_25mm_01": {

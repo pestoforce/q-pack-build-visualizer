@@ -31,6 +31,14 @@ wand is a separate, non-printed acrylic reference; it does not earn print credit
 and hides during exploded view. Its nominal size is 7/8-inch OD by 6 inches long.
 Insertion depth is illustrative and the inside diameter is not modeled.
 
+**Assembled pack render** opens the 76-piece pack in black painted finishes with
+metal-look fittings, a blue-lit powercell appearance and red cyclotron windows.
+Blue depicts the visible light/backing, not a requirement for blue lens material;
+a lit pack can use a clear/frosted diffuser with blue LEDs behind it.
+This is an appearance reference, not a claim that parts are printed or assembled.
+Small-detail positions and finishes remain illustrative; hoses, ribbon cable,
+labels, backboard, straps and frame are not modeled.
+
 Select a part and change its **Build status**, or select a specific group and use
 **Mark highlighted group printed**. Group completion requires confirmation and
 does not downgrade fit-checked, assembled, or finished pieces.
@@ -107,8 +115,29 @@ shell sections. Wand: **39 planned printed pieces**, including separate indicato
 covers, hidden retaining plugs, both banjo bodies and their decorative screws.
 The extra pieces receive their own stable IDs, status controls, and exploded offsets.
 Existing 22-piece progress exports remain compatible; newly modeled pieces start pending.
-Major shell offsets are matched to assembled CAD references. Small-detail
-placements are illustrative and labeled in the inspector. The wand's rack uses
+Major shell offsets are matched to assembled CAD references. The HGA mounts on
+the right gearbox side using its matching screw axis; the powercell lens covers
+the front aperture, injector flange and EDA disks match their screw holes, and
+the crank knob faces forward. The booster frame clears the tube, the PPD's angled
+end follows the booster shoulder, and the straight fittings follow the side
+sockets. PPD lateral seating, frame longitudinal seating, accessory fittings
+and insertion depths remain illustrative and labeled in the inspector.
+The three Legris elbow/nut pairs are grouped at the HGA, cyclotron and ion-arm
+underside. Each nut is seated on its corresponding elbow rather than positioned
+independently. The ion-arm Legris axis follows its modeled socket; HGA and
+cyclotron drilling positions remain illustrative. The HGA fittings' long stems
+face the pack front, with compression outlet and Clippard barb bending downward.
+Their shoulders sit on the front cylinder wall, superseding an earlier top-socket
+assumption. These are not verified HGA mounting holes or drilling templates.
+The Dale RH-50 mounts on the ion-arm side, with the original resistor and shell
+hole pitches preserved (about 0.187 mm residual per hole, not a drilling template).
+The Adaptaflex represents a provisional lower-right conduit entry only: its exact
+variant and installation site are unverified. Tubing relationships are described
+in the [GBFans tubing reference](https://www.gbfans.com/wiki/equipment/proton-pack/tubing);
+the [Dale reference](https://www.gbfans.com/wiki/equipment/proton-pack/dale-resistors)
+identifies the RH-50's ion-arm location. These cosmetic replicas are not working
+pressure fittings.
+The wand's rack uses
 the ELSA source variant; the displayed standard `Front_Barrel_22mm` and `Metal_tip`
 are not a guaranteed fit for purchased tubing. Their poses now use the barrel axis
 and mounting features rather than bounding-box centers; the front grip is seated
@@ -144,6 +173,10 @@ external source path, fail on missing geometry, and never edit `progress.json`.
 The pack script uses the checked-in catalog alongside the source manifest;
 adding geometry requires updating both. Outputs overwrite `assets/*_assembly.glb`
 and pack alignment data. Preserve asset attribution/license when sharing remixes.
+For a private asset directory with its own existing `pack-parts.json`, pass
+`--output-dir <directory>` to `build_pack.py`. The builder preserves all catalog
+fields except the regenerated `source`, `alignment`, and `explode` fields;
+statuses and plate memberships are not reconstructed or copied between catalogs.
 
 For a GBFans front assembly, generate a separate model without changing stable
 tracking IDs or the public default variants:
@@ -153,9 +186,30 @@ tracking IDs or the public default variants:
 & 'C:\Program Files\Blender Foundation\Blender 4.3\blender.exe' --background --python .\scripts\render_wand.py -- --model .\wand-gbfans.glb --output .\wand-reference.png
 ```
 
+For a measured/local purchased-tube reference, the renderer also accepts
+`--acrylic-reference <local-json>`. The optional configuration supplies
+`axis_center_mm` (X/Z), `rear_y_mm`, `outer_radius_mm`, `metal_tip_offset_mm`
+(Blender XYZ), `bevel_radial_reduction_mm`, and contiguous `segments` with
+`start_mm`, `end_mm`, `finish` (`clear`/`frosted`) and optional `bevel`.
+It renders open outside surfaces without inventing an inside diameter, and moves
+only the displayed silver tip; the source model is not overwritten. Keep
+personal measurements/configuration outside the public catalog.
+
 The checked-in `assets/wand_assembled_reference.png` is generated from the default
 model with the same renderer. Finish colors, tube insertion and missing purchased
 hardware are illustrative, not assembly instructions or proof of physical fit.
+
+To regenerate the assembled pack reference from the existing pack model:
+
+```powershell
+& 'C:\Program Files\Blender Foundation\Blender 4.3\blender.exe' --background --python .\scripts\render_pack.py -- --model .\assets\pack_assembly.glb --output .\assets\pack_assembled_reference.png
+```
+
+The renderer changes presentation materials and rotates the complete assembly
+upright only in its temporary scene. It does not rewrite the GLB, part catalogs,
+print files or progress.
+Pass `--view front` for an orthographic front reference instead of the default
+three-quarter presentation.
 
 ## Development
 

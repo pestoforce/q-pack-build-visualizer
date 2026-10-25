@@ -31,6 +31,46 @@ const mime = { '.html': 'text/html', '.js': 'application/javascript', '.json': '
       Object.keys(meshObjects).length === (kind === 'pack' ? 76 : 39), kind, { timeout: 60000 });
     await page.goto(url);
     await loaded('pack');
+    assert.ok(await page.evaluate(() => performance.getEntriesByType('resource').some(
+      entry => entry.name.endsWith('pack_assembly.glb?v=hga-front-stems-v2'))));
+    assert.ok((await page.locator('#pack-reference-link').getAttribute('href')).endsWith('?v=hga-front-stems-v2'));
+    const stemDirections = await page.evaluate(() => {
+      return [
+        ['pack_legris_elbow_GEN1_full_body_01', [0, 0, 1]],
+        ['pack_Clippard_Hex_01', [0, 1, 0]],
+      ].map(([key, axis]) => {
+        const mesh = meshObjects[key];
+        mesh.updateWorldMatrix(true, false);
+        const origin = mesh.localToWorld(new THREE.Vector3());
+        return mesh.localToWorld(new THREE.Vector3(...axis)).sub(origin).toArray();
+      });
+    });
+    for (const direction of stemDirections) {
+      assert.ok(direction.every((value, axis) => Math.abs(value - [0, 0, 1][axis]) < .0001),
+        'HGA long stems must face the pack viewer, not upward');
+    }
+    const packAlignment = JSON.parse(fs.readFileSync(path.join(root, 'assets', 'pack-alignment.json'), 'utf8'));
+    const packPoseErrors = await page.evaluate(rows => {
+      const errors = [];
+      for (const amount of [0, 100, 35, 0]) {
+        onExplodeChange(amount);
+        for (const row of rows) {
+          const [x, y, z] = row.translation_mm;
+          const [dx, dy, dz] = PART_DATABASE[row.key].explode;
+          const factor = amount / 100 * 230;
+          const expected = [x + dx * factor, z + dz * factor, -y - dy * factor];
+          const mesh = meshObjects[row.key];
+          if (mesh.position.toArray().some((value, axis) => Math.abs(value - expected[axis]) > .02)) {
+            errors.push(`${row.key} at ${amount}%`);
+          }
+          if (mesh.position.distanceTo(initialPositions[row.key]) > .02 && amount === 0) {
+            errors.push(`${row.key} did not return to its corrected assembly pose`);
+          }
+        }
+      }
+      return errors;
+    }, packAlignment);
+    assert.deepEqual(packPoseErrors, [], 'Exploded pack must use corrected mounting poses at every slider setting');
     assert.equal(await page.locator('#total-status').textContent(), '0 / 115');
     assert.ok(await page.evaluate(() => PLATES.filter(p => p.keys).every(p => {
       filterByPlate(p.id);
@@ -73,10 +113,15 @@ const mime = { '.html': 'text/html', '.js': 'application/javascript', '.json': '
     await page.waitForFunction(() => document.getElementById('total-status').textContent === '1 / 115');
     await page.locator('#assembly-wand').click();
     await loaded('wand');
-    const referenceResponse = await page.request.get(new URL(
-      await page.locator('#wand-reference-link').getAttribute('href'), url).href);
-    assert.ok(referenceResponse.ok());
-    assert.equal(referenceResponse.headers()['content-type'], 'image/png');
+    for (const kind of ['pack', 'wand']) {
+      const reference = page.locator(`#${kind}-reference-link`);
+      assert.ok(await reference.isVisible());
+      const referenceResponse = await page.request.get(new URL(
+        await reference.getAttribute('href'), url).href);
+      assert.ok(referenceResponse.ok());
+      assert.equal(referenceResponse.headers()['content-type'], 'image/png');
+      assert.equal((await referenceResponse.body()).subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
+    }
     assert.ok(await page.evaluate(() => {
       const tube = loadedModel.getObjectByName('acrylic-reference');
       return tube && tube.visible && !Object.values(meshObjects).includes(tube) &&
