@@ -765,14 +765,14 @@
       "key": "front_tube",
       "source_path": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_front_tube.stl",
       "rotation_rad": [
-        1.5707963267948966,
+        -1.5707963267948966,
         0,
         0
       ],
       "translation_mm": [
-        -109.22,
-        50.5,
-        -82.78
+        -143.5,
+        61.5,
+        127.22
       ]
     },
     {
@@ -933,14 +933,14 @@
       "key": "long_sloblow_red",
       "source_path": "q-pack\\WAND\\LENS\\long_sloblow.stl",
       "rotation_rad": [
-        0.8267613609825797,
+        0,
         0,
         0
       ],
       "translation_mm": [
-        27.5,
-        -45.81957255986375,
-        61.081357416201065
+        47.65,
+        -77,
+        40.85
       ]
     },
     {
@@ -956,6 +956,24 @@
         5.9,
         83.2
       ]
+    },
+    {
+      "key": "wand_clippard_body",
+      "source_path": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_701-331\\Q-pack-TacoShell_MK4_clippard_body_screws.stl",
+      "rotation_rad": [1.5707963267948966, 0, 3.141592653589793],
+      "translation_mm": [1.6, -65.5, 83.2]
+    },
+    {
+      "key": "wand_clippard_r701_top",
+      "source_path": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_701-331\\Q-pack-TacoShell_MK4_clippard_r701_top.stl",
+      "rotation_rad": [1.5707963267948966, 0, 3.141592653589793],
+      "translation_mm": [9.5, -65.5, 67]
+    },
+    {
+      "key": "wand_clippard_r701_cap",
+      "source_path": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_701-331\\Q-pack-TacoShell_MK4_clippard_r701_cap.stl",
+      "rotation_rad": [1.5707963267948966, 0, 3.141592653589793],
+      "translation_mm": [9.5, -65.5, 67]
     }
   ]
 }

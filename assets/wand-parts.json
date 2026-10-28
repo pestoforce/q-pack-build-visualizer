@@ -98,7 +98,11 @@
       "mat": "Material not specified",
       "layer": "Print settings not specified",
       "guide": "PDF pp. 47-48",
-      "explode": [-0.8, 0.1, 0],
+      "explode": [
+        -0.8,
+        0.1,
+        0
+      ],
       "source": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_left_big_knob.stl",
       "alignment": "Second body screw axis. Each left dial requires a large base and a small cap."
     },
@@ -110,7 +114,11 @@
       "mat": "Material not specified",
       "layer": "Print settings not specified",
       "guide": "PDF pp. 47-48",
-      "explode": [-1.1, 0.1, 0],
+      "explode": [
+        -1.1,
+        0.1,
+        0
+      ],
       "source": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_left_small_knob.stl",
       "alignment": "Eccentric screw matches the second large base; cap seats on its outward face."
     },
@@ -407,7 +415,7 @@
       "assumption": "Illustrative assembly placement; choose barrel and tip variants to suit the actual acrylic tube."
     },
     "front_tube": {
-      "name": "Front Body Tube",
+      "name": "Black Front Cylinder",
       "plate": "Example Plate 11: Base & Connectors",
       "status": "pending",
       "stage": "Not printed",
@@ -420,8 +428,8 @@
         0
       ],
       "source": "q-pack\\WAND\\BODY\\Q-pack-TacoShell_MK4_front_tube.stl",
-      "alignment": "Illustrative internal receiver-core placement; hidden in assembled view. Exact seating is not CAD-fit verified.",
-      "assumption": "Illustrative assembly placement; verify against the original guide."
+      "alignment": "Existing front_tube outside lower front face beside barrel; rear end at (-18.5,61.5,22.22)mm, extending forward to Y103.5mm. Its bore shares body/connector screw axis. Physical fit pending.",
+      "assumption": "Previously shown incorrectly as an internal receiver core. Existing printed-part identity preserved; no additional copy required."
     },
     "front_knob": {
       "name": "Front Knob",
@@ -624,7 +632,7 @@
         0.3
       ],
       "source": "q-pack\\WAND\\LENS\\long_sloblow.stl",
-      "alignment": "Seats in the 5mm Slo-Blo opening on the sloped body panel below the toggle opening; lens shoulder follows the outer face. Physical mating fit remains unverified.",
+      "alignment": "Seats in the 5mm opening on the rear electrical box top beside hose fitting. Both main-body sloped-panel openings are reserved for switches. Physical mating fit remains unverified.",
       "assumption": "Separate physical cover or retaining plug; guide colors are descriptive, not a material setting. Status colors are not filament colors."
     },
     "long_sloblow_clear": {
@@ -643,15 +651,66 @@
       "source": "q-pack\\WAND\\LENS\\long_sloblow.stl",
       "alignment": "Placed at source-model mounting features, not spaced-out placeholders. Physical mating fit remains unverified.",
       "assumption": "Separate physical cover or retaining plug; guide colors are descriptive, not a material setting. Status colors are not filament colors."
+    },
+    "wand_clippard_body": {
+      "name": "Wand Clippard Body",
+      "plate": "Example Group: Wand R701 Valve",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-32",
+      "explode": [
+        0.2,
+        0.8,
+        0.3
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_701-331\\Q-pack-TacoShell_MK4_clippard_body_screws.stl",
+      "alignment": "Wand valve on upper front face beside front knob; both flange holes align with body mounting holes at 42.9mm pitch. Top/cap share valve axis. Physical fit unverified.",
+      "assumption": "Separate R701 wand assembly, not the pack R331 valve. Each copy tracks independently; mounting hardware is not modeled."
+    },
+    "wand_clippard_r701_top": {
+      "name": "Wand Clippard R701 Top",
+      "plate": "Example Group: Wand R701 Valve",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-32",
+      "explode": [
+        0.2,
+        1.2000000000000002,
+        0.3
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_701-331\\Q-pack-TacoShell_MK4_clippard_r701_top.stl",
+      "alignment": "Wand valve on upper front face beside front knob; both flange holes align with body mounting holes at 42.9mm pitch. Top/cap share valve axis. Physical fit unverified.",
+      "assumption": "Separate R701 wand assembly, not the pack R331 valve. Each copy tracks independently; mounting hardware is not modeled."
+    },
+    "wand_clippard_r701_cap": {
+      "name": "Wand Clippard R701 Cap",
+      "plate": "Example Group: Wand R701 Valve",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 31-32",
+      "explode": [
+        0.2,
+        1.6,
+        0.3
+      ],
+      "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_701-331\\Q-pack-TacoShell_MK4_clippard_r701_cap.stl",
+      "alignment": "Wand valve on upper front face beside front knob; both flange holes align with body mounting holes at 42.9mm pitch. Top/cap share valve axis. Physical fit unverified.",
+      "assumption": "Separate R701 wand assembly, not the pack R331 valve. Each copy tracks independently; mounting hardware is not modeled."
     }
   },
   "plates": [
     {
       "id": "all",
       "name": "All Assembly Parts",
-      "count": "41 Planned Pieces",
+      "count": "44 Planned Pieces",
       "status": "all",
-      "desc": "41 planned wand pieces, including both two-piece left knobs; provisional variants labeled"
+      "desc": "44 planned wand pieces, including both two-piece left knobs and a separate R701 valve; provisional variants labeled"
     },
     {
       "id": "plate13",
@@ -756,7 +815,19 @@
         "long_sloblow_clear"
       ],
       "count": "7 Parts"
+    },
+    {
+      "id": "wand-valve",
+      "name": "Example Group: Wand R701 Valve",
+      "status": "pending",
+      "desc": "Separate three-piece valve; not a print-ready project",
+      "keys": [
+        "wand_clippard_body",
+        "wand_clippard_r701_top",
+        "wand_clippard_r701_cap"
+      ],
+      "count": "3 Parts"
     }
   ],
-  "note": "41 planned printed wand pieces, including both two-piece left dials. Knob stacks, heat sink, rear box and front/rear banjos reconciled with source mounting features and assembly diagrams. Banjo hose clocking remains illustrative. Assembly preview, not print orientation or physical fit certification. Rack remains the ELSA source variant. Standard and GBFans barrel/tip variants are available in the regeneration manifest. The separate acrylic tube in the finished rendering is a non-printed illustrative reference; insertion and hardware are not physically verified."
+  "note": "44 planned printed wand pieces, including both two-piece left dials and a separate three-piece R701 wand valve. Knob stacks, heat sink, rear box and front/rear banjos reconciled with source mounting features and assembly diagrams. Banjo hose clocking remains illustrative. Assembly preview, not print orientation or physical fit certification. Rack remains the ELSA source variant. Standard and GBFans barrel/tip variants are available in the regeneration manifest. The separate acrylic tube in the finished rendering is a non-printed illustrative reference; insertion and hardware are not physically verified."
 }

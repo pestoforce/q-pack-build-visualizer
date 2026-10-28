@@ -65,7 +65,7 @@ for (const constraint of audit.constraints) {
 };
 checkMountingConstraints(mountingAudit, key => packPose(key.slice(5)));
 const wandAudit = read('scripts/wand-mounting-constraints.json');
-assert.equal(wandAudit.constraints.length, 23, 'Wand mounting relationship coverage');
+assert.equal(wandAudit.constraints.length, 28, 'Wand mounting relationship coverage');
 checkMountingConstraints(wandAudit, wandPose);
 pointAt(wandPose('front_knob'), [0, 0, 0]).forEach((value, i) =>
   near(value, [-25, 23.167357, 72.33263707594463][i],
@@ -216,14 +216,20 @@ assert.deepEqual(wandPose('Front_Barrel_22mm').variants.gbfans.translation_mm, [
 assert.deepEqual(wandPose('Metal_tip').variants.gbfans.translation_mm, [0, 0, 0]);
 assert.deepEqual(wandPose('top_knob_V2').translation_mm, [-24, .9, 92]);
 pointAt(wandPose('long_sloblow_red'), [-21.5, 0, 2]).forEach((v, i) =>
-  near(v, [6, -47.291056211793396, 62.435881636030224][i],
-    'Red Slo-Blo shoulder must seat on sloped panel below toggle opening'));
+  near(v, [26.15, -77, 42.85][i],
+    'Red Slo-Blo shoulder must seat on rear electrical box, not main-body switch panel'));
+pointAt(wandPose('front_tube'), [125, 105, 0]).forEach((v, i) =>
+  near(v, [-18.5, 61.5, 22.22][i], 'Black front cylinder must meet lower-front fixing beside barrel'));
+near(pointAt(wandPose('front_tube'), [125, 105, 42])[1], 103.5,
+  'Black front cylinder must project forward rather than hide inside receiver');
+assert.ok(pointAt(wandPose('wand_clippard_body'), [-7.9, -35.21439, 88.9])[2] > 47.9,
+  'Asymmetric wand valve flange must be clocked clear of lower ledge');
 pointAt(wandPose('long_hat_inside_body'), [-15, 15, 0]).forEach((v, i) =>
   near(v, [-27, 52, 47.9][i],
     'Orange indicator base must sit on lower ledge, not occupy upper valve opening'));
 for (const [kind, catalog] of Object.entries(catalogs)) {
   const keys = Object.keys(catalog.parts);
-  assert.equal(keys.length, kind === 'pack' ? 76 : 41);
+  assert.equal(keys.length, kind === 'pack' ? 76 : 44);
   const bytes = fs.readFileSync(path.join(root, 'assets', `${kind}_assembly.glb`));
   assert.equal(bytes.toString('ascii', 0, 4), 'glTF');
   const gltf = JSON.parse(bytes.toString('utf8', 20, 20 + bytes.readUInt32LE(12)));
@@ -275,4 +281,4 @@ assert.throws(() => BuildProgress.validate({ version: 1, parts: { pack: { unknow
 assert.throws(() => BuildProgress.validate({ version: 1, parts: { pack: {}, wand: { rear_box: { status: 'accepted' } } } }, catalogs));
 assert.equal(BuildProgress.visualStatus('needs_rework'), 'pending');
 assert.equal(BuildProgress.visualStatus('assembled'), 'printed');
-console.log('Catalogs, 117 unique meshes, pack/wand mounting relationships and exported poses, guide quantity correction, plate coverage, blank defaults, progress format, and JavaScript validated.');
+console.log('Catalogs, 120 unique meshes, pack/wand mounting relationships and exported poses, guide quantity correction, plate coverage, blank defaults, progress format, and JavaScript validated.');

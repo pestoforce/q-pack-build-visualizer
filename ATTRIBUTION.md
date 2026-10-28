@@ -18,7 +18,7 @@ noncommercial use, and ShareAlike obligations. Do not treat these as MIT assets.
 Changes made here: selected a GB1 fixed-cyclotron/L-split visualization, combined
 the source meshes into GLB scenes, added part identities, reconciled separated
 CAD layouts, and authored illustrative small-detail transforms and exploded offsets.
-The wand includes 41 planned printed pieces, including both two-piece left dials,
+The wand includes 44 planned printed pieces, including both two-piece left dials and a separate R701 valve,
 an ELSA rack variant, and a provisional22mm barrel. Mounting features and assembly
 diagrams inform the poses; remaining illustrative positions are labeled.
 No paid guide images, text, or PDFs are distributed.

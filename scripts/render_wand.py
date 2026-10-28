@@ -42,7 +42,7 @@ for obj in [o for o in scene.objects if o.type == "MESH"]:
     mat = black
     if name in {"front_Grip", "b_handle_01", "b_handle_02"}:
         mat = grip
-    elif name in {"Metal_tip", "front_knob", "top_knob_V2", "heat_sink"}:
+    elif name in {"Metal_tip", "front_knob", "top_knob_V2", "heat_sink", "wand_clippard_r701_top", "wand_clippard_r701_cap"}:
         mat = silver
     elif "knob" in name or name == "rear_fitting" or name.startswith("banjo"):
         mat = brass

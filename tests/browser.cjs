@@ -28,12 +28,12 @@ const mime = { '.html': 'text/html', '.js': 'application/javascript', '.json': '
     page.on('dialog', dialog => dialog.accept());
     const url = `http://127.0.0.1:${server.address().port}`;
     const loaded = kind => page.waitForFunction(kind => activeAssembly === kind && loadedModel &&
-      Object.keys(meshObjects).length === (kind === 'pack' ? 76 : 41), kind, { timeout: 60000 });
+      Object.keys(meshObjects).length === (kind === 'pack' ? 76 : 44), kind, { timeout: 60000 });
     await page.goto(url);
     await loaded('pack');
     assert.ok(await page.evaluate(() => performance.getEntriesByType('resource').some(
-      entry => entry.name.endsWith('pack_assembly.glb?v=body-lights-v12'))));
-    assert.ok((await page.locator('#pack-reference-link').getAttribute('href')).endsWith('?v=body-lights-v12'));
+      entry => entry.name.endsWith('pack_assembly.glb?v=wand-r701-v13'))));
+    assert.ok((await page.locator('#pack-reference-link').getAttribute('href')).endsWith('?v=wand-r701-v13'));
     const stemDirections = await page.evaluate(() => {
       return [
         ['pack_legris_elbow_GEN1_full_body_01', [0, 0, 1]],
@@ -71,14 +71,14 @@ const mime = { '.html': 'text/html', '.js': 'application/javascript', '.json': '
       return errors;
     }, packAlignment);
     assert.deepEqual(packPoseErrors, [], 'Exploded pack must use corrected mounting poses at every slider setting');
-    assert.equal(await page.locator('#total-status').textContent(), '0 / 117');
+    assert.equal(await page.locator('#total-status').textContent(), '0 / 120');
     assert.ok(await page.evaluate(() => PLATES.filter(p => p.keys).every(p => {
       filterByPlate(p.id);
       return Object.values(meshObjects).filter(m => m.material === plateMaterial).length === p.keys.length;
     })));
     await page.locator('#card-plate10').click();
     await page.getByRole('button', { name: 'Mark highlighted group printed' }).click();
-    assert.equal(await page.locator('#total-status').textContent(), '4 / 117');
+    assert.equal(await page.locator('#total-status').textContent(), '4 / 120');
     assert.equal(await page.evaluate(() => activeFilter), 'plate10');
     await page.evaluate(() => {
       const key = PLATES.find(p => p.id === 'plate10').keys[0];
@@ -90,13 +90,13 @@ const mime = { '.html': 'text/html', '.js': 'application/javascript', '.json': '
     assert.equal(await page.evaluate(() => Object.values(progress.parts.pack).filter(p => p.status === 'fit_checked').length), 1);
     await page.reload();
     await loaded('pack');
-    assert.equal(await page.locator('#total-status').textContent(), '4 / 117');
+    assert.equal(await page.locator('#total-status').textContent(), '4 / 120');
     await page.evaluate(() => {
       const key = Object.keys(progress.parts.pack)[0];
       selectPart(meshObjects[key]);
     });
     await page.locator('#part-status').selectOption('needs_rework');
-    assert.equal(await page.locator('#total-status').textContent(), '3 / 117');
+    assert.equal(await page.locator('#total-status').textContent(), '3 / 120');
     await page.locator('.inspector-close').click();
     const downloadEvent = page.waitForEvent('download');
     await page.getByRole('button', { name: 'Export Progress' }).click();
@@ -106,11 +106,11 @@ const mime = { '.html': 'text/html', '.js': 'application/javascript', '.json': '
     await page.locator('#progress-import').setInputFiles({ name: 'bad.json', mimeType: 'application/json',
       buffer: Buffer.from(JSON.stringify({ version: 1, parts: { pack: { missing: { status: 'printed' } }, wand: {} } })) });
     await page.waitForFunction(() => document.getElementById('progress-message').textContent.includes('Import rejected'));
-    assert.equal(await page.locator('#total-status').textContent(), '3 / 117');
+    assert.equal(await page.locator('#total-status').textContent(), '3 / 120');
     const imported = { version: 1, parts: { pack: {}, wand: { rear_box: { status: 'printed' } } } };
     await page.locator('#progress-import').setInputFiles({ name: 'progress.json', mimeType: 'application/json',
       buffer: Buffer.from(JSON.stringify(imported)) });
-    await page.waitForFunction(() => document.getElementById('total-status').textContent === '1 / 117');
+    await page.waitForFunction(() => document.getElementById('total-status').textContent === '1 / 120');
     await page.locator('#assembly-wand').click();
     await loaded('wand');
     for (const kind of ['pack', 'wand']) {
@@ -129,6 +129,10 @@ const mime = { '.html': 'text/html', '.js': 'application/javascript', '.json': '
     }));
     assert.equal(await page.evaluate(() => meshObjects.rear_box.userData.status), 'printed');
     assert.equal(await page.evaluate(() => meshObjects.rear_box_plate.userData.status), 'pending');
+    assert.ok(await page.evaluate(() =>
+      ['wand_clippard_body', 'wand_clippard_r701_top', 'wand_clippard_r701_cap']
+        .every(key => meshObjects[key].userData.status === 'pending')),
+    'Old progress must not credit the newly added wand valve');
     assert.ok(await page.evaluate(() => PLATES.filter(p => p.keys).every(p => {
       filterByPlate(p.id);
       return Object.values(meshObjects).filter(m => m.material === plateMaterial).length === p.keys.length;
@@ -140,7 +144,8 @@ const mime = { '.html': 'text/html', '.js': 'application/javascript', '.json': '
     const addedKeys = ['front_Grip', 'Grey_tip', 'Metal_tip', 'front_tube', 'front_knob', 'top_knob_V2',
       'banjo_main_1', 'banjo_main_2', 'banjo_fake_screw_1', 'banjo_fake_screw_2',
       'hat_front', 'hat_body', 'hat_plug_front', 'hat_plug_body', 'long_hat_inside_body',
-      'long_sloblow_red', 'long_sloblow_clear'];
+      'long_sloblow_red', 'long_sloblow_clear',
+      'wand_clippard_body', 'wand_clippard_r701_top', 'wand_clippard_r701_cap'];
     assert.ok(await page.evaluate(keys => {
       onExplodeChange(100);
       if (loadedModel.getObjectByName('acrylic-reference').visible) return false;
@@ -153,7 +158,7 @@ const mime = { '.html': 'text/html', '.js': 'application/javascript', '.json': '
     await page.evaluate(() => selectPart(meshObjects.hat_plug_front));
     await page.locator('#part-status').selectOption('printed');
     assert.equal(await page.evaluate(() => meshObjects.hat_plug_body.userData.status), 'pending');
-    assert.equal(await page.locator('#total-status').textContent(), '2 / 117');
+    assert.equal(await page.locator('#total-status').textContent(), '2 / 120');
     await page.locator('.inspector-close').click();
     await page.locator('#card-plate12').click();
     assert.equal(await page.evaluate(() => Object.values(meshObjects).filter(m => m.material === plateMaterial).length), 4);
@@ -174,7 +179,7 @@ const mime = { '.html': 'text/html', '.js': 'application/javascript', '.json': '
     await page.setViewportSize({ width: 1366, height: 768 });
     for (const preset of ['iso', 'docking', 'rear', 'side', 'front']) await page.locator(`[data-view="${preset}"]`).click();
     assert.deepEqual(errors, []);
-    console.log('Browser: blank start, every group, all 41 wand inspectors, independent knob and plug copies, status edits, milestones, persistence, old progress import/export, both models and cameras passed.');
+    console.log('Browser: blank start, every group, all 44 wand inspectors, independent knob and plug copies, status edits, milestones, persistence, old progress import/export, both models and cameras passed.');
   } finally {
     if (browser) await browser.close();
     await new Promise(resolve => server.close(resolve));

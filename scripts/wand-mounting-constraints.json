@@ -659,34 +659,226 @@
     {
       "a": {
         "key": "long_sloblow_red",
-        "point": [-21.5, 0, 2],
-        "axis": [0, 0, 1]
+        "point": [
+          -21.5,
+          0,
+          2
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ]
       },
       "b": {
-        "key": "Gun_body",
-        "point": [6, -47.291056211793396, 62.435881636030224],
-        "axis": [0, -0.7357418259648231, 0.6772621099145792]
+        "key": "rear_box",
+        "point": [
+          121.49983,
+          72.63507,
+          12.5
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
       },
       "max_radial_mm": 0.01,
       "max_axis_angle_deg": 0.05,
       "axial_center_distance_mm": 0,
-      "note": "Red Slo-Blo lens shoulder seats on the outer sloped panel at its 5mm opening, below the separate toggle opening."
+      "note": "Red Slo-Blo lens seats in the rear electrical box top's 5mm opening beside hose fitting; both sloped main-body holes remain clear for switches."
     },
     {
       "a": {
         "key": "long_hat_inside_body",
-        "point": [-15, 15, 0],
-        "axis": [0, 0, 1]
+        "point": [
+          -15,
+          15,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ]
       },
       "b": {
         "key": "Gun_body",
-        "point": [-27, 52, 47.9],
-        "axis": [0, 0, 1]
+        "point": [
+          -27,
+          52,
+          47.9
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ]
       },
       "max_radial_mm": 0.01,
       "max_axis_angle_deg": 0.05,
       "axial_center_distance_mm": 0,
       "note": "Orange cover shown on exterior lower ledge ahead of front knob. Its 10mm body cannot insert through this 6mm LED opening; exterior base contact is illustrative, not an inside-mounted push fit."
+    },
+    {
+      "a": {
+        "key": "front_tube",
+        "point": [
+          125,
+          105,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ]
+      },
+      "b": {
+        "key": "Gun_body",
+        "point": [
+          -18.5,
+          61.5,
+          22.22
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      "max_radial_mm": 0.01,
+      "max_axis_angle_deg": 0.05,
+      "axial_center_distance_mm": 0,
+      "note": "Existing black front cylinder seats outside lower body beside barrel, on the shared M3 connector fixing axis."
+    },
+    {
+      "a": {
+        "key": "wand_clippard_body",
+        "point": [
+          -29.35,
+          -16.2,
+          88.9
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ]
+      },
+      "b": {
+        "key": "Gun_body",
+        "point": [
+          30.95,
+          23.4,
+          67
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      "max_radial_mm": 0.01,
+      "max_axis_angle_deg": 0.05,
+      "axial_center_distance_mm": 0,
+      "note": "Wand valve native 42.9mm flange pitch matches upper body mounting holes without scaling."
+    },
+    {
+      "a": {
+        "key": "wand_clippard_body",
+        "point": [
+          13.55,
+          -16.2,
+          88.9
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ]
+      },
+      "b": {
+        "key": "Gun_body",
+        "point": [
+          -11.95,
+          23.4,
+          67
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      "max_radial_mm": 0.01,
+      "max_axis_angle_deg": 0.05,
+      "axial_center_distance_mm": 0,
+      "note": "Wand valve native 42.9mm flange pitch matches upper body mounting holes without scaling."
+    },
+    {
+      "a": {
+        "key": "wand_clippard_r701_top",
+        "point": [
+          0,
+          0,
+          136.15
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ]
+      },
+      "b": {
+        "key": "wand_clippard_body",
+        "point": [
+          -7.9,
+          -16.2,
+          136.1
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ]
+      },
+      "max_radial_mm": 0.01,
+      "max_axis_angle_deg": 0.05,
+      "axial_center_distance_mm": 0.05000000000001137,
+      "note": "Retain source-designed R701 mating depth; physical fit remains unverified."
+    },
+    {
+      "a": {
+        "key": "wand_clippard_r701_cap",
+        "point": [
+          0,
+          0,
+          155.08
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ]
+      },
+      "b": {
+        "key": "wand_clippard_r701_top",
+        "point": [
+          0,
+          0,
+          155.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ]
+      },
+      "max_radial_mm": 0.01,
+      "max_axis_angle_deg": 0.05,
+      "axial_center_distance_mm": 0.030000000000001137,
+      "note": "Retain source-designed R701 mating depth; physical fit remains unverified."
     }
   ]
 }

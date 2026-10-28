@@ -51,7 +51,7 @@ To start over, import the repository's blank `progress.json`.
 
 Statuses: `pending`, `sliced`, `printing`, `printed`, `fit_checked`, `assembled`,
 `finished`, `needs_rework`. Green means printed or a later stage, **not** an
-automatic fit/assembly approval. Counts include only the **117 modeled pieces**,
+automatic fit/assembly approval. Counts include only the **120 modeled pieces**,
 not the entire physical build. Failed/rework pieces do not earn print credit.
 
 ## Tracking your build with an AI agent
@@ -111,7 +111,7 @@ the guide's printed numbering. Electronics are optional and not represented.
 ## Model coverage and limitations
 
 Pack: **76 nominal printed pieces**, GB1 fixed cyclotron/bumper and actual L split
-shell sections. Wand: **41 planned printed pieces**, including separate indicator
+shell sections. Wand: **44 planned printed pieces**, including separate indicator
 covers, hidden retaining plugs, both banjo bodies and their decorative screws.
 The extra pieces receive their own stable IDs, status controls, and exploded offsets.
 Existing 22-piece progress exports remain compatible; newly modeled pieces start pending.
@@ -184,11 +184,11 @@ meaning; `left_big_knob_2` and `left_small_knob_2` are separate new pieces that
 start pending, including when importing older progress. The rear box and cover
 are registered to the body screws and rear face; the rear hose nut, small right
 knob and heat sink are seated on their matching features.
-`scripts/wand-mounting-constraints.json` adds23source-local axis/seating checks.
-The red Slo-Blo lens occupies the 5mm opening on the sloped rear body panel,
-below the separate toggle opening. Its insertion axis follows the panel normal
-and its shoulder seats on the outer face; the old lower front ledge placement
-was incorrect. This relocates an existing pending cover, not an extra part.
+`scripts/wand-mounting-constraints.json` adds28source-local axis/seating checks.
+The red Slo-Blo lens occupies the 5mm opening on the rear electrical box top,
+beside the hose fitting. Both openings on the main body's sloped panel are left
+clear for switches. Earlier placement on that panel or the front ledge was
+incorrect. This relocates an existing pending cover, not an extra part.
 The orange body indicator is on the lower ledge ahead of the front knob,
 not in the upper Clippard opening. Its supplied 10mm body/12mm flange cannot
 pass through the ledge's 6mm LED opening, so the preview shows exterior base
@@ -197,8 +197,11 @@ assembly; the preview does not authorize drilling or resizing.
 The front knurled knob sits on the upper vertical tier atX-25/Z72.333mm,
 beside the wand valve location. The lower face'sX-18.5/Z22.22mm opening matches
 the internal front-grip connector's M3 fixing axis; it is not a knob mounting
-site. The separate wand Clippard valve remains missing from this preview and
-its modeled-piece count; the pack valve is not a substitute for it.
+site. The existing `front_tube` is the black cylinder projecting forward from
+that lower face, not an internal barrel core. Its end seats atY61.5mm and it
+extends toY103.5mm onX-18.5/Z22.22mm. A separate three-piece R701 wand Clippard
+mounts beside the upper knob; its flange holes match the body's42.9mm pitch.
+The pack retains its R331 valve; each copy has independent progress.
 The finger-grooved front grip projects sideways from the barrel, not underneath
 it. Its plain screw end faces the rear ear; its angled screw end faces the front
 ear. The rear face seats atY101.19mm. Native geometry leaves approximately0.197mm
@@ -211,9 +214,9 @@ provisional; motherboard/frame, cables and hardware are not modeled.
 The wand's rack uses
 the ELSA source variant; the displayed standard `Front_Barrel_22mm` and `Metal_tip`
 are not a guaranteed fit for purchased tubing. Their poses now use the barrel axis
-and mounting features rather than bounding-box centers; the front grip is seated
-under the barrel, and tip rings, knobs and covers no longer use spaced-out
-placeholder locations. Exact internal receiver-core seating remains illustrative.
+and mounting features rather than bounding-box centers; the front grip projects
+sideways, and tip rings, knobs and covers no longer use spaced-out
+placeholder locations. Physical mating fit remains unverified.
 The source also has
 `Front_Barrel_Gbfan` and `metal_tip_gbfan` alternatives for GBFans tubing; choose
 matching variants after checking the actual tube. Indicator names describe guide
