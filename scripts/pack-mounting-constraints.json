@@ -1,0 +1,4397 @@
+{
+  "method": "Welded original meshes at0.0001mm; planar circular-loop and connected smooth cylindrical-wall fits. Source-local anchors, rigid poses only.",
+  "scope": "All76pack meshes screened;553planar circular boundaries and503cylindrical surfaces (366 inward bores). Counts include counterbores and duplicate bore segments, not distinct screws. Not every opening is a fastener.",
+  "limitations": [
+    "Axis constraints establish coaxiality, not independently verified insertion depth, fastener size or physical print fit.",
+    "RH50, RH25 and valve flange pitch mismatches retained without scaling.",
+    "Unmatched illustrative clamp copy2, bumper spacers, Alice spacers, PH25, shockmount and drilled hose-fitting sites remain provisional.",
+    "Original booster rim/slope angular discrepancy retained; matched mounting screws take precedence over forced plane coincidence."
+  ],
+  "relationships": [
+    {
+      "parts": [
+        "pack_Beamline_L_XL_XXL_01",
+        "pack_Center_Cover_L_02_sharp_corner_01"
+      ],
+      "bore_segment_pairs": 1,
+      "max_radial_mm": 0.0
+    },
+    {
+      "parts": [
+        "pack_Booster_box_01_L_01",
+        "pack_Booster_box_02_L_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 0.0
+    },
+    {
+      "parts": [
+        "pack_Booster_box_01_L_01",
+        "pack_PowerCell_L_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 3e-05
+    },
+    {
+      "parts": [
+        "pack_Booster_box_01_L_01",
+        "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01"
+      ],
+      "bore_segment_pairs": 1,
+      "max_radial_mm": 4e-05
+    },
+    {
+      "parts": [
+        "pack_Booster_box_02_L_01",
+        "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01"
+      ],
+      "bore_segment_pairs": 1,
+      "max_radial_mm": 1e-05
+    },
+    {
+      "parts": [
+        "pack_Center_Cover_L_01_01",
+        "pack_Center_Cover_L_02_sharp_corner_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 1e-05
+    },
+    {
+      "parts": [
+        "pack_Center_Cover_L_01_01",
+        "pack_SynchGen_05_L_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 0.00012
+    },
+    {
+      "parts": [
+        "pack_Center_Cover_L_01_01",
+        "pack_Filler_Tube_L_XL_XXL_01"
+      ],
+      "bore_segment_pairs": 1,
+      "max_radial_mm": 1e-05
+    },
+    {
+      "parts": [
+        "pack_Center_Cover_L_01_01",
+        "pack_Injector_Bracket_L_XL_XXL_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 1e-05
+    },
+    {
+      "parts": [
+        "pack_Center_Cover_L_02_sharp_corner_01",
+        "pack_Center_Cover_L_03_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 0.0
+    },
+    {
+      "parts": [
+        "pack_Center_Cover_L_02_sharp_corner_01",
+        "pack_SynchGen_01_L_XL_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 9e-05
+    },
+    {
+      "parts": [
+        "pack_Center_Cover_L_02_sharp_corner_01",
+        "pack_SynchGen_02_L_01"
+      ],
+      "bore_segment_pairs": 3,
+      "max_radial_mm": 0.00085
+    },
+    {
+      "parts": [
+        "pack_Center_Cover_L_02_sharp_corner_01",
+        "pack_SynchGen_05_L_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 0.00041
+    },
+    {
+      "parts": [
+        "pack_Center_Cover_L_03_01",
+        "pack_SynchGen_01_L_XL_01"
+      ],
+      "bore_segment_pairs": 1,
+      "max_radial_mm": 1e-05
+    },
+    {
+      "parts": [
+        "pack_Center_Cover_L_03_01",
+        "pack_SynchGen_02_L_01"
+      ],
+      "bore_segment_pairs": 1,
+      "max_radial_mm": 1e-05
+    },
+    {
+      "parts": [
+        "pack_Clamp_X2_01",
+        "pack_SynchGen_05_L_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 0.0
+    },
+    {
+      "parts": [
+        "pack_Clippard_Base_GB1_01",
+        "pack_SynchGen_02_L_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 0.0
+    },
+    {
+      "parts": [
+        "pack_Clippard_Base_GB1_01",
+        "pack_SynchGen_01_L_XL_01"
+      ],
+      "bore_segment_pairs": 1,
+      "max_radial_mm": 0.0
+    },
+    {
+      "parts": [
+        "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01",
+        "pack_HGA_L_XL_XXL_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 2e-05
+    },
+    {
+      "parts": [
+        "pack_Cyclotron_NOT_REMOVABLE_L_01_01",
+        "pack_Cyclotron_NOT_REMOVABLE_L_04_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 1e-05
+    },
+    {
+      "parts": [
+        "pack_Cyclotron_NOT_REMOVABLE_L_01_01",
+        "pack_Cyclotron_NOT_REMOVABLE_L_02_01"
+      ],
+      "bore_segment_pairs": 3,
+      "max_radial_mm": 3e-05
+    },
+    {
+      "parts": [
+        "pack_Cyclotron_NOT_REMOVABLE_L_01_01",
+        "pack_SynchGen_03_L_01"
+      ],
+      "bore_segment_pairs": 1,
+      "max_radial_mm": 6e-05
+    },
+    {
+      "parts": [
+        "pack_Cyclotron_NOT_REMOVABLE_L_01_01",
+        "pack_SynchGen_02_L_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 1e-05
+    },
+    {
+      "parts": [
+        "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "pack_Cyclotron_NOT_REMOVABLE_L_03_01"
+      ],
+      "bore_segment_pairs": 5,
+      "max_radial_mm": 1e-05
+    },
+    {
+      "parts": [
+        "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "pack_SynchGen_03_L_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 5e-05
+    },
+    {
+      "parts": [
+        "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "pack_NFilter_non_remove_ver_01"
+      ],
+      "bore_segment_pairs": 6,
+      "max_radial_mm": 1e-05
+    },
+    {
+      "parts": [
+        "pack_Cyclotron_NOT_REMOVABLE_L_03_01",
+        "pack_Cyclotron_NOT_REMOVABLE_L_04_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 1e-05
+    },
+    {
+      "parts": [
+        "pack_Cyclotron_NOT_REMOVABLE_L_03_01",
+        "pack_SynchGen_04_L_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 2e-05
+    },
+    {
+      "parts": [
+        "pack_Cyclotron_NOT_REMOVABLE_L_03_01",
+        "pack_NFilter_non_remove_ver_01"
+      ],
+      "bore_segment_pairs": 3,
+      "max_radial_mm": 0.00014
+    },
+    {
+      "parts": [
+        "pack_Cyclotron_NOT_REMOVABLE_L_04_01",
+        "pack_SynchGen_05_L_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 2e-05
+    },
+    {
+      "parts": [
+        "pack_Dale_RH_50_01",
+        "pack_Ion_Arm_L_XL_XXL_GB1_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 0.18711
+    },
+    {
+      "parts": [
+        "pack_Injector_Block_GB1_01",
+        "pack_SynchGen_04_L_01"
+      ],
+      "bore_segment_pairs": 3,
+      "max_radial_mm": 1e-05
+    },
+    {
+      "parts": [
+        "pack_Injectors_L_XL_XXL_GB1_01",
+        "pack_PowerCell_L_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 3e-05
+    },
+    {
+      "parts": [
+        "pack_ION_ARM_CAP_L_XL_XXL_GB1_01",
+        "pack_Ion_Arm_L_XL_XXL_GB1_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 2e-05
+    },
+    {
+      "parts": [
+        "pack_Ion_Arm_L_XL_XXL_GB1_01",
+        "pack_Sage_RH_25_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 0.07248
+    },
+    {
+      "parts": [
+        "pack_SynchGen_01_L_XL_01",
+        "pack_SynchGen_02_L_01"
+      ],
+      "bore_segment_pairs": 4,
+      "max_radial_mm": 1e-05
+    },
+    {
+      "parts": [
+        "pack_SynchGen_01_L_XL_01",
+        "pack_VacHose_base_01"
+      ],
+      "bore_segment_pairs": 1,
+      "max_radial_mm": 2e-05
+    },
+    {
+      "parts": [
+        "pack_SynchGen_01_L_XL_01",
+        "pack_VacHose_mount_01"
+      ],
+      "bore_segment_pairs": 1,
+      "max_radial_mm": 1e-05
+    },
+    {
+      "parts": [
+        "pack_SynchGen_02_L_01",
+        "pack_SynchGen_05_L_01"
+      ],
+      "bore_segment_pairs": 4,
+      "max_radial_mm": 2e-05
+    },
+    {
+      "parts": [
+        "pack_SynchGen_02_L_01",
+        "pack_SynchGen_03_L_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 0.0
+    },
+    {
+      "parts": [
+        "pack_SynchGen_03_L_01",
+        "pack_SynchGen_04_L_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 0.0
+    },
+    {
+      "parts": [
+        "pack_SynchGen_04_L_01",
+        "pack_SynchGen_05_L_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 0.0
+    },
+    {
+      "parts": [
+        "pack_V_Hook_Base_01",
+        "pack_V_Hook_Track_GB1_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 1e-05
+    },
+    {
+      "parts": [
+        "pack_VacHose_base_01",
+        "pack_VacHose_mount_01"
+      ],
+      "bore_segment_pairs": 1,
+      "max_radial_mm": 1e-05
+    },
+    {
+      "parts": [
+        "pack_Booster_box_01_L_01",
+        "pack_Center_Cover_L_01_01"
+      ],
+      "bore_segment_pairs": 3,
+      "max_radial_mm": 2e-05
+    },
+    {
+      "parts": [
+        "pack_Booster_box_01_L_01",
+        "pack_Center_Cover_L_02_sharp_corner_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 4e-05
+    },
+    {
+      "parts": [
+        "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01",
+        "pack_Center_Cover_L_02_sharp_corner_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 2e-05
+    },
+    {
+      "parts": [
+        "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01",
+        "pack_Center_Cover_L_03_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 0.0
+    },
+    {
+      "parts": [
+        "pack_Booster_box_02_L_01",
+        "pack_Ion_Arm_L_XL_XXL_GB1_01"
+      ],
+      "bore_segment_pairs": 4,
+      "max_radial_mm": 4e-05
+    },
+    {
+      "parts": [
+        "pack_Booster_Tube_PART1_L_01",
+        "pack_Booster_box_02_L_01"
+      ],
+      "bore_segment_pairs": 1,
+      "max_radial_mm": 6e-05
+    },
+    {
+      "parts": [
+        "pack_Booster_Tube_PART2_L_01",
+        "pack_Booster_box_01_L_01"
+      ],
+      "bore_segment_pairs": 1,
+      "max_radial_mm": 3e-05
+    },
+    {
+      "parts": [
+        "pack_Booster_Frame_L_XL_XXL_GB1_01",
+        "pack_Booster_Tube_PART1_L_01"
+      ],
+      "bore_segment_pairs": 1,
+      "max_radial_mm": 2e-05
+    },
+    {
+      "parts": [
+        "pack_Booster_Frame_L_XL_XXL_GB1_01",
+        "pack_Booster_Tube_PART2_L_01"
+      ],
+      "bore_segment_pairs": 1,
+      "max_radial_mm": 1e-05
+    },
+    {
+      "parts": [
+        "pack_PPD_Type_1_01",
+        "pack_Booster_box_01_L_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 7e-05
+    },
+    {
+      "parts": [
+        "pack_V_Hook_Base_01",
+        "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01"
+      ],
+      "bore_segment_pairs": 3,
+      "max_radial_mm": 1e-05
+    },
+    {
+      "parts": [
+        "pack_Injectors_L_XL_XXL_GB1_01",
+        "pack_Injector_Bracket_L_XL_XXL_01"
+      ],
+      "bore_segment_pairs": 2,
+      "max_radial_mm": 2e-05
+    },
+    {
+      "parts": [
+        "pack_clippard_body_screws_01",
+        "pack_Clippard_Base_GB1_01"
+      ],
+      "bore_segment_pairs": 3,
+      "max_radial_mm": 0.04999
+    }
+  ],
+  "constraints": [
+    {
+      "a": {
+        "key": "pack_Beamline_L_XL_XXL_01",
+        "point": [
+          -11.2114727,
+          173.4949319,
+          42.5
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Center_Cover_L_02_sharp_corner_01",
+        "point": [
+          688.7885306,
+          173.4949319,
+          29.65
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 12.85
+    },
+    {
+      "a": {
+        "key": "pack_Booster_box_01_L_01",
+        "point": [
+          317.6351549,
+          1010.6,
+          27.0
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Booster_box_02_L_01",
+        "point": [
+          317.6351549,
+          1015.6,
+          27.0
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 5.0
+    },
+    {
+      "a": {
+        "key": "pack_Booster_box_01_L_01",
+        "point": [
+          232.55,
+          1010.6,
+          27.0
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Booster_box_02_L_01",
+        "point": [
+          232.55,
+          1015.6,
+          27.0
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 5.0
+    },
+    {
+      "a": {
+        "key": "pack_Booster_box_01_L_01",
+        "point": [
+          222.6,
+          900.6499879,
+          15.1563371
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_PowerCell_L_01",
+        "point": [
+          218.1,
+          550.6499879,
+          15.1563371
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 3e-05,
+      "axial_center_distance_mm": 4.5
+    },
+    {
+      "a": {
+        "key": "pack_Booster_box_01_L_01",
+        "point": [
+          222.6,
+          1000.0000083,
+          15.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_PowerCell_L_01",
+        "point": [
+          218.1,
+          650.0000083,
+          15.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 3e-05,
+      "axial_center_distance_mm": 4.5
+    },
+    {
+      "a": {
+        "key": "pack_Booster_box_01_L_01",
+        "point": [
+          327.7,
+          979.1369905,
+          25.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01",
+        "point": [
+          534.08875,
+          269.1370083,
+          25.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 2e-05,
+      "after_radial_mm": 4e-05,
+      "axial_center_distance_mm": 6.38872
+    },
+    {
+      "a": {
+        "key": "pack_Booster_box_02_L_01",
+        "point": [
+          327.7,
+          1092.137025,
+          25.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01",
+        "point": [
+          534.08875,
+          382.1370083,
+          25.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 2e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 6.38872
+    },
+    {
+      "a": {
+        "key": "pack_Center_Cover_L_01_01",
+        "point": [
+          302.9018892,
+          157.3765108,
+          8.25
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Center_Cover_L_02_sharp_corner_01",
+        "point": [
+          652.9018954,
+          157.3765108,
+          19.25
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 11.0
+    },
+    {
+      "a": {
+        "key": "pack_Center_Cover_L_01_01",
+        "point": [
+          314.9018892,
+          182.3765108,
+          8.25
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Center_Cover_L_02_sharp_corner_01",
+        "point": [
+          664.9018954,
+          182.3765108,
+          19.25
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 11.0
+    },
+    {
+      "a": {
+        "key": "pack_Center_Cover_L_01_01",
+        "point": [
+          218.0081114,
+          89.4936132,
+          6.2499999
+        ],
+        "axis": [
+          0.8805575,
+          -0.4739393,
+          -0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_05_L_01",
+        "point": [
+          -121.1091822,
+          83.636248,
+          6.2499998
+        ],
+        "axis": [
+          0.8805565,
+          -0.4739411,
+          1e-07
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 12.35888
+    },
+    {
+      "a": {
+        "key": "pack_Center_Cover_L_01_01",
+        "point": [
+          261.0228018,
+          133.7234473,
+          6.2498085
+        ],
+        "axis": [
+          -0.6087549,
+          0.7933584,
+          1.9e-06
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_05_L_01",
+        "point": [
+          -80.9654056,
+          123.2822957,
+          6.2498119
+        ],
+        "axis": [
+          -0.6087615,
+          0.7933533,
+          1.1e-06
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.00012,
+      "after_radial_mm": 0.00012,
+      "axial_center_distance_mm": 13.16079
+    },
+    {
+      "a": {
+        "key": "pack_Center_Cover_L_01_01",
+        "point": [
+          265.0199364,
+          163.2160789,
+          9.9
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Filler_Tube_L_XL_XXL_01",
+        "point": [
+          -84.9800654,
+          163.2160694,
+          22.5
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 12.6
+    },
+    {
+      "a": {
+        "key": "pack_Center_Cover_L_01_01",
+        "point": [
+          218.3091319,
+          124.8309273,
+          9.9
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Injector_Bracket_L_XL_XXL_01",
+        "point": [
+          -131.6908748,
+          124.8309218,
+          13.75
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 3.85
+    },
+    {
+      "a": {
+        "key": "pack_Center_Cover_L_01_01",
+        "point": [
+          230.3091319,
+          140.8309273,
+          9.9
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Injector_Bracket_L_XL_XXL_01",
+        "point": [
+          -119.6908748,
+          140.830925,
+          13.75
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 3.85
+    },
+    {
+      "a": {
+        "key": "pack_Center_Cover_L_02_sharp_corner_01",
+        "point": [
+          740.0000003,
+          316.0,
+          20.25
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Center_Cover_L_03_01",
+        "point": [
+          390.0,
+          316.0,
+          8.25
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 12.0
+    },
+    {
+      "a": {
+        "key": "pack_Center_Cover_L_02_sharp_corner_01",
+        "point": [
+          747.0000003,
+          323.0,
+          20.25
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Center_Cover_L_03_01",
+        "point": [
+          397.0,
+          323.0,
+          8.25
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 12.0
+    },
+    {
+      "a": {
+        "key": "pack_Center_Cover_L_02_sharp_corner_01",
+        "point": [
+          726.2922762,
+          304.246357,
+          16.25
+        ],
+        "axis": [
+          -0.2588307,
+          0.9659227,
+          -0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_01_L_XL_01",
+        "point": [
+          27.8954521,
+          298.2631506,
+          16.25
+        ],
+        "axis": [
+          -0.2588179,
+          0.9659261,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 9e-05,
+      "after_radial_mm": 9e-05,
+      "axial_center_distance_mm": 6.19427
+    },
+    {
+      "a": {
+        "key": "pack_Center_Cover_L_02_sharp_corner_01",
+        "point": [
+          707.9657814,
+          271.6470548,
+          15.5
+        ],
+        "axis": [
+          0.9999982,
+          -0.0019134,
+          -0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_01_L_XL_01",
+        "point": [
+          13.9657663,
+          271.6355969,
+          15.5
+        ],
+        "axis": [
+          0.9999982,
+          -0.0019059,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 2e-05,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 6.0
+    },
+    {
+      "a": {
+        "key": "pack_Center_Cover_L_02_sharp_corner_01",
+        "point": [
+          690.7720194,
+          153.2134446,
+          19.9995883
+        ],
+        "axis": [
+          -0.1736501,
+          0.9848074,
+          5.94e-05
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_02_L_01",
+        "point": [
+          -6.8844724,
+          139.922646,
+          19.9996319
+        ],
+        "axis": [
+          -0.1736454,
+          0.9848082,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.00085,
+      "after_radial_mm": 0.00085,
+      "axial_center_distance_mm": 13.49583
+    },
+    {
+      "a": {
+        "key": "pack_Center_Cover_L_02_sharp_corner_01",
+        "point": [
+          673.2057068,
+          151.1398854,
+          19.9978797
+        ],
+        "axis": [
+          -0.1736189,
+          0.9848129,
+          -3.1e-05
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_02_L_01",
+        "point": [
+          -24.7630171,
+          139.6199578,
+          19.9978851
+        ],
+        "axis": [
+          -0.1736478,
+          0.9848078,
+          1.5e-06
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0005,
+      "after_radial_mm": 0.0005,
+      "axial_center_distance_mm": 11.69764
+    },
+    {
+      "a": {
+        "key": "pack_Center_Cover_L_02_sharp_corner_01",
+        "point": [
+          707.757702,
+          162.64725,
+          15.5
+        ],
+        "axis": [
+          0.9999982,
+          -0.0019096,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_02_L_01",
+        "point": [
+          13.7577025,
+          162.6358,
+          15.5
+        ],
+        "axis": [
+          0.9999982,
+          -0.0019071,
+          -0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 6.00001
+    },
+    {
+      "a": {
+        "key": "pack_Center_Cover_L_02_sharp_corner_01",
+        "point": [
+          690.7720194,
+          153.2134446,
+          19.9995883
+        ],
+        "axis": [
+          -0.1736501,
+          0.9848074,
+          5.94e-05
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_05_L_01",
+        "point": [
+          -8.1788801,
+          147.2635947,
+          19.9996343
+        ],
+        "axis": [
+          -0.1736483,
+          0.9848077,
+          8e-07
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.00041,
+      "after_radial_mm": 0.00041,
+      "axial_center_distance_mm": 6.04163
+    },
+    {
+      "a": {
+        "key": "pack_Center_Cover_L_02_sharp_corner_01",
+        "point": [
+          673.2057068,
+          151.1398854,
+          19.9978797
+        ],
+        "axis": [
+          -0.1736189,
+          0.9848129,
+          -3.1e-05
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_05_L_01",
+        "point": [
+          -25.7523833,
+          145.2309452,
+          19.9978854
+        ],
+        "axis": [
+          -0.1736477,
+          0.9848078,
+          -1.3e-06
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.00026,
+      "after_radial_mm": 0.00026,
+      "axial_center_distance_mm": 6.0001
+    },
+    {
+      "a": {
+        "key": "pack_Center_Cover_L_03_01",
+        "point": [
+          436.2589491,
+          259.0065844,
+          6.25
+        ],
+        "axis": [
+          0.9571347,
+          0.289643,
+          -0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_01_L_XL_01",
+        "point": [
+          76.2090317,
+          255.9653383,
+          6.25
+        ],
+        "axis": [
+          0.9571352,
+          0.2896414,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 10.5
+    },
+    {
+      "a": {
+        "key": "pack_Center_Cover_L_03_01",
+        "point": [
+          459.4303366,
+          182.4357825,
+          6.25
+        ],
+        "axis": [
+          0.9571347,
+          0.289643,
+          -0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_02_L_01",
+        "point": [
+          99.3804271,
+          179.3945418,
+          6.25
+        ],
+        "axis": [
+          0.9571353,
+          0.2896411,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 10.49999
+    },
+    {
+      "a": {
+        "key": "pack_Clamp_X2_01",
+        "point": [
+          -83.9842319,
+          113.2592108,
+          77.01
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_05_L_01",
+        "point": [
+          -83.9842319,
+          113.2592108,
+          72.5
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 4.51
+    },
+    {
+      "a": {
+        "key": "pack_Clamp_X2_01",
+        "point": [
+          -126.323126,
+          62.6376108,
+          77.01
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_05_L_01",
+        "point": [
+          -126.323126,
+          62.6376108,
+          72.5
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 4.51
+    },
+    {
+      "a": {
+        "key": "pack_Clippard_Base_GB1_01",
+        "point": [
+          34.264174,
+          179.0646598,
+          83.6
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_02_L_01",
+        "point": [
+          34.264174,
+          179.0646598,
+          72.5
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 11.1
+    },
+    {
+      "a": {
+        "key": "pack_Clippard_Base_GB1_01",
+        "point": [
+          77.2641319,
+          179.0216472,
+          83.6
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_02_L_01",
+        "point": [
+          77.2641319,
+          179.0216472,
+          72.5
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 11.1
+    },
+    {
+      "a": {
+        "key": "pack_Clippard_Base_GB1_01",
+        "point": [
+          55.7641319,
+          179.0216472,
+          77.6
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_01_L_XL_01",
+        "point": [
+          55.7641319,
+          179.0216472,
+          72.5
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 5.1
+    },
+    {
+      "a": {
+        "key": "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01",
+        "point": [
+          649.4,
+          370.2934648,
+          54.9768135
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_HGA_L_XL_XXL_01",
+        "point": [
+          14.9,
+          130.2934626,
+          54.9768319
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 2e-05,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 65.50002
+    },
+    {
+      "a": {
+        "key": "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01",
+        "point": [
+          649.4,
+          370.2934648,
+          54.9768135
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_HGA_L_XL_XXL_01",
+        "point": [
+          -31.6,
+          130.2934626,
+          54.9768319
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 2e-05,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 19.00002
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_01_01",
+        "point": [
+          927.3492289,
+          -316.8795986,
+          82.9999976
+        ],
+        "axis": [
+          0.104527,
+          0.994522,
+          -0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_04_01",
+        "point": [
+          926.5652469,
+          -324.3387376,
+          83.0
+        ],
+        "axis": [
+          0.1045263,
+          0.9945221,
+          -0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 7.50023
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_01_01",
+        "point": [
+          916.4904,
+          -408.0,
+          111.5
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_04_01",
+        "point": [
+          913.4904,
+          -408.0,
+          111.5
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 3.0
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_01_01",
+        "point": [
+          1020.661214,
+          -441.5652429,
+          83.0
+        ],
+        "axis": [
+          0.9945219,
+          -0.1045285,
+          -0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "point": [
+          1028.1204688,
+          -442.3492342,
+          83.0000012
+        ],
+        "axis": [
+          0.9945218,
+          -0.1045294,
+          6e-07
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 7.50034
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_01_01",
+        "point": [
+          1028.3874,
+          -430.1611195,
+          88.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "point": [
+          1028.3873755,
+          -430.1611054,
+          88.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 3e-05,
+      "after_radial_mm": 3e-05,
+      "axial_center_distance_mm": 0.0
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_01_01",
+        "point": [
+          936.9904057,
+          -428.5,
+          111.5
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "point": [
+          936.9904057,
+          -431.5,
+          111.5
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 3.0
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_01_01",
+        "point": [
+          1028.3874,
+          -430.1611195,
+          88.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_03_L_01",
+        "point": [
+          113.3873922,
+          -0.1610611,
+          72.5
+        ],
+        "axis": [
+          -0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 6e-05,
+      "after_radial_mm": 6e-05,
+      "axial_center_distance_mm": 15.5
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_01_01",
+        "point": [
+          984.496,
+          -340.4062997,
+          88.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_02_L_01",
+        "point": [
+          69.496,
+          89.5937108,
+          72.5
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 15.5
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_01_01",
+        "point": [
+          1016.8605,
+          -380.1887319,
+          88.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_02_L_01",
+        "point": [
+          101.8605111,
+          49.8112681,
+          72.5
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 15.5
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "point": [
+          903.4347576,
+          -535.661213,
+          83.0
+        ],
+        "axis": [
+          0.1045265,
+          0.9945221,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_03_01",
+        "point": [
+          902.6507648,
+          -543.1204561,
+          82.9999976
+        ],
+        "axis": [
+          0.1045272,
+          0.994522,
+          1e-07
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 7.50033
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "point": [
+          920.8175126,
+          -543.0967236,
+          86.0
+        ],
+        "axis": [
+          0.9986295,
+          0.0523361,
+          -0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_03_01",
+        "point": [
+          914.5355673,
+          -543.4259543,
+          86.0
+        ],
+        "axis": [
+          0.998629,
+          0.0523462,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 6.29057
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "point": [
+          920.8198622,
+          -543.1155066,
+          100.5
+        ],
+        "axis": [
+          0.9986295,
+          0.0523357,
+          -0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_03_01",
+        "point": [
+          914.5360531,
+          -543.4448267,
+          100.5
+        ],
+        "axis": [
+          0.9986296,
+          0.0523339,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 6.29243
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "point": [
+          920.8222651,
+          -543.1342907,
+          115.0
+        ],
+        "axis": [
+          0.9986296,
+          0.0523349,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_03_01",
+        "point": [
+          914.5365411,
+          -543.4637078,
+          115.0
+        ],
+        "axis": [
+          0.9986294,
+          0.0523377,
+          -0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 6.29435
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "point": [
+          915.80795,
+          -452.0,
+          111.5
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_03_01",
+        "point": [
+          913.4904,
+          -452.0,
+          111.5
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 2.31755
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "point": [
+          1028.3873755,
+          -430.1611054,
+          88.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_03_L_01",
+        "point": [
+          113.3873922,
+          -0.1610611,
+          72.5
+        ],
+        "axis": [
+          -0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 5e-05,
+      "after_radial_mm": 5e-05,
+      "axial_center_distance_mm": 15.5
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "point": [
+          1005.2099614,
+          -498.6941346,
+          88.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_03_L_01",
+        "point": [
+          90.2099727,
+          -68.6941346,
+          72.5
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 15.5
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "point": [
+          998.0548796,
+          -506.9723748,
+          86.0
+        ],
+        "axis": [
+          0.6755907,
+          0.7372769,
+          -0.0
+        ]
+      },
+      "b": {
+        "key": "pack_NFilter_non_remove_ver_01",
+        "point": [
+          77.8424662,
+          -82.6607148,
+          86.0
+        ],
+        "axis": [
+          0.6755916,
+          0.7372761,
+          -0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 7.71534
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "point": [
+          998.0548796,
+          -506.9723748,
+          115.0
+        ],
+        "axis": [
+          0.6755907,
+          0.7372769,
+          -0.0
+        ]
+      },
+      "b": {
+        "key": "pack_NFilter_non_remove_ver_01",
+        "point": [
+          77.8424662,
+          -82.6607148,
+          115.0
+        ],
+        "axis": [
+          0.6755916,
+          0.7372761,
+          -0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 7.71534
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "point": [
+          998.0548796,
+          -506.9723748,
+          100.5
+        ],
+        "axis": [
+          0.6755907,
+          0.7372769,
+          -0.0
+        ]
+      },
+      "b": {
+        "key": "pack_NFilter_non_remove_ver_01",
+        "point": [
+          77.8424662,
+          -82.6607148,
+          100.5
+        ],
+        "axis": [
+          0.6755916,
+          0.7372761,
+          -0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 7.71534
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "point": [
+          920.8175126,
+          -543.0967236,
+          86.0
+        ],
+        "axis": [
+          0.9986295,
+          0.0523361,
+          -0.0
+        ]
+      },
+      "b": {
+        "key": "pack_NFilter_non_remove_ver_01",
+        "point": [
+          13.0326999,
+          -112.7185975,
+          86.0
+        ],
+        "axis": [
+          0.9986296,
+          0.0523354,
+          -0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 7.22509
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "point": [
+          920.8198622,
+          -543.1155066,
+          100.5
+        ],
+        "axis": [
+          0.9986295,
+          0.0523357,
+          -0.0
+        ]
+      },
+      "b": {
+        "key": "pack_NFilter_non_remove_ver_01",
+        "point": [
+          13.0369014,
+          -112.7372767,
+          100.5
+        ],
+        "axis": [
+          0.9986295,
+          0.0523366,
+          -0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 7.22694
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_02_01",
+        "point": [
+          920.8222651,
+          -543.1342907,
+          115.0
+        ],
+        "axis": [
+          0.9986296,
+          0.0523349,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_NFilter_non_remove_ver_01",
+        "point": [
+          13.0411006,
+          -112.7559613,
+          115.0
+        ],
+        "axis": [
+          0.9986293,
+          0.0523405,
+          -0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 7.22874
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_03_01",
+        "point": [
+          809.338786,
+          -418.4347571,
+          83.0
+        ],
+        "axis": [
+          0.9945219,
+          -0.1045285,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_04_01",
+        "point": [
+          801.8795426,
+          -417.6507667,
+          83.000001
+        ],
+        "axis": [
+          0.9945218,
+          -0.1045295,
+          -5e-07
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 7.50033
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_03_01",
+        "point": [
+          892.9904057,
+          -431.5,
+          111.5
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_04_01",
+        "point": [
+          892.9904057,
+          -428.5,
+          111.5
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 3.0
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_03_01",
+        "point": [
+          802.9567783,
+          -447.4081273,
+          88.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_04_L_01",
+        "point": [
+          -112.0432176,
+          -17.4081319,
+          72.5
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 15.5
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_03_01",
+        "point": [
+          836.2899789,
+          -511.6177444,
+          88.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_04_L_01",
+        "point": [
+          -78.710026,
+          -81.6177681,
+          72.5
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 2e-05,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 15.5
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_03_01",
+        "point": [
+          914.5360531,
+          -543.4448267,
+          100.5
+        ],
+        "axis": [
+          0.9986296,
+          0.0523339,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_NFilter_non_remove_ver_01",
+        "point": [
+          13.0369014,
+          -112.7372767,
+          100.5
+        ],
+        "axis": [
+          0.9986295,
+          0.0523366,
+          -0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 3e-05,
+      "after_radial_mm": 3e-05,
+      "axial_center_distance_mm": 13.51938
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_03_01",
+        "point": [
+          914.5355673,
+          -543.4259543,
+          86.0
+        ],
+        "axis": [
+          0.998629,
+          0.0523462,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_NFilter_non_remove_ver_01",
+        "point": [
+          13.0326999,
+          -112.7185975,
+          86.0
+        ],
+        "axis": [
+          0.9986296,
+          0.0523354,
+          -0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.00014,
+      "after_radial_mm": 0.00014,
+      "axial_center_distance_mm": 13.51566
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_03_01",
+        "point": [
+          914.5365411,
+          -543.4637078,
+          115.0
+        ],
+        "axis": [
+          0.9986294,
+          0.0523377,
+          -0.0
+        ]
+      },
+      "b": {
+        "key": "pack_NFilter_non_remove_ver_01",
+        "point": [
+          13.0411006,
+          -112.7559613,
+          115.0
+        ],
+        "axis": [
+          0.9986293,
+          0.0523405,
+          -0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 2e-05,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 13.52309
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_04_01",
+        "point": [
+          811.3193935,
+          -384.0973003,
+          88.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_05_L_01",
+        "point": [
+          -103.6806108,
+          45.9026892,
+          72.5
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 15.5
+    },
+    {
+      "a": {
+        "key": "pack_Cyclotron_NOT_REMOVABLE_L_04_01",
+        "point": [
+          854.71335,
+          -333.967474,
+          88.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_05_L_01",
+        "point": [
+          -60.2866681,
+          96.032526,
+          72.5
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 2e-05,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 15.5
+    },
+    {
+      "a": {
+        "key": "pack_Dale_RH_50_01",
+        "point": [
+          26.6348895,
+          180.1362324,
+          78.6250627
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Ion_Arm_L_XL_XXL_GB1_01",
+        "point": [
+          -122.655,
+          440.3020065,
+          154.2000108
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.2,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.18704,
+      "after_radial_mm": 0.18704,
+      "axial_center_distance_mm": 3.2
+    },
+    {
+      "a": {
+        "key": "pack_Dale_RH_50_01",
+        "point": [
+          26.6348895,
+          220.1362333,
+          100.0650624
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Ion_Arm_L_XL_XXL_GB1_01",
+        "point": [
+          -122.655,
+          480.4239997,
+          176.2000108
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.2,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.18711,
+      "after_radial_mm": 0.18711,
+      "axial_center_distance_mm": 3.2
+    },
+    {
+      "a": {
+        "key": "pack_Injector_Block_GB1_01",
+        "point": [
+          -160.1359757,
+          -145.4944845,
+          55.5
+        ],
+        "axis": [
+          0.7689859,
+          0.6392658,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_04_L_01",
+        "point": [
+          -106.1147311,
+          -100.5860707,
+          55.5
+        ],
+        "axis": [
+          0.7689853,
+          0.6392665,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 10.25011
+    },
+    {
+      "a": {
+        "key": "pack_Injector_Block_GB1_01",
+        "point": [
+          -160.1359798,
+          -145.4944797,
+          6.4084907
+        ],
+        "axis": [
+          0.7689859,
+          0.6392658,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_04_L_01",
+        "point": [
+          -106.1147311,
+          -100.5860707,
+          6.4084824
+        ],
+        "axis": [
+          0.7689853,
+          0.6392665,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 10.25011
+    },
+    {
+      "a": {
+        "key": "pack_Injector_Block_GB1_01",
+        "point": [
+          -172.921301,
+          -130.1147774,
+          55.5
+        ],
+        "axis": [
+          0.7689854,
+          0.6392663,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_04_L_01",
+        "point": [
+          -118.9000528,
+          -85.2063466,
+          55.5
+        ],
+        "axis": [
+          0.7689871,
+          0.6392643,
+          -0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 4e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 10.25012
+    },
+    {
+      "a": {
+        "key": "pack_Injectors_L_XL_XXL_GB1_01",
+        "point": [
+          -304.3919306,
+          -80.6,
+          71.4999681
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_PowerCell_L_01",
+        "point": [
+          198.6080789,
+          533.15,
+          71.4999789
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 3e-05,
+      "axial_center_distance_mm": 15.25
+    },
+    {
+      "a": {
+        "key": "pack_Injectors_L_XL_XXL_GB1_01",
+        "point": [
+          -304.3999997,
+          -80.6,
+          36.5
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_PowerCell_L_01",
+        "point": [
+          198.6,
+          533.15,
+          36.5
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 15.25
+    },
+    {
+      "a": {
+        "key": "pack_ION_ARM_CAP_L_XL_XXL_GB1_01",
+        "point": [
+          -132.655,
+          479.363002,
+          219.6
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Ion_Arm_L_XL_XXL_GB1_01",
+        "point": [
+          -132.6549827,
+          479.363,
+          214.35
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 2e-05,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 5.25
+    },
+    {
+      "a": {
+        "key": "pack_ION_ARM_CAP_L_XL_XXL_GB1_01",
+        "point": [
+          -132.655,
+          441.363002,
+          219.6
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Ion_Arm_L_XL_XXL_GB1_01",
+        "point": [
+          -132.6549827,
+          441.363,
+          214.35
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 2e-05,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 5.25
+    },
+    {
+      "a": {
+        "key": "pack_Ion_Arm_L_XL_XXL_GB1_01",
+        "point": [
+          -142.655,
+          451.213,
+          208.2000108
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Sage_RH_25_01",
+        "point": [
+          337.036174,
+          347.7046724,
+          65.7300196
+        ],
+        "axis": [
+          -0.0,
+          -1e-07,
+          -1.0
+        ]
+      },
+      "max_radial_mm": 0.08,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.07246,
+      "after_radial_mm": 0.07246,
+      "axial_center_distance_mm": 3.20005
+    },
+    {
+      "a": {
+        "key": "pack_Ion_Arm_L_XL_XXL_GB1_01",
+        "point": [
+          -142.655,
+          469.5130065,
+          188.2000108
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Sage_RH_25_01",
+        "point": [
+          356.8761791,
+          329.444681,
+          65.7300212
+        ],
+        "axis": [
+          -0.0,
+          -1e-07,
+          -1.0
+        ]
+      },
+      "max_radial_mm": 0.08,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.07248,
+      "after_radial_mm": 0.07248,
+      "axial_center_distance_mm": 3.20005
+    },
+    {
+      "a": {
+        "key": "pack_SynchGen_01_L_XL_01",
+        "point": [
+          31.5304254,
+          188.0267514,
+          60.0
+        ],
+        "axis": [
+          0.2896423,
+          0.957135,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_02_L_01",
+        "point": [
+          30.6035708,
+          184.9639286,
+          60.0
+        ],
+        "axis": [
+          0.2896434,
+          0.9571346,
+          -0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 3.19999
+    },
+    {
+      "a": {
+        "key": "pack_SynchGen_01_L_XL_01",
+        "point": [
+          80.5334772,
+          188.1888488,
+          60.0
+        ],
+        "axis": [
+          -0.2896412,
+          0.9571353,
+          -0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_02_L_01",
+        "point": [
+          81.4603362,
+          185.1260126,
+          60.0
+        ],
+        "axis": [
+          -0.2896448,
+          0.9571342,
+          -0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 3.20001
+    },
+    {
+      "a": {
+        "key": "pack_SynchGen_01_L_XL_01",
+        "point": [
+          31.5304254,
+          188.0267514,
+          20.0
+        ],
+        "axis": [
+          0.2896423,
+          0.957135,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_02_L_01",
+        "point": [
+          30.6035708,
+          184.9639286,
+          20.0
+        ],
+        "axis": [
+          0.2896434,
+          0.9571346,
+          -0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 3.19999
+    },
+    {
+      "a": {
+        "key": "pack_SynchGen_01_L_XL_01",
+        "point": [
+          80.5334772,
+          188.1888488,
+          20.0
+        ],
+        "axis": [
+          -0.2896412,
+          0.9571353,
+          -0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_02_L_01",
+        "point": [
+          81.4603362,
+          185.1260126,
+          20.0
+        ],
+        "axis": [
+          -0.2896448,
+          0.9571342,
+          -0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 3.20001
+    },
+    {
+      "a": {
+        "key": "pack_SynchGen_01_L_XL_01",
+        "point": [
+          41.0776273,
+          271.0226273,
+          72.5
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_VacHose_base_01",
+        "point": [
+          41.0776152,
+          271.022614,
+          81.375
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 2e-05,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 8.875
+    },
+    {
+      "a": {
+        "key": "pack_SynchGen_01_L_XL_01",
+        "point": [
+          41.0776273,
+          271.0226273,
+          72.5
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_VacHose_mount_01",
+        "point": [
+          41.0776266,
+          271.0226191,
+          89.25
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 16.75
+    },
+    {
+      "a": {
+        "key": "pack_SynchGen_02_L_01",
+        "point": [
+          -6.8844724,
+          139.922646,
+          19.9996319
+        ],
+        "axis": [
+          -0.1736454,
+          0.9848082,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_05_L_01",
+        "point": [
+          -8.1788801,
+          147.2635947,
+          19.9996343
+        ],
+        "axis": [
+          -0.1736483,
+          0.9848077,
+          8e-07
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 2e-05,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 7.45419
+    },
+    {
+      "a": {
+        "key": "pack_SynchGen_02_L_01",
+        "point": [
+          -13.0,
+          139.92265,
+          19.0
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_05_L_01",
+        "point": [
+          -13.0,
+          144.92265,
+          19.0
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 5.0
+    },
+    {
+      "a": {
+        "key": "pack_SynchGen_02_L_01",
+        "point": [
+          -13.0,
+          139.92265,
+          42.0
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_05_L_01",
+        "point": [
+          -13.0,
+          144.92265,
+          42.0
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 5.0
+    },
+    {
+      "a": {
+        "key": "pack_SynchGen_02_L_01",
+        "point": [
+          -24.7630171,
+          139.6199578,
+          19.9978851
+        ],
+        "axis": [
+          -0.1736478,
+          0.9848078,
+          1.5e-06
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_05_L_01",
+        "point": [
+          -25.7523833,
+          145.2309452,
+          19.9978854
+        ],
+        "axis": [
+          -0.1736477,
+          0.9848078,
+          -1.3e-06
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 5.69755
+    },
+    {
+      "a": {
+        "key": "pack_SynchGen_02_L_01",
+        "point": [
+          145.23085,
+          15.0,
+          10.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_03_L_01",
+        "point": [
+          139.5043,
+          15.0,
+          10.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 5.72655
+    },
+    {
+      "a": {
+        "key": "pack_SynchGen_02_L_01",
+        "point": [
+          145.23085,
+          15.0,
+          37.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_03_L_01",
+        "point": [
+          139.5043,
+          15.0,
+          37.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 5.72655
+    },
+    {
+      "a": {
+        "key": "pack_SynchGen_03_L_01",
+        "point": [
+          -5.0,
+          -148.8845,
+          40.0
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_04_L_01",
+        "point": [
+          -5.0,
+          -139.88675,
+          40.0
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 8.99775
+    },
+    {
+      "a": {
+        "key": "pack_SynchGen_03_L_01",
+        "point": [
+          -5.0,
+          -148.3845,
+          15.0
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_04_L_01",
+        "point": [
+          -5.0,
+          -139.88675,
+          15.0
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 8.49775
+    },
+    {
+      "a": {
+        "key": "pack_SynchGen_04_L_01",
+        "point": [
+          -144.19125,
+          -20.0,
+          10.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_05_L_01",
+        "point": [
+          -138.83185,
+          -20.0,
+          10.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 5.3594
+    },
+    {
+      "a": {
+        "key": "pack_SynchGen_04_L_01",
+        "point": [
+          -144.19125,
+          -20.0,
+          33.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_SynchGen_05_L_01",
+        "point": [
+          -138.83185,
+          -20.0,
+          33.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 0.0,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 5.3594
+    },
+    {
+      "a": {
+        "key": "pack_V_Hook_Base_01",
+        "point": [
+          171.695,
+          370.6827426,
+          77.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_V_Hook_Track_GB1_01",
+        "point": [
+          179.695,
+          370.6827322,
+          77.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 8.0
+    },
+    {
+      "a": {
+        "key": "pack_V_Hook_Base_01",
+        "point": [
+          171.695,
+          400.3827447,
+          77.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_V_Hook_Track_GB1_01",
+        "point": [
+          179.695,
+          400.3827392,
+          77.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 8.0
+    },
+    {
+      "a": {
+        "key": "pack_VacHose_base_01",
+        "point": [
+          41.0776152,
+          271.022614,
+          81.375
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_VacHose_mount_01",
+        "point": [
+          41.0776266,
+          271.0226191,
+          89.25
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1e-05,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 7.875
+    },
+    {
+      "a": {
+        "key": "pack_Booster_box_01_L_01",
+        "point": [
+          293.4731,
+          819.2,
+          6.25
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Center_Cover_L_01_01",
+        "point": [
+          285.5180935,
+          185.063,
+          6.25
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 7.95501,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 14.99998
+    },
+    {
+      "a": {
+        "key": "pack_Booster_box_01_L_01",
+        "point": [
+          316.7320727,
+          819.2,
+          6.25
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Center_Cover_L_01_01",
+        "point": [
+          308.7770668,
+          192.063,
+          6.25
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 7.95501,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 7.99998
+    },
+    {
+      "a": {
+        "key": "pack_Booster_box_01_L_01",
+        "point": [
+          261.8910319,
+          819.2,
+          6.25
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Center_Cover_L_01_01",
+        "point": [
+          253.9360319,
+          185.063,
+          6.25
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 7.955,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 14.99998
+    },
+    {
+      "a": {
+        "key": "pack_Booster_box_01_L_01",
+        "point": [
+          327.7,
+          831.5263333,
+          14.5
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Center_Cover_L_02_sharp_corner_01",
+        "point": [
+          676.245,
+          212.3893309,
+          14.5
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 10.863,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 6.49999
+    },
+    {
+      "a": {
+        "key": "pack_Booster_box_01_L_01",
+        "point": [
+          327.7,
+          940.5263333,
+          14.5
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Center_Cover_L_02_sharp_corner_01",
+        "point": [
+          676.245,
+          321.3893444,
+          14.5
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 10.86301,
+      "after_radial_mm": 4e-05,
+      "axial_center_distance_mm": 6.49999
+    },
+    {
+      "a": {
+        "key": "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01",
+        "point": [
+          593.1346386,
+          245.19725,
+          20.5
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Center_Cover_L_02_sharp_corner_01",
+        "point": [
+          735.1796374,
+          322.52255,
+          20.5
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 7.955,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 13.5377
+    },
+    {
+      "a": {
+        "key": "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01",
+        "point": [
+          553.1346386,
+          245.19725,
+          20.5
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Center_Cover_L_02_sharp_corner_01",
+        "point": [
+          695.1796374,
+          329.52255,
+          20.5
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 7.955,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 6.5377
+    },
+    {
+      "a": {
+        "key": "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01",
+        "point": [
+          621.5205904,
+          244.82385,
+          6.25
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Center_Cover_L_03_01",
+        "point": [
+          413.5655778,
+          321.505,
+          6.25
+        ],
+        "axis": [
+          -0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 7.95501,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 14.18185
+    },
+    {
+      "a": {
+        "key": "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01",
+        "point": [
+          661.5205904,
+          244.82385,
+          6.25
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Center_Cover_L_03_01",
+        "point": [
+          453.5655778,
+          321.505,
+          6.25
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 7.95501,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 14.18185
+    },
+    {
+      "a": {
+        "key": "pack_Booster_box_02_L_01",
+        "point": [
+          202.2999892,
+          1054.5,
+          72.85
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Ion_Arm_L_XL_XXL_GB1_01",
+        "point": [
+          -155.6549827,
+          435.363,
+          80.2
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 13.46426,
+      "after_radial_mm": 3e-05,
+      "axial_center_distance_mm": 7.35
+    },
+    {
+      "a": {
+        "key": "pack_Booster_box_02_L_01",
+        "point": [
+          228.5,
+          1054.5,
+          72.85
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Ion_Arm_L_XL_XXL_GB1_01",
+        "point": [
+          -129.4549889,
+          435.363,
+          80.2
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 13.46427,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 7.35
+    },
+    {
+      "a": {
+        "key": "pack_Booster_box_02_L_01",
+        "point": [
+          202.2999892,
+          1099.4999833,
+          72.85
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Ion_Arm_L_XL_XXL_GB1_01",
+        "point": [
+          -155.6549827,
+          480.363,
+          80.2
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 13.46428,
+      "after_radial_mm": 4e-05,
+      "axial_center_distance_mm": 7.35
+    },
+    {
+      "a": {
+        "key": "pack_Booster_box_02_L_01",
+        "point": [
+          228.5,
+          1099.4999833,
+          72.85
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Ion_Arm_L_XL_XXL_GB1_01",
+        "point": [
+          -129.4549889,
+          480.363,
+          80.2
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 13.46429,
+      "after_radial_mm": 4e-05,
+      "axial_center_distance_mm": 7.35
+    },
+    {
+      "a": {
+        "key": "pack_Booster_Tube_PART1_L_01",
+        "point": [
+          -168.8535165,
+          1118.3630087,
+          78.7157689
+        ],
+        "axis": [
+          1.9e-06,
+          -3e-06,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Booster_box_02_L_01",
+        "point": [
+          279.1014886,
+          1037.5,
+          72.85
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 3.48993,
+      "after_radial_mm": 6e-05,
+      "axial_center_distance_mm": 5.86577
+    },
+    {
+      "a": {
+        "key": "pack_Booster_Tube_PART2_L_01",
+        "point": [
+          -78.8535194,
+          1032.362992,
+          78.6657549
+        ],
+        "axis": [
+          -0.0,
+          4e-07,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Booster_box_01_L_01",
+        "point": [
+          279.1014886,
+          951.5,
+          72.85
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 3.55918,
+      "after_radial_mm": 3e-05,
+      "axial_center_distance_mm": 5.81575
+    },
+    {
+      "a": {
+        "key": "pack_Booster_Frame_L_XL_XXL_GB1_01",
+        "point": [
+          -0.693433,
+          76.8945333,
+          8.8799884
+        ],
+        "axis": [
+          6e-07,
+          1.7e-06,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Booster_Tube_PART1_L_01",
+        "point": [
+          -168.8535165,
+          1113.8325615,
+          137.1842374
+        ],
+        "axis": [
+          -1.9e-06,
+          -3.9e-06,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 14.61746,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 5.19575
+    },
+    {
+      "a": {
+        "key": "pack_Booster_Frame_L_XL_XXL_GB1_01",
+        "point": [
+          -0.6934314,
+          -50.8554764,
+          8.879971
+        ],
+        "axis": [
+          1e-07,
+          -2e-06,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Booster_Tube_PART2_L_01",
+        "point": [
+          -78.8535194,
+          986.0825649,
+          137.234243
+        ],
+        "axis": [
+          -0.0,
+          -2e-07,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 14.61747,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 5.14573
+    },
+    {
+      "a": {
+        "key": "pack_PPD_Type_1_01",
+        "point": [
+          -8.8842203,
+          -50.0360148,
+          -162.852677
+        ],
+        "axis": [
+          0.7071063,
+          0.7071072,
+          -7e-07
+        ]
+      },
+      "b": {
+        "key": "pack_Booster_box_01_L_01",
+        "point": [
+          308.3219546,
+          845.5295881,
+          117.4737232
+        ],
+        "axis": [
+          0.7071182,
+          -6e-07,
+          0.7070954
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 6.54342,
+      "after_radial_mm": 7e-05,
+      "axial_center_distance_mm": 13.74209
+    },
+    {
+      "a": {
+        "key": "pack_PPD_Type_1_01",
+        "point": [
+          -8.8842203,
+          -50.0360142,
+          -175.852677
+        ],
+        "axis": [
+          0.7071063,
+          0.7071072,
+          -7e-07
+        ]
+      },
+      "b": {
+        "key": "pack_Booster_box_01_L_01",
+        "point": [
+          308.3219546,
+          832.5295881,
+          117.4737232
+        ],
+        "axis": [
+          0.7071182,
+          -6e-07,
+          0.7070954
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 6.54342,
+      "after_radial_mm": 7e-05,
+      "axial_center_distance_mm": 13.74209
+    },
+    {
+      "a": {
+        "key": "pack_V_Hook_Base_01",
+        "point": [
+          171.695,
+          370.6827426,
+          77.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01",
+        "point": [
+          720.8,
+          279.8197472,
+          77.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 10.863,
+      "after_radial_mm": 0.0,
+      "axial_center_distance_mm": 8.85002
+    },
+    {
+      "a": {
+        "key": "pack_V_Hook_Base_01",
+        "point": [
+          171.695,
+          400.3827447,
+          77.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01",
+        "point": [
+          720.8,
+          309.5197346,
+          77.0
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 10.86301,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 8.85002
+    },
+    {
+      "a": {
+        "key": "pack_V_Hook_Base_01",
+        "point": [
+          171.695,
+          399.4201815,
+          69.5
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01",
+        "point": [
+          720.8,
+          308.5571731,
+          69.5
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 10.86301,
+      "after_radial_mm": 1e-05,
+      "axial_center_distance_mm": 8.85002
+    },
+    {
+      "a": {
+        "key": "pack_Injectors_L_XL_XXL_GB1_01",
+        "point": [
+          -294.0639,
+          -196.5320717,
+          71.499967
+        ],
+        "axis": [
+          1.0,
+          -5e-07,
+          -3e-07
+        ]
+      },
+      "b": {
+        "key": "pack_Injector_Bracket_L_XL_XXL_01",
+        "point": [
+          -141.4409,
+          132.8309152,
+          71.4999648
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 10.86299,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 7.578
+    },
+    {
+      "a": {
+        "key": "pack_Injectors_L_XL_XXL_GB1_01",
+        "point": [
+          -294.06795,
+          -196.5320717,
+          36.5
+        ],
+        "axis": [
+          1.0,
+          -5e-07,
+          -0.0
+        ]
+      },
+      "b": {
+        "key": "pack_Injector_Bracket_L_XL_XXL_01",
+        "point": [
+          -141.4409,
+          132.8309152,
+          36.5
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.02,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 10.86299,
+      "after_radial_mm": 2e-05,
+      "axial_center_distance_mm": 7.58205
+    },
+    {
+      "a": {
+        "key": "pack_clippard_body_screws_01",
+        "point": [
+          13.5500091,
+          -16.2000039,
+          94.2
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Clippard_Base_GB1_01",
+        "point": [
+          77.2641319,
+          179.0216472,
+          83.6
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.06,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1.0037,
+      "after_radial_mm": 0.04999,
+      "axial_center_distance_mm": 13.4
+    },
+    {
+      "a": {
+        "key": "pack_clippard_body_screws_01",
+        "point": [
+          -29.3499909,
+          -16.2000039,
+          94.2
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Clippard_Base_GB1_01",
+        "point": [
+          34.264174,
+          179.0646598,
+          83.6
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.06,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1.04528,
+      "after_radial_mm": 0.04999,
+      "axial_center_distance_mm": 13.4
+    },
+    {
+      "a": {
+        "key": "pack_clippard_body_screws_01",
+        "point": [
+          -7.8999909,
+          -16.2000039,
+          101.95
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "b": {
+        "key": "pack_Clippard_Base_GB1_01",
+        "point": [
+          55.7641319,
+          179.0216472,
+          77.6
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "max_radial_mm": 0.06,
+      "max_axis_angle_deg": 0.5,
+      "before_radial_mm": 1.00175,
+      "after_radial_mm": 0.0215,
+      "axial_center_distance_mm": 27.15
+    }
+  ]
+}

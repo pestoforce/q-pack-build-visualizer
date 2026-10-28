@@ -39,45 +39,116 @@ const pointAt = (pose, point) => {
   return [rx * Math.cos(z) - ry * Math.sin(z),
     rx * Math.sin(z) + ry * Math.cos(z), zz].map((v, i) => v + pose.translation_mm[i]);
 };
+const mountingAudit = read('scripts/pack-mounting-constraints.json');
+assert.equal(mountingAudit.relationships.length, 57, 'Mounting audit relationship coverage');
+assert.equal(mountingAudit.constraints.length, 119, 'Mounting audit bore-segment coverage');
+const checkMountingConstraints = (audit, getPose) => {
+for (const constraint of audit.constraints) {
+  const anchors = [constraint.a, constraint.b].map(anchor => {
+    const pose = getPose(anchor.key);
+    const origin = pointAt(pose, [0, 0, 0]);
+    const vector = pointAt(pose, anchor.axis).map((v, i) => v - origin[i]);
+    const length = Math.hypot(...vector);
+    return { point: pointAt(pose, anchor.point), axis: vector.map(v => v / length) };
+  });
+  const [a, b] = anchors;
+  const delta = b.point.map((v, i) => v - a.point[i]);
+  const axial = delta.reduce((sum, v, i) => sum + v * a.axis[i], 0);
+  const radial = Math.hypot(...delta.map((v, i) => v - axial * a.axis[i]));
+  const cosine = Math.abs(a.axis.reduce((sum, v, i) => sum + v * b.axis[i], 0));
+  const label = `${constraint.a.key} / ${constraint.b.key}`;
+  assert.ok(radial <= constraint.max_radial_mm, `${label}: screw axes offset by ${radial}mm`);
+  assert.ok(cosine >= Math.cos(constraint.max_axis_angle_deg * Math.PI / 180),
+    `${label}: screw axes have different directions`);
+  near(Math.abs(axial), constraint.axial_center_distance_mm, `${label}: seating depth changed`, .03);
+}
+};
+checkMountingConstraints(mountingAudit, key => packPose(key.slice(5)));
+const wandAudit = read('scripts/wand-mounting-constraints.json');
+assert.equal(wandAudit.constraints.length, 17, 'Wand mounting relationship coverage');
+checkMountingConstraints(wandAudit, wandPose);
+const loom = packPose('Wand_loom_panel_GB1_01');
+loom.translation_mm.forEach((value, i) =>
+  near(value, [-46.3236364, 38.1329347, 0][i], 'Loom panel must slide into the generator dovetail', .001));
+for (const suffix of ['', '_2']) {
+  const base = wandPose(`left_big_knob${suffix}`);
+  const cap = wandPose(`left_small_knob${suffix}`);
+  pointAt(cap, [-44, 11.5, 23]).forEach((value, i) =>
+    near(value, pointAt(base, [-44, -29.5, 23])[i], 'Left dial cap must seat on its eccentric base screw'));
+  near(pointAt(base, [-38, -36.5, 23])[0], -38, 'Left dial base must contact body wall');
+}
+near(pointAt(wandPose('heat_sink'), [38.86541748, 0, 0])[0], 38, 'Heat sink must contact body wall');
+near(pointAt(wandPose('rear_box'), [100, 60, 0])[1], -64.5, 'Rear box must sit outside body rear face');
+near(pointAt(wandPose('rear_fitting'), [48.36999, -77, 42.85])[2], 42.85,
+  'Rear hose nut must seat on box top');
+for (const i of [1, 2]) {
+  assert.deepEqual(wandPose(`banjo_fake_screw_${i}`).rotation_rad, wandPose(`banjo_main_${i}`).rotation_rad);
+  assert.deepEqual(wandPose(`banjo_fake_screw_${i}`).translation_mm, wandPose(`banjo_main_${i}`).translation_mm);
+}
+const frontBanjo = wandPose('banjo_main_2');
+pointAt(frontBanjo, [0, -5, 7.5]).forEach((value, i) =>
+  near(value, [42.85, 95, 13.89][i], 'Front banjo must seat on rear ear, not the rear box'));
+assert.ok(pointAt(frontBanjo, [0, 0, 28.4])[2] < 0, 'Front banjo outlet must hang below handle');
 const hga = packPose('HGA_L_XL_XXL_01');
+const topShellPoint = p => [p[0] - 7.955, p[1] + 10.863, p[2]];
 pointAt(hga, [-46.6, 130.293467, 54.976828]).forEach((v, i) =>
-  near(v, [103.4, 450.293472, 54.976828][i], 'HGA base hole must meet gearbox side hole'));
+  near(v, topShellPoint([103.4, 450.293472, 54.976828])[i], 'HGA base hole must meet gearbox side hole'));
 const lens = packPose('Powercell_Lens_01');
 near(lens.bounds_mm[0][2], 101.6, 'Lens must sit on front aperture rim');
 near(lens.bounds_mm[1][2] - lens.bounds_mm[0][2], 2.5, 'Lens must remain flat in XY');
 for (const [x, y] of [[-159.9, 267.788736], [-145.7, 366.788736]]) {
-  assert.ok(x > lens.bounds_mm[0][0] && x < lens.bounds_mm[1][0], 'Lens must cover aperture width');
-  assert.ok(y > lens.bounds_mm[0][1] && y < lens.bounds_mm[1][1], 'Lens must cover aperture length');
+  assert.ok(x - 7.955 > lens.bounds_mm[0][0] && x - 7.955 < lens.bounds_mm[1][0], 'Lens must cover aperture width');
+  assert.ok(y + 10.863 > lens.bounds_mm[0][1] && y + 10.863 < lens.bounds_mm[1][1], 'Lens must cover aperture length');
 }
 const injectors = packPose('Injectors_L_XL_XXL_GB1_01');
 for (const [sourceX, z] of [[-304.4, 36.5], [-304.392, 71.5]]) {
   pointAt(injectors, [sourceX, -68.1, z]).forEach((v, i) =>
-    near(v, [sourceX + 153, 250.4, z][i], 'Injector flange must meet both powercell holes'));
+    near(v, topShellPoint([sourceX + 153, 250.4, z])[i], 'Injector flange must meet both powercell holes'));
 }
 for (let i = 0; i < 2; i++) {
   const suffix = `0${i + 1}`;
   const disk = packPose(`EDA_Disks_Flat_x2_${suffix}`);
   pointAt(disk, [-249.6, -110.5, 141.2]).forEach((v, axis) =>
-    near(v, [[-99.6, -60][i], 209.5, 141.2][axis], 'EDA disk must meet its booster hole'));
+    near(v, topShellPoint([[-99.6, -60][i], 209.5, 141.2])[axis], 'EDA disk must meet its booster hole'));
   const fitting = packPose(`Legris_Straight_${suffix}`);
-  near(fitting.bounds_mm[0][0], -18.8, 'Straight fitting must start at booster wall');
-  near((fitting.bounds_mm[0][1] + fitting.bounds_mm[1][1]) / 2, 209.4 + i * 19, 'Straight fitting socket Y');
+  near(fitting.bounds_mm[0][0], -26.755, 'Straight fitting must start at booster wall');
+  near((fitting.bounds_mm[0][1] + fitting.bounds_mm[1][1]) / 2, 220.263 + i * 19, 'Straight fitting socket Y');
   near((fitting.bounds_mm[0][2] + fitting.bounds_mm[1][2]) / 2, 95.2, 'Straight fitting socket Z');
 }
 const frame = packPose('Booster_Frame_L_XL_XXL_GB1_01');
-near(pointAt(frame, [-.69343, 0, 6.4])[0], -78.85398, 'Frame must share booster tube centerline');
-assert.ok(pointAt(frame, [-.69343, 0, 6.4])[2] >= 139.7, 'Frame underside must not be buried in booster tube');
-assert.ok(pointAt(frame, [-.69343, 0, 6.4])[2] < 140.1, 'Frame must not float above booster tube');
+near(pointAt(frame, [-.69343, 0, 6.4])[0], -78.85351, 'Frame must share booster tube centerline');
+const frameSeat = pointAt(frame, [-.69343, 0, 6.4]);
+assert.ok(frameSeat[2] >= 139.7, 'Frame underside must not be buried in booster tube');
+assert.ok(frameSeat[2] < 140.1, 'Frame must not float above booster tube');
 const ppd = packPose('PPD_Type_1_01');
+pointAt(packPose('Beamline_L_XL_XXL_01'), [-11.21147585, 173.49493408, 32.5])
+  .forEach((value, axis) => near(value, [-11.21147378, 173.49493956, 32.5][axis],
+    'Beamline base must center on the upper center-cover screw aperture beside the filler tube'));
 const shoulderNormal = [0, .791215, .611538];
 const dot = p => p.reduce((sum, v, i) => sum + v * shoulderNormal[i], 0);
-const shoulderPlane = dot([-60, 233.960896, 141.2]);
-const cut = [11.6104641, -50.14656448, -142.89071655];
-near(dot(pointAt(ppd, cut)), shoulderPlane, 'PPD angled end must meet booster shoulder');
-assert.ok(dot(pointAt(ppd, [0, -45, -194.182266])) > shoulderPlane,
-  'PPD body must be outside, not inside, the booster shoulder');
+const shoulderPlane = dot(topShellPoint([-60, 233.960896, 141.2]));
+const ppdBase = pointAt(ppd, [0, -45, -194.18226624]);
+near(ppdBase[0], -34.8799174, 'PPD axis must match booster-box 01 cylindrical cutout X');
+near(ppdBase[2], 136.0751106, 'PPD axis must match booster-box 01 cylindrical cutout Z');
+near(ppdBase[1], 195.063, 'PPD flat end must meet the cutout mouth with both side screws aligned');
+assert.ok(ppd.bounds_mm[0][1] - packPose('Beamline_L_XL_XXL_01').bounds_mm[1][1] > 3,
+  'PPD and beamline must have positive clearance, not intersect');
+const ppdEnd = pointAt(ppd, [0, -45, -144.18226624]);
+assert.ok(Math.abs(ppdEnd[0] - ppdBase[0]) < .001 &&
+  Math.abs(ppdEnd[2] - ppdBase[2]) < .001 &&
+  Math.abs(ppdEnd[1] - ppdBase[1] - 50) < .001,
+  'PPD axis must be parallel to pack Y, hanging straight down rather than normal to the slope');
+assert.ok(dot(ppdBase) < shoulderPlane - 40,
+  'PPD flat end must hang below the shoulder, not be mounted onto its upper face');
+const lowerTube = packPose('Booster_Tube_PART2_L_01');
+const rimCenter = pointAt(lowerTube, [-78.85350990, 972.72393799, 107.94999695]);
+near(rimCenter[0], -78.85351225, 'Tube axis must match booster opening X');
+near(rimCenter[2], 107.95, 'Tube axis must match booster opening Z');
+const tubeAxis = pointAt(lowerTube, [-78.85351, 1000, 107.95]);
+const tubeAxisNext = pointAt(lowerTube, [-78.85351, 1010, 107.95]);
+near(tubeAxisNext[2], tubeAxis[2], 'Tube must remain untilted so both underside screw axes match the box', .001);
 pointAt(packPose('crank_knob_01'), [130.853012, 104.999, .00048]).forEach((v, i) =>
-  near(v, [43.80214, 457.10002, 110.5][i], 'Crank knob must meet front gearbox seat'));
+  near(v, topShellPoint([43.80214, 457.10002, 110.5])[i], 'Crank knob must meet front gearbox seat'));
 for (let i = 1; i <= 3; i++) {
   const body = packPose(`legris_elbow_GEN1_full_body_0${i}`);
   const nut = packPose(`legris_elbow_GEN1_Nut_0${i}`);
@@ -96,7 +167,7 @@ for (const [stem, anchor, x] of [
 ]) {
   const seat = [x, 450.293457, 54.976826].map((v, i) => v + radial[i] / radialLength * 31.75);
   pointAt(packPose(stem), anchor).forEach((v, i) =>
-    near(v, seat[i], 'HGA elbow shoulder must meet the front cylinder surface'));
+    near(v, topShellPoint(seat)[i], 'HGA elbow shoulder must meet the front cylinder surface'));
 }
 for (const [stem, axis] of [
   ['legris_elbow_GEN1_full_body_01', [0, 0, -1]],
@@ -134,19 +205,35 @@ assert.deepEqual(wandPose('Metal_tip').variants.gbfans.translation_mm, [0, 0, 0]
 assert.deepEqual(wandPose('top_knob_V2').translation_mm, [-24, .9, 92]);
 for (const [kind, catalog] of Object.entries(catalogs)) {
   const keys = Object.keys(catalog.parts);
-  assert.equal(keys.length, kind === 'pack' ? 76 : 39);
+  assert.equal(keys.length, kind === 'pack' ? 76 : 41);
   const bytes = fs.readFileSync(path.join(root, 'assets', `${kind}_assembly.glb`));
   assert.equal(bytes.toString('ascii', 0, 4), 'glTF');
   const gltf = JSON.parse(bytes.toString('utf8', 20, 20 + bytes.readUInt32LE(12)));
   const modelKeys = gltf.nodes.filter(n => n.mesh !== undefined).map(n => n.extras?.part_key || n.name);
   assert.deepEqual(new Set(modelKeys), new Set(keys));
   assert.equal(modelKeys.length, keys.length, 'Duplicate model keys');
-  if (kind === 'pack') {
+  {
     for (const node of gltf.nodes.filter(n => n.mesh !== undefined)) {
-      const pose = packPose((node.extras?.part_key || node.name).slice(5));
+      const key = node.extras?.part_key || node.name;
+      const pose = kind === 'pack' ? packPose(key.slice(5)) : wandPose(key);
       const [x, y, z] = pose.translation_mm;
       (node.translation || [0, 0, 0]).forEach((v, i) =>
-        near(v, [x, z, -y][i], 'GLB translation must agree with pack alignment report'));
+        near(v, [x, z, -y][i], 'GLB translation must agree with assembly pose'));
+      const [qx, qy, qz, qw] = node.rotation || [0, 0, 0, 1];
+      for (const point of [[1, 0, 0], [0, 1, 0], [0, 0, 1]]) {
+        const [a, b, c] = [point[0], point[2], -point[1]];
+        const tx = 2 * (qy * c - qz * b);
+        const ty = 2 * (qz * a - qx * c);
+        const tz = 2 * (qx * b - qy * a);
+        const actual = [a + qw * tx + qy * tz - qz * ty,
+          b + qw * ty + qz * tx - qx * tz,
+          c + qw * tz + qx * ty - qy * tx];
+        const origin = pointAt(pose, [0, 0, 0]);
+        const direction = pointAt(pose, point).map((v, i) => v - origin[i]);
+        const expected = [direction[0], direction[2], -direction[1]];
+        actual.forEach((value, i) =>
+          near(value, expected[i], 'GLB rotation must agree with assembly pose', .00001));
+      }
     }
   }
   const plateKeys = catalog.plates.flatMap(p => p.keys || []);
@@ -170,4 +257,4 @@ assert.throws(() => BuildProgress.validate({ version: 1, parts: { pack: { unknow
 assert.throws(() => BuildProgress.validate({ version: 1, parts: { pack: {}, wand: { rear_box: { status: 'accepted' } } } }, catalogs));
 assert.equal(BuildProgress.visualStatus('needs_rework'), 'pending');
 assert.equal(BuildProgress.visualStatus('assembled'), 'printed');
-console.log('Catalogs, 115 unique meshes, pack mounting relationships and exported poses, wand regeneration manifest, plate coverage, blank defaults, progress format, and JavaScript validated.');
+console.log('Catalogs, 117 unique meshes, pack/wand mounting relationships and exported poses, guide quantity correction, plate coverage, blank defaults, progress format, and JavaScript validated.');

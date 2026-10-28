@@ -51,7 +51,7 @@ To start over, import the repository's blank `progress.json`.
 
 Statuses: `pending`, `sliced`, `printing`, `printed`, `fit_checked`, `assembled`,
 `finished`, `needs_rework`. Green means printed or a later stage, **not** an
-automatic fit/assembly approval. Counts include only the **115 modeled pieces**,
+automatic fit/assembly approval. Counts include only the **117 modeled pieces**,
 not the entire physical build. Failed/rework pieces do not earn print credit.
 
 ## Tracking your build with an AI agent
@@ -111,17 +111,43 @@ the guide's printed numbering. Electronics are optional and not represented.
 ## Model coverage and limitations
 
 Pack: **76 nominal printed pieces**, GB1 fixed cyclotron/bumper and actual L split
-shell sections. Wand: **39 planned printed pieces**, including separate indicator
+shell sections. Wand: **41 planned printed pieces**, including separate indicator
 covers, hidden retaining plugs, both banjo bodies and their decorative screws.
 The extra pieces receive their own stable IDs, status controls, and exploded offsets.
 Existing 22-piece progress exports remain compatible; newly modeled pieces start pending.
-Major shell offsets are matched to assembled CAD references. The HGA mounts on
+Major shell offsets are registered to mating screw patterns. The HGA mounts on
 the right gearbox side using its matching screw axis; the powercell lens covers
 the front aperture, injector flange and EDA disks match their screw holes, and
-the crank knob faces forward. The booster frame clears the tube, the PPD's angled
-end follows the booster shoulder, and the straight fittings follow the side
-sockets. PPD lateral seating, frame longitudinal seating, accessory fittings
-and insertion depths remain illustrative and labeled in the inspector.
+the crank knob faces forward. A mounting-hole audit found that the split top
+shell's print-layout coordinates needed a common(-7.955,+10.863,0)mm offset
+relative to the assembled center covers, native ion arm and V-hook. Dependent
+details now follow that registration. The tube retains its original untilted
+pose: both underside screw axes match the corrected booster box. This
+supersedes the earlier attempt to tilt the tube into rim-plane coincidence.
+The PPD hangs straight down beneath the shoulder,parallel to the pack's long
+axis. Its angled recessed end follows the slope and its flat end faces down;
+it does not project along the shoulder normal. Its cylinder axis matches the
+31.75mm cutout in booster box01 and both13mm-pitch side screw axes determine
+insertion depth. There is more than3mm Y-envelope clearance to the beamline,
+which remains on its matching center-cover screw hole. Both frame screw axes
+match the tube's127.75mm pattern; its saddle clears the original tube surface.
+The injector block's three screw axes match SynchGen04, with the flange seated
+against the shell rather than60mm away along the bolts. The valve flange is
+centered on the Clippard base; its42.9vs43.0mm pitch difference is retained
+without scaling (about0.050mm residual per outer hole).
+
+`scripts/pack-mounting-constraints.json` records119source-local bore-segment
+constraints across57part relationships, including existing shell seams,
+cyclotron quarters, center-cover joints, injector bracket, ion-arm cap and
+resistor mounts. `npm run validate` checks their radial residuals, axis angles
+and recorded axial separations. The audit screened all76pack meshes and fitted
+553planar circular boundaries and503cylindrical surfaces (366 inward bores);
+these counts include counterbores and repeated segments, not distinct screws.
+Coaxiality is not proof of correct insertion depth or physical printed fit.
+The second clamp, bumper/Alice spacers, PH25, shockmount and accessory drilling
+sites without established mating features remain provisional. The original
+tube-rim/shoulder angular discrepancy is retained rather than breaking the
+measured screw relationships. No source geometry was resized.
 The three Legris elbow/nut pairs are grouped at the HGA, cyclotron and ion-arm
 underside. Each nut is seated on its corresponding elbow rather than positioned
 independently. The ion-arm Legris axis follows its modeled socket; HGA and
@@ -141,6 +167,25 @@ in the [GBFans tubing reference](https://www.gbfans.com/wiki/equipment/proton-pa
 the [Dale reference](https://www.gbfans.com/wiki/equipment/proton-pack/dale-resistors)
 identifies the RH-50's ion-arm location. These cosmetic replicas are not working
 pressure fittings.
+### Assembly-diagram reconciliation
+
+The GB1 pack and wand assembly diagrams were compared against the STL-derived
+geometry. The wand-hose panel now slides into the generator dovetail instead of
+remaining at its source layout's 60mm separation. The wand's front banjo hangs
+from the front handle's rear ear, not the rear electrical box; the rear banjo
+remains on the rear tube. Hose clocking is still illustrative.
+
+Both left dials now have a large base and an eccentric small cap: **two copies of
+each source file are required**, not one. Existing progress IDs keep their
+meaning; `left_big_knob_2` and `left_small_knob_2` are separate new pieces that
+start pending, including when importing older progress. The rear box and cover
+are registered to the body screws and rear face; the rear hose nut, small right
+knob and heat sink are seated on their matching features.
+`scripts/wand-mounting-constraints.json` adds17source-local axis/seating checks.
+The geometry is not resized. Missing/ambiguous accessory sockets are not inferred
+from diagrams: second clamp, bumper/Alice spacers, PH25 and conduit sites remain
+provisional; motherboard/frame, cables and hardware are not modeled.
+
 The wand's rack uses
 the ELSA source variant; the displayed standard `Front_Barrel_22mm` and `Metal_tip`
 are not a guaranteed fit for purchased tubing. Their poses now use the barrel axis

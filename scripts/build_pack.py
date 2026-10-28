@@ -150,6 +150,27 @@ def legris_pose(copy):
 
 
 def fitting_placement(name, copy):
+    if name == "Wand_loom_panel_GB1":
+        return (0, 0, 0), (-46.3236364, 38.1329347, 0), (
+            "GB1 wand-hose panel slid into the SynchGen03 dovetail per assembly guide PDF10. "
+            "Removed the 60mm source print-layout separation along the panel normal; slide height unchanged. "
+            "No screw holes are modeled in this glue/slide joint; verify printed sliding fit.")
+    if name == "Injector_Block_GB1":
+        return (0, 0, 0), (46.1390604, 38.3558699, 0), (
+            "All three mounting screw axes match SynchGen04; inner flange seated on its exterior wall. "
+            "Removed the source layout's 60mm separation along the bolt axes; geometry not scaled.")
+    if name in {"clippard_body_screws", "clippard_r331_top", "clippard_r331_cap_corrected"}:
+        matrix = Matrix.Rotation(-.0010002934087281578, 3, "Z")
+        if name == "clippard_r331_cap_corrected":
+            source = Vector((42, 26, 155.08))
+            target = Vector((55.7641529453, 179.0431535168, 153.6))
+        else:
+            source = Vector((-7.8999908767, -16.2000038539, 88.9))
+            target = Vector((55.7641529453, 179.0431535168, 91.7))
+        return tuple(matrix.to_euler()), tuple(target - matrix @ source), (
+            "Valve flange two-hole pattern centered and aligned on the Clippard base; "
+            "42.9mm source pitch vs43.0mm base pitch, about0.050mm residual per hole without scaling. "
+            "Top and cap follow the body; cap centered on its pin. Verify screw clearance.")
     if name == "Sage-RH-25":
         source_midpoint = Vector((346.95618, 338.574707, 64.53))
         source_pitch = Vector((19.84, -18.26, 0))
@@ -212,7 +233,7 @@ def fitting_placement(name, copy):
     return None
 
 
-def placement(name, copy, mesh):
+def source_placement(name, copy, mesh):
     rotation = (0, 0, 0)
     note = "Source CAD coordinates / matched assembly-layout offset."
     fitting = fitting_placement(name, copy)
@@ -235,23 +256,16 @@ def placement(name, copy, mesh):
     if name == "HGA_L_XL_XXL":
         return rotation, (150, 320, 0), "HGA base hole coaxial with the right gearbox mounting hole at X=103.4 mm."
     if name == "PPD_Type_1":
-        # The angled end, not the flat base, mates to the booster shoulder.
-        from mathutils import Euler
-        rotation = (math.pi / 2, math.pi / 2, 0)
-        matrix = Euler(rotation).to_matrix()
-        shoulder = Vector((0, .791215, .611538))
-        shoulder.normalize()
-        cut_point = matrix @ Vector((11.6104641, -50.14656448, -142.89071655))
-        seat = Vector((-32, (shoulder.dot(Vector((-60, 233.960896, 141.2)))
-                            - shoulder.z * 117) / shoulder.y, 117))
-        center_on_cut = Vector((-45, cut_point.y + cut_point.z * shoulder.z / shoulder.y, 0))
-        return rotation, tuple(seat - center_on_cut), "Angled end matched to the booster shoulder plane; lateral seating remains illustrative."
+        matrix = Matrix(((0, 1, 0),
+                         (0, 0, 1),
+                         (1, 0, 0)))
+        return tuple(matrix.to_euler()), (18.075082599751063, 378.38226624, 136.0751106093669), (
+            "PPD hangs vertically down the pack beneath the booster shoulder, not normal to it. "
+            "Angled hose-hole end follows the shoulder slope; side screw bores govern insertion depth. "
+            "Cylinder registered to the booster-box 01 cutout and both 13mm-pitch side screw bores; "
+            "flat end meets the cutout mouth. Source half-mm face step retained; verify physical fit.")
     if name == "crank_knob":
         return rotation, (-87.05087, 352.10102, 110.49952), "Knob underside centered over the gearbox front hole; not the HGA side wall."
-    if name == "clippard_body_screws":
-        return rotation, (63.65, 194.22, 2.8), "Illustrative valve on GB1 Clippard base."
-    if name == "clippard_r331_top":
-        return rotation, (63.65, 194.22, 2.8), "Illustrative R331 valve selection; not finalized."
     if name == "Clippard_Hex" and copy == 1:
         return rotation, (0, 0, 0), note
     if name == "Bumper_Spacer":
@@ -259,10 +273,9 @@ def placement(name, copy, mesh):
     # Locally authored small details use explicit mating-site anchors.
     anchors = {
         "PH-25-without_ring": ((0, math.pi / 2, 0), (48, 245, 55)),
-        "Booster_Frame_L_XL_XXL_GB1": (rotation, (-78.85398, 361, 137)),
+        "Booster_Frame_L_XL_XXL_GB1": (rotation, (-78.85351, 346.38254, 137)),
         "Powercell_Lens": (rotation, (-152.8, 317.288736, 101.6)),
         "Shockmount_full_GB1": (rotation, (0, 0, 159.5)),
-        "clippard_r331_cap_corrected": (rotation, (55.75, 177.92, 153.6)),
         "Clippard_elbow_square": (rotation, (-132.65, 465, 229)),
         "Legris_Straight": ((0, math.pi / 2, 0), (-18.8, 209.4 + copy * 19, 95.2)),
         "Cyclotron_Window_Lens_x4_L_XL_XXL": (rotation,
@@ -286,11 +299,32 @@ def placement(name, copy, mesh):
     if name in {"PH-25-without_ring", "Legris_Straight", "crank_knob"}:
         anchor = Vector((low.x, center.y, center.z))
     notes = {
-        "Booster_Frame_L_XL_XXL_GB1": "Centered on the booster tube, curved underside raised clear of its surface; longitudinal seating is illustrative.",
+        "Booster_Frame_L_XL_XXL_GB1": "Both 127.75mm-pitch screw axes registered to the tube's upper bores; saddle clears the original tube surface by about0.025mm.",
         "Powercell_Lens": "Flat over the PowerCell front aperture at Z=101.6 mm; lens material is not specified by the pose.",
         "Legris_Straight": "Coaxial with the two booster side sockets at Y=209.4/228.4, Z=95.2 mm; insertion depth is illustrative.",
     }
     return rotation, tuple(Vector(target) - anchor), notes.get(name, "Illustrative detail placement / provisional variant; verify during dry-fit.")
+
+
+def placement(name, copy, mesh):
+    rotation, translation, note = source_placement(name, copy, mesh)
+    top_shell = name in {
+        "Booster_box_01_L", "Booster_box_02_L", "PowerCell_L",
+        "Crank_Gen_And_Gun_Mount_L_XL_XXL", "HGA_L_XL_XXL", "crank_knob",
+        "Powercell_Lens", "EDA_Disks-Flat_x2", "PPD_Type_1", "Legris_Straight",
+        "Injectors_L_XL_XXL_GB1",
+    } or (copy == 0 and name in {
+        "legris_elbow_GEN1_full_body", "legris_elbow_GEN1_Nut", "Clippard_Hex",
+    })
+    if top_shell:
+        # Register split print-layout coordinates to the native assembled shell.
+        translation = tuple(Vector(translation) + Vector((-7.955, 10.863, 0)))
+        note += (" Top-shell layout registered by center-cover, ion-arm and V-hook screw patterns: "
+                 "common translation(-7.955,+10.863,0)mm; dependent details follow their parent shell.")
+    if name in {"Booster_Tube_PART1_L", "Booster_Tube_PART2_L"}:
+        note += (" Original untilted tube axis retained: underside screw bores match the corrected "
+                 "booster-box mounting bores. Do not tilt the tube merely to force rim-plane coincidence.")
+    return rotation, translation, note
 
 
 rows = json.loads((ROOT / "scripts" / "build-manifest.json").read_text())["pack"]

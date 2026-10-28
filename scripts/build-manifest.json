@@ -406,9 +406,9 @@
         0
       ],
       "translation_mm": [
-        0,
-        0,
-        0
+        -0.48983,
+        -3,
+        -0.27507
       ]
     },
     {
@@ -420,9 +420,9 @@
         0
       ],
       "translation_mm": [
-        -94.86,
-        -61.5,
-        -29.51
+        -95.34983,
+        -64.5,
+        -29.78507
       ]
     },
     {
@@ -449,9 +449,21 @@
       ],
       "translation_mm": [
         0,
-        0,
+        -41,
         0
       ]
+    },
+    {
+      "key": "left_big_knob_2",
+      "source_path": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_left_big_knob.stl",
+      "rotation_rad": [0, 0, 0],
+      "translation_mm": [0, 41, 0]
+    },
+    {
+      "key": "left_small_knob_2",
+      "source_path": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_left_small_knob.stl",
+      "rotation_rad": [0, 0, 0],
+      "translation_mm": [0, 0, 0]
     },
     {
       "key": "right_big_knob",
@@ -477,8 +489,8 @@
       ],
       "translation_mm": [
         0,
-        0,
-        0
+        1.4,
+        -4
       ]
     },
     {
@@ -504,9 +516,9 @@
         0
       ],
       "translation_mm": [
-        0,
-        0,
-        0
+        -0.86541748,
+        0.01284,
+        0.17121
       ]
     },
     {
@@ -809,14 +821,14 @@
       "key": "banjo_main_2",
       "source_path": "q-pack\\WAND\\MISC\\BANJOS\\Q-pack-TacoShell_MK4_banjo_main.stl",
       "rotation_rad": [
+        3.141592653589793,
         0,
-        0,
-        -1.5707963267948966
+        1.5707963267948966
       ],
       "translation_mm": [
-        53.863,
-        -74,
-        35.625
+        47.85,
+        95,
+        21.39
       ]
     },
     {
@@ -837,14 +849,14 @@
       "key": "banjo_fake_screw_2",
       "source_path": "q-pack\\WAND\\MISC\\BANJOS\\Q-pack-TacoShell_MK4_banjo_fake_screw.stl",
       "rotation_rad": [
+        3.141592653589793,
         0,
-        0,
-        -1.5707963267948966
+        1.5707963267948966
       ],
       "translation_mm": [
-        53.863,
-        -74,
-        35.625
+        47.85,
+        95,
+        21.39
       ]
     },
     {

@@ -1,4 +1,4 @@
-"""Rebuild the 39-piece wand preview from an external Q-Pack MK4 checkout."""
+"""Rebuild the wand preview from an external Q-Pack MK4 checkout."""
 
 import argparse
 import json

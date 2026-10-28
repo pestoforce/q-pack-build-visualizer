@@ -197,23 +197,23 @@
       0
     ],
     "translation_mm": [
-      150.0,
-      320,
-      0
+      142.0449981689453,
+      330.8630065917969,
+      0.0
     ],
     "bounds_mm": [
       [
-        -113.85000610351562,
-        195.2520294189453,
+        -121.80500793457031,
+        206.1150360107422,
         141.1999969482422
       ],
       [
-        -85.35000610351562,
-        223.7479705810547,
+        -93.30500793457031,
+        234.61097717285156,
         146.1999969482422
       ]
     ],
-    "alignment": "Disk centers matched to the booster screw holes at Z=141.2 mm."
+    "alignment": "Disk centers matched to the booster screw holes at Z=141.2 mm. Top-shell layout registered by center-cover, ion-arm and V-hook screw patterns: common translation(-7.955,+10.863,0)mm; dependent details follow their parent shell."
   },
   {
     "key": "pack_EDA_Disks_Flat_x2_02",
@@ -224,23 +224,23 @@
       0
     ],
     "translation_mm": [
-      189.6,
-      320,
-      0
+      181.64500427246094,
+      330.8630065917969,
+      0.0
     ],
     "bounds_mm": [
       [
-        -74.25,
-        195.2520294189453,
+        -82.20500183105469,
+        206.1150360107422,
         141.1999969482422
       ],
       [
-        -45.75,
-        223.7479705810547,
+        -53.70500183105469,
+        234.61097717285156,
         146.1999969482422
       ]
     ],
-    "alignment": "Disk centers matched to the booster screw holes at Z=141.2 mm."
+    "alignment": "Disk centers matched to the booster screw holes at Z=141.2 mm. Top-shell layout registered by center-cover, ion-arm and V-hook screw patterns: common translation(-7.955,+10.863,0)mm; dependent details follow their parent shell."
   },
   {
     "key": "pack_SynchGen_01_L_XL_01",
@@ -467,23 +467,23 @@
       0
     ],
     "translation_mm": [
-      0,
-      0,
+      46.1390604,
+      38.3558699,
       0
     ],
     "bounds_mm": [
       [
-        -183.01441955566406,
-        -154.83523559570312,
+        -136.8753662109375,
+        -116.4793701171875,
         0.0
       ],
       [
-        -148.18814086914062,
-        -117.79945373535156,
+        -102.04907989501953,
+        -79.44358825683594,
         68.0
       ]
     ],
-    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+    "alignment": "All three mounting screw axes match SynchGen04; inner flange seated on its exterior wall. Removed the source layout's 60mm separation along the bolt axes; geometry not scaled."
   },
   {
     "key": "pack_Wand_loom_panel_GB1_01",
@@ -494,23 +494,23 @@
       0
     ],
     "translation_mm": [
-      0,
-      0,
+      -46.3236364,
+      38.1329347,
       0
     ],
     "bounds_mm": [
       [
-        148.36984252929688,
-        -158.9434814453125,
+        102.04620361328125,
+        -120.810546875,
         0.0
       ],
       [
-        186.84857177734375,
-        -117.1884765625,
+        140.52493286132812,
+        -79.0555419921875,
         68.0
       ]
     ],
-    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+    "alignment": "GB1 wand-hose panel slid into the SynchGen03 dovetail per assembly guide PDF10. Removed the 60mm source print-layout separation along the panel normal; slide height unchanged. No screw holes are modeled in this glue/slide joint; verify printed sliding fit."
   },
   {
     "key": "pack_Center_Cover_L_01_01",
@@ -656,23 +656,23 @@
       0
     ],
     "translation_mm": [
-      -350,
-      -630,
-      0
+      -357.9549865722656,
+      -619.1370239257812,
+      0.0
     ],
     "bounds_mm": [
       [
-        -129.89999389648438,
-        184.20001220703125,
+        -137.85498046875,
+        195.06298828125,
         0.0
       ],
       [
-        -18.79998779296875,
-        383.0999755859375,
+        -26.754974365234375,
+        393.96295166015625,
         141.1999969482422
       ]
     ],
-    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+    "alignment": "Source CAD coordinates / matched assembly-layout offset. Top-shell layout registered by center-cover, ion-arm and V-hook screw patterns: common translation(-7.955,+10.863,0)mm; dependent details follow their parent shell."
   },
   {
     "key": "pack_Booster_box_02_L_01",
@@ -683,23 +683,23 @@
       0
     ],
     "translation_mm": [
-      -350,
-      -630,
-      0
+      -357.9549865722656,
+      -619.1370239257812,
+      0.0
     ],
     "bounds_mm": [
       [
-        -159.6999969482422,
-        383.0999755859375,
+        -167.6549835205078,
+        393.96295166015625,
         0.0
       ],
       [
-        -18.799224853515625,
-        485.49560546875,
+        -26.75421142578125,
+        496.35858154296875,
         76.19999694824219
       ]
     ],
-    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+    "alignment": "Source CAD coordinates / matched assembly-layout offset. Top-shell layout registered by center-cover, ion-arm and V-hook screw patterns: common translation(-7.955,+10.863,0)mm; dependent details follow their parent shell."
   },
   {
     "key": "pack_PowerCell_L_01",
@@ -710,23 +710,23 @@
       0
     ],
     "translation_mm": [
-      -350,
-      -280,
-      0
+      -357.9549865722656,
+      -269.1369934082031,
+      0.0
     ],
     "bounds_mm": [
       [
-        -183.89999389648438,
-        245.53253173828125,
+        -191.85498046875,
+        256.3955383300781,
         0.0
       ],
       [
-        -129.89999389648438,
-        383.0999755859375,
+        -137.85498046875,
+        393.9629821777344,
         104.80000305175781
       ]
     ],
-    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+    "alignment": "Source CAD coordinates / matched assembly-layout offset. Top-shell layout registered by center-cover, ion-arm and V-hook screw patterns: common translation(-7.955,+10.863,0)mm; dependent details follow their parent shell."
   },
   {
     "key": "pack_Crank_Gen_And_Gun_Mount_L_XL_XXL_01",
@@ -737,23 +737,23 @@
       0
     ],
     "translation_mm": [
-      -550,
-      80,
-      0
+      -557.9550170898438,
+      90.86299896240234,
+      0.0
     ],
     "bounds_mm": [
       [
-        -20.0902099609375,
-        299.8468017578125,
+        -28.04522705078125,
+        310.70977783203125,
         0.0
       ],
       [
-        176.4000244140625,
-        494.153564453125,
+        168.44500732421875,
+        505.0165710449219,
         121.54169464111328
       ]
     ],
-    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+    "alignment": "Source CAD coordinates / matched assembly-layout offset. Top-shell layout registered by center-cover, ion-arm and V-hook screw patterns: common translation(-7.955,+10.863,0)mm; dependent details follow their parent shell."
   },
   {
     "key": "pack_Powercell_Lens_01",
@@ -764,23 +764,23 @@
       0
     ],
     "translation_mm": [
-      -152.3000030517578,
-      314.39996337890625,
+      -160.2550048828125,
+      325.2629699707031,
       101.5999984741211
     ],
     "bounds_mm": [
       [
-        -164.3000030517578,
-        264.188720703125,
+        -172.2550048828125,
+        275.0517272949219,
         101.5999984741211
       ],
       [
-        -141.3000030517578,
-        370.38873291015625,
+        -149.2550048828125,
+        381.2517395019531,
         104.0999984741211
       ]
     ],
-    "alignment": "Flat over the PowerCell front aperture at Z=101.6 mm; lens material is not specified by the pose."
+    "alignment": "Flat over the PowerCell front aperture at Z=101.6 mm; lens material is not specified by the pose. Top-shell layout registered by center-cover, ion-arm and V-hook screw patterns: common translation(-7.955,+10.863,0)mm; dependent details follow their parent shell."
   },
   {
     "key": "pack_Booster_Tube_PART1_L_01",
@@ -807,7 +807,7 @@
         139.6999969482422
       ]
     ],
-    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+    "alignment": "Source CAD coordinates / matched assembly-layout offset. Original untilted tube axis retained: underside screw bores match the corrected booster-box mounting bores. Do not tilt the tube merely to force rim-plane coincidence."
   },
   {
     "key": "pack_Booster_Tube_PART2_L_01",
@@ -834,7 +834,7 @@
         139.6999969482422
       ]
     ],
-    "alignment": "Source CAD coordinates / matched assembly-layout offset."
+    "alignment": "Source CAD coordinates / matched assembly-layout offset. Original untilted tube axis retained: underside screw bores match the corrected booster-box mounting bores. Do not tilt the tube merely to force rim-plane coincidence."
   },
   {
     "key": "pack_Booster_Frame_L_XL_XXL_GB1_01",
@@ -845,23 +845,23 @@
       0
     ],
     "translation_mm": [
-      -78.16055297851562,
-      351.55548095703125,
+      -78.16007995605469,
+      336.9380187988281,
       133.5
     ],
     "bounds_mm": [
       [
-        -119.03863525390625,
-        288.0,
+        -119.03816223144531,
+        273.3825378417969,
         137.0
       ],
       [
-        -38.669334411621094,
-        434.0,
+        -38.668861389160156,
+        419.3825378417969,
         151.69503784179688
       ]
     ],
-    "alignment": "Centered on the booster tube, curved underside raised clear of its surface; longitudinal seating is illustrative."
+    "alignment": "Both 127.75mm-pitch screw axes registered to the tube's upper bores; saddle clears the original tube surface by about0.025mm."
   },
   {
     "key": "pack_Injector_Bracket_L_XL_XXL_01",
@@ -899,23 +899,23 @@
       0
     ],
     "translation_mm": [
-      153,
-      318.5,
-      0
+      145.0449981689453,
+      329.3630065917969,
+      0.0
     ],
     "bounds_mm": [
       [
-        -171.39999389648438,
-        85.39999389648438,
+        -179.35499572753906,
+        96.26300048828125,
         1.0
       ],
       [
-        -131.39999389648438,
-        250.39999389648438,
+        -139.35499572753906,
+        261.26300048828125,
         93.69999694824219
       ]
     ],
-    "alignment": "Both flange holes matched to the PowerCell lower face at Y=250.4 mm."
+    "alignment": "Both flange holes matched to the PowerCell lower face at Y=250.4 mm. Top-shell layout registered by center-cover, ion-arm and V-hook screw patterns: common translation(-7.955,+10.863,0)mm; dependent details follow their parent shell."
   },
   {
     "key": "pack_Ion_Arm_L_XL_XXL_GB1_01",
@@ -953,50 +953,50 @@
       0
     ],
     "translation_mm": [
-      150,
-      320,
-      0
+      142.0449981689453,
+      330.8630065917969,
+      0.0
     ],
     "bounds_mm": [
       [
-        103.4000015258789,
-        418.54345703125,
+        95.44499969482422,
+        429.4064636230469,
         23.232248306274414
       ],
       [
-        165.39999389648438,
-        482.04345703125,
+        157.4449920654297,
+        492.906494140625,
         86.72140502929688
       ]
     ],
-    "alignment": "HGA base hole coaxial with the right gearbox mounting hole at X=103.4 mm."
+    "alignment": "HGA base hole coaxial with the right gearbox mounting hole at X=103.4 mm. Top-shell layout registered by center-cover, ion-arm and V-hook screw patterns: common translation(-7.955,+10.863,0)mm; dependent details follow their parent shell."
   },
   {
     "key": "pack_PPD_Type_1_01",
     "source": "q-pack\\SHELL\\PPD\\Q-pack-TacoShell_MK4_PPD_Type_1.stl",
     "rotation_rad": [
-      1.5707963267948966,
-      1.5707963267948966,
-      0
+      -1.5707963705062866,
+      -1.5707963705062866,
+      0.0
     ],
     "translation_mm": [
-      13.0,
-      118.74842834472656,
-      117.0
+      10.12008285522461,
+      389.2452697753906,
+      136.07510375976562
     ],
     "bounds_mm": [
       [
-        -47.87499237060547,
-        241.02731323242188,
-        101.125
+        -50.75492477416992,
+        195.06300354003906,
+        120.20010375976562
       ],
       [
-        -16.12499237060547,
-        312.9306945800781,
-        132.875
+        -19.00492286682129,
+        266.9664001464844,
+        151.95010375976562
       ]
     ],
-    "alignment": "Angled end matched to the booster shoulder plane; lateral seating remains illustrative."
+    "alignment": "PPD hangs vertically down the pack beneath the booster shoulder, not normal to it. Angled hose-hole end follows the shoulder slope; side screw bores govern insertion depth. Cylinder registered to the booster-box 01 cutout and both 13mm-pitch side screw bores; flat end meets the cutout mouth. Source half-mm face step retained; verify physical fit. Top-shell layout registered by center-cover, ion-arm and V-hook screw patterns: common translation(-7.955,+10.863,0)mm; dependent details follow their parent shell."
   },
   {
     "key": "pack_V_Hook_Base_01",
@@ -1547,104 +1547,104 @@
       0
     ],
     "translation_mm": [
-      -87.05087,
-      352.10102,
-      110.49952
+      -95.00587463378906,
+      362.9640197753906,
+      110.49951934814453
     ],
     "bounds_mm": [
       [
-        16.495132446289062,
-        441.5110168457031,
+        8.540130615234375,
+        452.3740234375,
         110.5
       ],
       [
-        59.40312194824219,
-        472.6910095214844,
+        51.4481201171875,
+        483.55401611328125,
         144.78199768066406
       ]
     ],
-    "alignment": "Knob underside centered over the gearbox front hole; not the HGA side wall."
+    "alignment": "Knob underside centered over the gearbox front hole; not the HGA side wall. Top-shell layout registered by center-cover, ion-arm and V-hook screw patterns: common translation(-7.955,+10.863,0)mm; dependent details follow their parent shell."
   },
   {
     "key": "pack_clippard_body_screws_01",
     "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_701-331\\Q-pack-TacoShell_MK4_clippard_body_screws.stl",
     "rotation_rad": [
-      0,
-      0,
-      0
+      0.0,
+      -0.0,
+      -0.0010004043579101562
     ],
     "translation_mm": [
-      63.65,
-      194.22,
-      2.8
+      63.68034744262695,
+      195.23524475097656,
+      2.7999954223632812
     ],
     "bounds_mm": [
       [
-        30.35000228881836,
-        159.005615234375,
-        91.70000457763672
+        30.36366081237793,
+        160.02842712402344,
+        91.69999694824219
       ],
       [
-        81.11412048339844,
-        198.00286865234375,
-        143.40000915527344
+        81.1286392211914,
+        199.02598571777344,
+        143.39999389648438
       ]
     ],
-    "alignment": "Illustrative valve on GB1 Clippard base."
+    "alignment": "Valve flange two-hole pattern centered and aligned on the Clippard base; 42.9mm source pitch vs43.0mm base pitch, about0.050mm residual per hole without scaling. Top and cap follow the body; cap centered on its pin. Verify screw clearance."
   },
   {
     "key": "pack_clippard_r331_top_01",
     "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_701-331\\Q-pack-TacoShell_MK4_clippard_r331_top.stl",
     "rotation_rad": [
-      0,
-      0,
-      0
+      0.0,
+      -0.0,
+      -0.0010004043579101562
     ],
     "translation_mm": [
-      63.65,
-      194.22,
-      2.8
+      63.68034744262695,
+      195.23524475097656,
+      2.7999954223632812
     ],
     "bounds_mm": [
       [
-        39.50239562988281,
-        161.77059936523438,
-        138.90000915527344
+        39.516265869140625,
+        162.7938995361328,
+        138.89999389648438
       ],
       [
-        72.0,
-        194.2694091796875,
+        72.0141372680664,
+        195.29269409179688,
         153.60000610351562
       ]
     ],
-    "alignment": "Illustrative R331 valve selection; not finalized."
+    "alignment": "Valve flange two-hole pattern centered and aligned on the Clippard base; 42.9mm source pitch vs43.0mm base pitch, about0.050mm residual per hole without scaling. Top and cap follow the body; cap centered on its pin. Verify screw clearance."
   },
   {
     "key": "pack_clippard_r331_cap_corrected_01",
     "source": "q-pack\\SHELL\\ACCESSORIES\\CLIPPARD_701-331\\Q-pack-TacoShell_MK4_clippard_r331_cap_corrected.stl",
     "rotation_rad": [
-      0,
-      0,
-      0
+      0.0,
+      -0.0,
+      -0.0010004043579101562
     ],
     "translation_mm": [
-      13.749996185302734,
-      151.91998291015625,
+      13.738162994384766,
+      153.08517456054688,
       -1.4799957275390625
     ],
     "bounds_mm": [
       [
-        46.450042724609375,
-        168.62005615234375,
+        46.464202880859375,
+        169.7432098388672,
         153.60000610351562
       ],
       [
-        65.04995727539062,
-        187.21994018554688,
+        65.06411743164062,
+        188.34310913085938,
         168.5500030517578
       ]
     ],
-    "alignment": "Illustrative detail placement / provisional variant; verify during dry-fit."
+    "alignment": "Valve flange two-hole pattern centered and aligned on the Clippard base; 42.9mm source pitch vs43.0mm base pitch, about0.050mm residual per hole without scaling. Top and cap follow the body; cap centered on its pin. Verify screw clearance."
   },
   {
     "key": "pack_Clippard_Hex_01",
@@ -1655,23 +1655,23 @@
       -2.6179938316345215
     ],
     "translation_mm": [
-      48.94310760498047,
-      594.938720703125,
+      40.98810577392578,
+      605.8016967773438,
       -53.723175048828125
     ],
     "bounds_mm": [
       [
-        138.93368530273438,
-        440.19342041015625,
+        130.9786834716797,
+        451.056396484375,
         80.72682189941406
       ],
       [
-        151.8663330078125,
-        455.8934631347656,
+        143.9113311767578,
+        466.7564392089844,
         99.42681884765625
       ]
     ],
-    "alignment": "HGA brass Clippard hex elbow: long mounting stem faces the pack front (+Z); side barb bends downward (-Y). Shoulder sits on the front cylinder wall at X=145.4mm; mounting position is illustrative, not a verified socket or drilling template. Physical seating requires dry-fit."
+    "alignment": "HGA brass Clippard hex elbow: long mounting stem faces the pack front (+Z); side barb bends downward (-Y). Shoulder sits on the front cylinder wall at X=145.4mm; mounting position is illustrative, not a verified socket or drilling template. Physical seating requires dry-fit. Top-shell layout registered by center-cover, ion-arm and V-hook screw patterns: common translation(-7.955,+10.863,0)mm; dependent details follow their parent shell."
   },
   {
     "key": "pack_Clippard_Hex_02",
@@ -1736,23 +1736,23 @@
       0.0
     ],
     "translation_mm": [
-      123.4000015258789,
-      435.99346923828125,
+      115.44499969482422,
+      446.8564758300781,
       62.426822662353516
     ],
     "bounds_mm": [
       [
-        118.05000305175781,
-        435.99346923828125,
+        110.09500122070312,
+        446.8564758300781,
         83.72682189941406
       ],
       [
-        128.75,
-        455.6434631347656,
+        120.79499816894531,
+        466.5064697265625,
         106.77681732177734
       ]
     ],
-    "alignment": "HGA Legris elbow: long mounting stem faces the pack front (+Z); compression outlet bends downward (-Y). Shoulder sits on the front cylinder wall at X=123.4mm; mounting position is illustrative, not a verified socket or drilling template. Stem seating and hose clocking require physical dry-fit."
+    "alignment": "HGA Legris elbow: long mounting stem faces the pack front (+Z); compression outlet bends downward (-Y). Shoulder sits on the front cylinder wall at X=123.4mm; mounting position is illustrative, not a verified socket or drilling template. Stem seating and hose clocking require physical dry-fit. Top-shell layout registered by center-cover, ion-arm and V-hook screw patterns: common translation(-7.955,+10.863,0)mm; dependent details follow their parent shell."
   },
   {
     "key": "pack_legris_elbow_GEN1_full_body_02",
@@ -1817,23 +1817,23 @@
       0.0
     ],
     "translation_mm": [
-      123.4000015258789,
-      456.99346923828125,
+      115.44499969482422,
+      467.8564758300781,
       101.42681884765625
     ],
     "bounds_mm": [
       [
-        117.77083587646484,
-        425.99346923828125,
+        109.81583404541016,
+        436.8564758300781,
         94.92681884765625
       ],
       [
-        129.02915954589844,
-        439.79345703125,
+        121.07416534423828,
+        450.6564636230469,
         107.92681884765625
       ]
     ],
-    "alignment": "HGA Legris elbow: long mounting stem faces the pack front (+Z); compression outlet bends downward (-Y). Shoulder sits on the front cylinder wall at X=123.4mm; mounting position is illustrative, not a verified socket or drilling template. Stem seating and hose clocking require physical dry-fit. Matching compression nut shares the elbow transform; pin inserted 3.8mm into its outlet."
+    "alignment": "HGA Legris elbow: long mounting stem faces the pack front (+Z); compression outlet bends downward (-Y). Shoulder sits on the front cylinder wall at X=123.4mm; mounting position is illustrative, not a verified socket or drilling template. Stem seating and hose clocking require physical dry-fit. Matching compression nut shares the elbow transform; pin inserted 3.8mm into its outlet. Top-shell layout registered by center-cover, ion-arm and V-hook screw patterns: common translation(-7.955,+10.863,0)mm; dependent details follow their parent shell."
   },
   {
     "key": "pack_legris_elbow_GEN1_Nut_02",
@@ -1898,23 +1898,23 @@
       0
     ],
     "translation_mm": [
-      -18.799999237060547,
-      209.39999389648438,
+      -26.7549991607666,
+      220.26300048828125,
       95.19999694824219
     ],
     "bounds_mm": [
       [
-        -18.799999237060547,
-        203.04913330078125,
+        -26.7549991607666,
+        213.91213989257812,
         89.69999694824219
       ],
       [
-        1.7000008821487427,
-        215.7508544921875,
+        -6.254999160766602,
+        226.61386108398438,
         100.69999694824219
       ]
     ],
-    "alignment": "Coaxial with the two booster side sockets at Y=209.4/228.4, Z=95.2 mm; insertion depth is illustrative."
+    "alignment": "Coaxial with the two booster side sockets at Y=209.4/228.4, Z=95.2 mm; insertion depth is illustrative. Top-shell layout registered by center-cover, ion-arm and V-hook screw patterns: common translation(-7.955,+10.863,0)mm; dependent details follow their parent shell."
   },
   {
     "key": "pack_Legris_Straight_02",
@@ -1925,23 +1925,23 @@
       0
     ],
     "translation_mm": [
-      -18.799999237060547,
-      228.39999389648438,
+      -26.7549991607666,
+      239.26300048828125,
       95.19999694824219
     ],
     "bounds_mm": [
       [
-        -18.799999237060547,
-        222.04913330078125,
+        -26.7549991607666,
+        232.91213989257812,
         89.69999694824219
       ],
       [
-        1.7000008821487427,
-        234.7508544921875,
+        -6.254999160766602,
+        245.61386108398438,
         100.69999694824219
       ]
     ],
-    "alignment": "Coaxial with the two booster side sockets at Y=209.4/228.4, Z=95.2 mm; insertion depth is illustrative."
+    "alignment": "Coaxial with the two booster side sockets at Y=209.4/228.4, Z=95.2 mm; insertion depth is illustrative. Top-shell layout registered by center-cover, ion-arm and V-hook screw patterns: common translation(-7.955,+10.863,0)mm; dependent details follow their parent shell."
   },
   {
     "key": "pack_Adaptaflex_elbow_full_body_01",

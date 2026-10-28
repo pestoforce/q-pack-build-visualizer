@@ -90,6 +90,30 @@
       ],
       "source": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_left_small_knob.stl"
     },
+    "left_big_knob_2": {
+      "name": "Second Left Knob Base",
+      "plate": "Example Group: Knobs & Heatsink",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 47-48",
+      "explode": [-0.8, 0.1, 0],
+      "source": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_left_big_knob.stl",
+      "alignment": "Second body screw axis. Each left dial requires a large base and a small cap."
+    },
+    "left_small_knob_2": {
+      "name": "Second Left Knob Cap",
+      "plate": "Example Group: Knobs & Heatsink",
+      "status": "pending",
+      "stage": "Not printed",
+      "mat": "Material not specified",
+      "layer": "Print settings not specified",
+      "guide": "PDF pp. 47-48",
+      "explode": [-1.1, 0.1, 0],
+      "source": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_left_small_knob.stl",
+      "alignment": "Eccentric screw matches the second large base; cap seats on its outward face."
+    },
     "right_big_knob": {
       "name": "Right Big Knob",
       "plate": "Example Group: Knobs & Heatsink",
@@ -625,9 +649,9 @@
     {
       "id": "all",
       "name": "All Assembly Parts",
-      "count": "39 Planned Pieces",
+      "count": "41 Planned Pieces",
       "status": "all",
-      "desc": "39 planned wand pieces; illustrative placements and provisional variants"
+      "desc": "41 planned wand pieces, including both two-piece left knobs; provisional variants labeled"
     },
     {
       "id": "plate13",
@@ -670,12 +694,14 @@
     {
       "id": "knobs",
       "name": "Example Group: Knobs & Heatsink",
-      "count": "8 Parts",
+      "count": "10 Parts",
       "status": "pending",
       "desc": "Example grouping; not a print-ready project",
       "keys": [
         "left_big_knob",
         "left_small_knob",
+        "left_big_knob_2",
+        "left_small_knob_2",
         "right_big_knob",
         "right_little_knob",
         "rear_fitting",
@@ -732,5 +758,5 @@
       "count": "7 Parts"
     }
   ],
-  "note": "39 planned printed wand pieces. Front cylinder axes and detail mounting features reconciled with source geometry. Assembly preview, not print orientation or physical fit certification. Rack remains the ELSA source variant. Standard and GBFans barrel/tip variants are available in the regeneration manifest. The separate acrylic tube in the finished rendering is a non-printed illustrative reference; insertion and hardware are not physically verified."
+  "note": "41 planned printed wand pieces, including both two-piece left dials. Knob stacks, heat sink, rear box and front/rear banjos reconciled with source mounting features and assembly diagrams. Banjo hose clocking remains illustrative. Assembly preview, not print orientation or physical fit certification. Rack remains the ELSA source variant. Standard and GBFans barrel/tip variants are available in the regeneration manifest. The separate acrylic tube in the finished rendering is a non-printed illustrative reference; insertion and hardware are not physically verified."
 }
