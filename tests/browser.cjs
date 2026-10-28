@@ -32,8 +32,8 @@ const mime = { '.html': 'text/html', '.js': 'application/javascript', '.json': '
     await page.goto(url);
     await loaded('pack');
     assert.ok(await page.evaluate(() => performance.getEntriesByType('resource').some(
-      entry => entry.name.endsWith('pack_assembly.glb?v=wand-r701-v13'))));
-    assert.ok((await page.locator('#pack-reference-link').getAttribute('href')).endsWith('?v=wand-r701-v13'));
+      entry => entry.name.endsWith('pack_assembly.glb?v=wand-r701-v14'))));
+    assert.ok((await page.locator('#pack-reference-link').getAttribute('href')).endsWith('?v=wand-r701-v14'));
     const stemDirections = await page.evaluate(() => {
       return [
         ['pack_legris_elbow_GEN1_full_body_01', [0, 0, 1]],
