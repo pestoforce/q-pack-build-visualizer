@@ -468,68 +468,6 @@
     },
     {
       "a": {
-        "key": "banjo_main_2",
-        "point": [
-          -3.579845098133916e-08,
-          -2.4999999999957083,
-          7.500001795503422
-        ],
-        "axis": [
-          1.1313440072800204e-08,
-          0.9999999999971658,
-          -2.380836699935205e-06
-        ]
-      },
-      "b": {
-        "key": "Back_ear",
-        "point": [
-          41.35,
-          94.9999946286065,
-          13.890004003221854
-        ],
-        "axis": [
-          1.0,
-          0.0,
-          0.0
-        ]
-      },
-      "max_radial_mm": 0.01,
-      "max_axis_angle_deg": 0.05,
-      "axial_center_distance_mm": 3.9999999999792095
-    },
-    {
-      "a": {
-        "key": "banjo_main_1",
-        "point": [
-          3.579674720617025e-08,
-          -2.4999999999954383,
-          7.500002056170381
-        ],
-        "axis": [
-          1.1313449936523913e-08,
-          -0.9999999999975246,
-          2.224952432183791e-06
-        ]
-      },
-      "b": {
-        "key": "Rear_tube",
-        "point": [
-          15.00000000000119,
-          -104.19999999999999,
-          8.999999999998035
-        ],
-        "axis": [
-          0.0,
-          1.0,
-          0.0
-        ]
-      },
-      "max_radial_mm": 0.01,
-      "max_axis_angle_deg": 0.05,
-      "axial_center_distance_mm": 8.599999999978708
-    },
-    {
-      "a": {
         "key": "front_Grip",
         "point": [
           124.89000838572294,
@@ -591,6 +529,70 @@
       "max_axis_angle_deg": 0.05,
       "axial_center_distance_mm": 9.683100470864234,
       "note": "Rear grip end seats against rear ear face Y101.19mm; original geometry is not scaled. Angled front screw has approximately0.197mm native radial residual at that seating. Physical printed fit remains unverified."
+    },
+    {
+      "a": {
+        "key": "banjo_main_1",
+        "point": [
+          0,
+          -2.5,
+          7.5
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      "b": {
+        "key": "Metal_tip",
+        "point": [
+          116.148267,
+          90.152206,
+          4.49999999999998
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.01,
+      "max_axis_angle_deg": 0.05,
+      "axial_center_distance_mm": 5.500000000000002,
+      "note": "Banjo shoulder on outward negative-X mounting face; both banjos are on front assembly, not rear tube or rear ear."
+    },
+    {
+      "a": {
+        "key": "banjo_main_2",
+        "point": [
+          0,
+          -2.5,
+          7.5
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      "b": {
+        "key": "Front_Barrel_22mm",
+        "point": [
+          -10.884,
+          228.15,
+          9.631
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.01,
+      "max_axis_angle_deg": 0.05,
+      "axial_center_distance_mm": 10.5,
+      "note": "Banjo shoulder on outward negative-X mounting face; both banjos are on front assembly, not rear tube or rear ear."
     }
   ]
 }

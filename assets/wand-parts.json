@@ -458,7 +458,7 @@
       "assumption": "Illustrative assembly placement; verify against the original guide."
     },
     "banjo_main_1": {
-      "name": "Banjo Body 1",
+      "name": "Metal-Tip Banjo Body",
       "plate": "Example Group: Banjos",
       "status": "pending",
       "stage": "Not printed",
@@ -471,11 +471,11 @@
         0
       ],
       "source": "q-pack\\WAND\\MISC\\BANJOS\\Q-pack-TacoShell_MK4_banjo_main.stl",
-      "alignment": "Placed at source-model mounting features, not spaced-out placeholders. Physical mating fit remains unverified.",
+      "alignment": "Seated on metal-tip negative-X side lug and coaxial with its3mm screw bore; hose outlet down. Not a rear-tube fitting. Physical printed fit unverified.",
       "assumption": "Illustrative assembly placement; verify against the original guide."
     },
     "banjo_main_2": {
-      "name": "Banjo Body 2",
+      "name": "Front-Barrel Ear Banjo Body",
       "plate": "Example Group: Banjos",
       "status": "pending",
       "stage": "Not printed",
@@ -488,7 +488,7 @@
         0
       ],
       "source": "q-pack\\WAND\\MISC\\BANJOS\\Q-pack-TacoShell_MK4_banjo_main.stl",
-      "alignment": "Placed at source-model mounting features, not spaced-out placeholders. Physical mating fit remains unverified.",
+      "alignment": "Seated on front barrel's negative-X outer ear and coaxial with its3mm screw bore; hose outlet down. Not on grip rear ear. Physical printed fit unverified.",
       "assumption": "Illustrative assembly placement; verify against the original guide."
     },
     "banjo_fake_screw_1": {

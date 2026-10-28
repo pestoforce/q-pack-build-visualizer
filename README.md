@@ -171,9 +171,12 @@ pressure fittings.
 
 The GB1 pack and wand assembly diagrams were compared against the STL-derived
 geometry. The wand-hose panel now slides into the generator dovetail instead of
-remaining at its source layout's 60mm separation. The wand's front banjo hangs
-from the front handle's rear ear, not the rear electrical box; the rear banjo
-remains on the rear tube. Hose clocking is still illustrative.
+remaining at its source layout's 60mm separation. Both wand banjos hang from
+the negative-X side of the front assembly: one on the barrel's front outer ear,
+the other on the metal tip's lug, matching the red-hose pair in prop references.
+Neither is mounted on the rear tube, rear box or grip's rear ear.
+The rear-ear transverse screw retains the ear; the rear-tube long stud is a
+different hose fitting. Hose routing is not modeled.
 
 Both left dials now have a large base and an eccentric small cap: **two copies of
 each source file are required**, not one. Existing progress IDs keep their

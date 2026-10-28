@@ -85,10 +85,16 @@ for (const i of [1, 2]) {
   assert.deepEqual(wandPose(`banjo_fake_screw_${i}`).rotation_rad, wandPose(`banjo_main_${i}`).rotation_rad);
   assert.deepEqual(wandPose(`banjo_fake_screw_${i}`).translation_mm, wandPose(`banjo_main_${i}`).translation_mm);
 }
-const frontBanjo = wandPose('banjo_main_2');
-pointAt(frontBanjo, [0, -5, 7.5]).forEach((value, i) =>
-  near(value, [42.85, 95, 13.89][i], 'Front banjo must seat on rear ear, not the rear box'));
-assert.ok(pointAt(frontBanjo, [0, 0, 28.4])[2] < 0, 'Front banjo outlet must hang below handle');
+for (const [key, seat] of [
+  ['banjo_main_1', [-6.92, 261, 22.22]],
+  ['banjo_main_2', [-19.145, 228.15, 9.52]],
+]) {
+  const pose = wandPose(key);
+  pointAt(pose, [0, -5, 7.5]).forEach((value, i) =>
+    near(value, seat[i], 'Banjo must seat on front barrel/tip negative-X mounting lug'));
+  near(pointAt(pose, [0, 0, 28.4])[2], seat[2] - 20.9, 'Banjo hose outlet must point down');
+  assert.ok(pose.translation_mm[1] > 220, 'Neither banjo belongs on rear tube or rear ear');
+}
 const hga = packPose('HGA_L_XL_XXL_01');
 const topShellPoint = p => [p[0] - 7.955, p[1] + 10.863, p[2]];
 pointAt(hga, [-46.6, 130.293467, 54.976828]).forEach((v, i) =>

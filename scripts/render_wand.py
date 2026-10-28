@@ -56,7 +56,7 @@ for obj in [o for o in scene.objects if o.type == "MESH"]:
         mat = clear
     obj.data.materials.clear()
     obj.data.materials.append(mat)
-    if reference and name == "Metal_tip":
+    if reference and name in {"Metal_tip", "banjo_main_1", "banjo_fake_screw_1"}:
         obj.location += Vector(reference["metal_tip_offset_mm"])
 
 if reference:
