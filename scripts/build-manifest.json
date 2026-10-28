@@ -933,14 +933,14 @@
       "key": "long_sloblow_red",
       "source_path": "q-pack\\WAND\\LENS\\long_sloblow.stl",
       "rotation_rad": [
-        0,
+        0.8267613609825797,
         0,
         0
       ],
       "translation_mm": [
-        -5.5,
-        52,
-        45.7
+        27.5,
+        -45.81957255986375,
+        61.081357416201065
       ]
     },
     {

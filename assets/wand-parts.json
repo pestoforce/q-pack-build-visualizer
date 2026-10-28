@@ -624,7 +624,7 @@
         0.3
       ],
       "source": "q-pack\\WAND\\LENS\\long_sloblow.stl",
-      "alignment": "Placed at source-model mounting features, not spaced-out placeholders. Physical mating fit remains unverified.",
+      "alignment": "Seats in the 5mm Slo-Blo opening on the sloped body panel below the toggle opening; lens shoulder follows the outer face. Physical mating fit remains unverified.",
       "assumption": "Separate physical cover or retaining plug; guide colors are descriptive, not a material setting. Status colors are not filament colors."
     },
     "long_sloblow_clear": {

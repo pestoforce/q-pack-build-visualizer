@@ -65,7 +65,7 @@ for (const constraint of audit.constraints) {
 };
 checkMountingConstraints(mountingAudit, key => packPose(key.slice(5)));
 const wandAudit = read('scripts/wand-mounting-constraints.json');
-assert.equal(wandAudit.constraints.length, 21, 'Wand mounting relationship coverage');
+assert.equal(wandAudit.constraints.length, 22, 'Wand mounting relationship coverage');
 checkMountingConstraints(wandAudit, wandPose);
 pointAt(wandPose('front_knob'), [0, 0, 0]).forEach((value, i) =>
   near(value, [-25, 23.167357, 72.33263707594463][i],
@@ -215,6 +215,9 @@ assert.deepEqual(wandPose('front_Grip').translation_mm,
 assert.deepEqual(wandPose('Front_Barrel_22mm').variants.gbfans.translation_mm, [0, -220, 0]);
 assert.deepEqual(wandPose('Metal_tip').variants.gbfans.translation_mm, [0, 0, 0]);
 assert.deepEqual(wandPose('top_knob_V2').translation_mm, [-24, .9, 92]);
+pointAt(wandPose('long_sloblow_red'), [-21.5, 0, 2]).forEach((v, i) =>
+  near(v, [6, -47.291056211793396, 62.435881636030224][i],
+    'Red Slo-Blo shoulder must seat on sloped panel below toggle opening'));
 for (const [kind, catalog] of Object.entries(catalogs)) {
   const keys = Object.keys(catalog.parts);
   assert.equal(keys.length, kind === 'pack' ? 76 : 41);

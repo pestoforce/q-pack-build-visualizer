@@ -32,8 +32,8 @@ const mime = { '.html': 'text/html', '.js': 'application/javascript', '.json': '
     await page.goto(url);
     await loaded('pack');
     assert.ok(await page.evaluate(() => performance.getEntriesByType('resource').some(
-      entry => entry.name.endsWith('pack_assembly.glb?v=upper-knob-v10'))));
-    assert.ok((await page.locator('#pack-reference-link').getAttribute('href')).endsWith('?v=upper-knob-v10'));
+      entry => entry.name.endsWith('pack_assembly.glb?v=slo-blo-v11'))));
+    assert.ok((await page.locator('#pack-reference-link').getAttribute('href')).endsWith('?v=slo-blo-v11'));
     const stemDirections = await page.evaluate(() => {
       return [
         ['pack_legris_elbow_GEN1_full_body_01', [0, 0, 1]],
