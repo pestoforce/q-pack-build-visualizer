@@ -369,7 +369,7 @@
         0
       ],
       "source": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_front_Grip.stl",
-      "alignment": "Source barrel/receiver axis registered at X15.78/Z22.22 mm; front grip and tip poses reconciled with assembly references. Physical mating fit remains unverified.",
+      "alignment": "Sideways grip, not underneath barrel. Plain rear screw faces rear ear; angled screw faces front ear. Rear face seated at Y101.19mm. Native front screw residual approximately0.197mm and sampled saddle/barrel overlap up to0.284mm retained without scaling; physical dry-fit required.",
       "assumption": "Illustrative assembly placement; choose barrel and tip variants to suit the actual acrylic tube."
     },
     "Grey_tip": {

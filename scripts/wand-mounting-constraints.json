@@ -527,6 +527,70 @@
       "max_radial_mm": 0.01,
       "max_axis_angle_deg": 0.05,
       "axial_center_distance_mm": 8.599999999978708
+    },
+    {
+      "a": {
+        "key": "front_Grip",
+        "point": [
+          124.89000838572294,
+          103.45500423794368,
+          6.155000000020346
+        ],
+        "axis": [
+          -4.7281360954950206e-07,
+          1.4649525981180744e-07,
+          -0.9999999999998774
+        ]
+      },
+      "b": {
+        "key": "Back_ear",
+        "point": [
+          36.183818455064,
+          94.845,
+          22.220002515288417
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "max_radial_mm": 0.01,
+      "max_axis_angle_deg": 0.05,
+      "axial_center_distance_mm": 12.500000000020709,
+      "note": "Rear grip end seats against rear ear face Y101.19mm; original geometry is not scaled. Angled front screw has approximately0.197mm native radial residual at that seating. Physical printed fit remains unverified."
+    },
+    {
+      "a": {
+        "key": "front_Grip",
+        "point": [
+          124.89000295663246,
+          99.86684410080235,
+          110.0380713562439
+        ],
+        "axis": [
+          4.0734522554914734e-07,
+          0.3420207211701818,
+          -0.9396924104674159
+        ]
+      },
+      "b": {
+        "key": "Front_Barrel_22mm",
+        "point": [
+          43.52944877365155,
+          220.26000044635538,
+          22.33099999999995
+        ],
+        "axis": [
+          0.34202093053239463,
+          0.9396923342657183,
+          -1.4436320679892704e-17
+        ]
+      },
+      "max_radial_mm": 0.21,
+      "max_axis_angle_deg": 0.05,
+      "axial_center_distance_mm": 9.683100470864234,
+      "note": "Rear grip end seats against rear ear face Y101.19mm; original geometry is not scaled. Angled front screw has approximately0.197mm native radial residual at that seating. Physical printed fit remains unverified."
     }
   ]
 }

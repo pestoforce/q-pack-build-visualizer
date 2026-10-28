@@ -32,8 +32,8 @@ const mime = { '.html': 'text/html', '.js': 'application/javascript', '.json': '
     await page.goto(url);
     await loaded('pack');
     assert.ok(await page.evaluate(() => performance.getEntriesByType('resource').some(
-      entry => entry.name.endsWith('pack_assembly.glb?v=diagram-audit-v7'))));
-    assert.ok((await page.locator('#pack-reference-link').getAttribute('href')).endsWith('?v=diagram-audit-v7'));
+      entry => entry.name.endsWith('pack_assembly.glb?v=side-grip-v8'))));
+    assert.ok((await page.locator('#pack-reference-link').getAttribute('href')).endsWith('?v=side-grip-v8'));
     const stemDirections = await page.evaluate(() => {
       return [
         ['pack_legris_elbow_GEN1_full_body_01', [0, 0, 1]],

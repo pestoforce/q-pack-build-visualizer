@@ -708,14 +708,14 @@
       "key": "front_Grip",
       "source_path": "q-pack\\WAND\\FRONT\\Q-pack-TacoShell_MK4_front_Grip.stl",
       "rotation_rad": [
+        -1.5707963267948966,
         1.5707963267948966,
-        0,
         0
       ],
       "translation_mm": [
-        -109.22,
-        221.8,
-        -98.41
+        139.63882269300768,
+        101.19,
+        147.11000692882186
       ]
     },
     {

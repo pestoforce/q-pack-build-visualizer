@@ -65,7 +65,7 @@ for (const constraint of audit.constraints) {
 };
 checkMountingConstraints(mountingAudit, key => packPose(key.slice(5)));
 const wandAudit = read('scripts/wand-mounting-constraints.json');
-assert.equal(wandAudit.constraints.length, 17, 'Wand mounting relationship coverage');
+assert.equal(wandAudit.constraints.length, 19, 'Wand mounting relationship coverage');
 checkMountingConstraints(wandAudit, wandPose);
 const loom = packPose('Wand_loom_panel_GB1_01');
 loom.translation_mm.forEach((value, i) =>
@@ -199,7 +199,8 @@ assert.ok(shortResistor.bounds_mm[1][2] - shortResistor.bounds_mm[0][2] > 26,
   'Short resistor long axis must stand vertically');
 assert.match(packPose('legris_elbow_GEN1_full_body_02').alignment, /illustrative/);
 assert.match(packPose('Adaptaflex_elbow_full_body_01').alignment, /NOT established/);
-assert.deepEqual(wandPose('front_Grip').translation_mm, [-109.22, 221.8, -98.41]);
+assert.deepEqual(wandPose('front_Grip').translation_mm,
+  [139.63882269300768, 101.19, 147.11000692882186]);
 assert.deepEqual(wandPose('Front_Barrel_22mm').variants.gbfans.translation_mm, [0, -220, 0]);
 assert.deepEqual(wandPose('Metal_tip').variants.gbfans.translation_mm, [0, 0, 0]);
 assert.deepEqual(wandPose('top_knob_V2').translation_mm, [-24, .9, 92]);

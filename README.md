@@ -181,7 +181,12 @@ meaning; `left_big_knob_2` and `left_small_knob_2` are separate new pieces that
 start pending, including when importing older progress. The rear box and cover
 are registered to the body screws and rear face; the rear hose nut, small right
 knob and heat sink are seated on their matching features.
-`scripts/wand-mounting-constraints.json` adds17source-local axis/seating checks.
+`scripts/wand-mounting-constraints.json` adds19source-local axis/seating checks.
+The finger-grooved front grip projects sideways from the barrel, not underneath
+it. Its plain screw end faces the rear ear; its angled screw end faces the front
+ear. The rear face seats atY101.19mm. Native geometry leaves approximately0.197mm
+front screw-axis residual and up to0.284mm sampled saddle/barrel overlap;
+these are retained and flagged for physical dry-fit, not hidden by scaling.
 The geometry is not resized. Missing/ambiguous accessory sockets are not inferred
 from diagrams: second clamp, bumper/Alice spacers, PH25 and conduit sites remain
 provisional; motherboard/frame, cables and hardware are not modeled.

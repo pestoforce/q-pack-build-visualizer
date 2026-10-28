@@ -375,8 +375,8 @@
       <div class="assembly-switch">
         <button class="btn" id="assembly-pack" onclick="switchAssembly('pack')">Proton Pack</button>
         <button class="btn" id="assembly-wand" onclick="switchAssembly('wand')">Wand</button>
-        <a class="btn" id="pack-reference-link" href="assets/pack_assembled_reference.png?v=diagram-audit-v7" target="_blank" rel="noopener noreferrer">Assembled pack render</a>
-        <a class="btn" id="wand-reference-link" href="assets/wand_assembled_reference.png?v=diagram-audit-v7" target="_blank" rel="noopener noreferrer">Assembled wand render</a>
+        <a class="btn" id="pack-reference-link" href="assets/pack_assembled_reference.png?v=side-grip-v8" target="_blank" rel="noopener noreferrer">Assembled pack render</a>
+        <a class="btn" id="wand-reference-link" href="assets/wand_assembled_reference.png?v=side-grip-v8" target="_blank" rel="noopener noreferrer">Assembled wand render</a>
         <button class="btn" onclick="exportProgress()">Export Progress</button>
         <button class="btn" onclick="document.getElementById('progress-import').click()">Import Progress</button>
         <input type="file" accept=".json,application/json" id="progress-import" hidden onchange="importProgress(this)">
@@ -781,7 +781,7 @@
         const labels = isPack ? ['Isometric', 'Wand Dock / Right', 'Backboard Side', 'Left Shoulder', 'Pack Face'] :
           ['Isometric', 'Docking / Underside', 'Rear Boxes', 'Side / Knobs', 'Front Grip'];
         document.querySelectorAll('[data-view]').forEach((button, i) => button.textContent = labels[i]);
-        const gltf = await new THREE.GLTFLoader().loadAsync(`assets/${kind}_assembly.glb?v=diagram-audit-v7`);
+        const gltf = await new THREE.GLTFLoader().loadAsync(`assets/${kind}_assembly.glb?v=side-grip-v8`);
         incomingModel = gltf.scene;
         if (version !== loadVersion) {
           disposeModel(incomingModel);
