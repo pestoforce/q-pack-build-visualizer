@@ -65,8 +65,13 @@ for (const constraint of audit.constraints) {
 };
 checkMountingConstraints(mountingAudit, key => packPose(key.slice(5)));
 const wandAudit = read('scripts/wand-mounting-constraints.json');
-assert.equal(wandAudit.constraints.length, 19, 'Wand mounting relationship coverage');
+assert.equal(wandAudit.constraints.length, 21, 'Wand mounting relationship coverage');
 checkMountingConstraints(wandAudit, wandPose);
+pointAt(wandPose('front_knob'), [0, 0, 0]).forEach((value, i) =>
+  near(value, [-25, 23.167357, 72.33263707594463][i],
+    'Front knob must mount on upper vertical tier beside wand valve'));
+near(pointAt(wandPose('front_knob'), [0, 0, .232643])[1], 23.4,
+  'Front knob back face must seat on upper body wall, not lower connector screw');
 const loom = packPose('Wand_loom_panel_GB1_01');
 loom.translation_mm.forEach((value, i) =>
   near(value, [-46.3236364, 38.1329347, 0][i], 'Loom panel must slide into the generator dovetail', .001));

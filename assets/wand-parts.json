@@ -437,7 +437,7 @@
         0
       ],
       "source": "q-pack\\WAND\\MISC\\KNOBS\\Q-pack-TacoShell_MK4_front_knob.stl",
-      "alignment": "Placed at source-model mounting features, not spaced-out placeholders. Physical mating fit remains unverified.",
+      "alignment": "Upper vertical tier beside missing wand Clippard; axis X-25/Z72.333mm, back face Y23.4mm. Lower opening is internal connector M3 fixing, not a knob mount. Physical fit unverified.",
       "assumption": "Illustrative assembly placement; verify against the original guide."
     },
     "top_knob_V2": {

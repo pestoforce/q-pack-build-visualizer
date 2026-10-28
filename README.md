@@ -184,7 +184,12 @@ meaning; `left_big_knob_2` and `left_small_knob_2` are separate new pieces that
 start pending, including when importing older progress. The rear box and cover
 are registered to the body screws and rear face; the rear hose nut, small right
 knob and heat sink are seated on their matching features.
-`scripts/wand-mounting-constraints.json` adds19source-local axis/seating checks.
+`scripts/wand-mounting-constraints.json` adds21source-local axis/seating checks.
+The front knurled knob sits on the upper vertical tier atX-25/Z72.333mm,
+beside the wand valve location. The lower face'sX-18.5/Z22.22mm opening matches
+the internal front-grip connector's M3 fixing axis; it is not a knob mounting
+site. The separate wand Clippard valve remains missing from this preview and
+its modeled-piece count; the pack valve is not a substitute for it.
 The finger-grooved front grip projects sideways from the barrel, not underneath
 it. Its plain screw end faces the rear ear; its angled screw end faces the front
 ear. The rear face seats atY101.19mm. Native geometry leaves approximately0.197mm
