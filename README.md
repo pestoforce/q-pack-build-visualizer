@@ -184,11 +184,16 @@ meaning; `left_big_knob_2` and `left_small_knob_2` are separate new pieces that
 start pending, including when importing older progress. The rear box and cover
 are registered to the body screws and rear face; the rear hose nut, small right
 knob and heat sink are seated on their matching features.
-`scripts/wand-mounting-constraints.json` adds22source-local axis/seating checks.
+`scripts/wand-mounting-constraints.json` adds23source-local axis/seating checks.
 The red Slo-Blo lens occupies the 5mm opening on the sloped rear body panel,
 below the separate toggle opening. Its insertion axis follows the panel normal
 and its shoulder seats on the outer face; the old lower front ledge placement
 was incorrect. This relocates an existing pending cover, not an extra part.
+The orange body indicator is on the lower ledge ahead of the front knob,
+not in the upper Clippard opening. Its supplied 10mm body/12mm flange cannot
+pass through the ledge's 6mm LED opening, so the preview shows exterior base
+contact only, not a verified inside-mounted push fit. Confirm mounting before
+assembly; the preview does not authorize drilling or resizing.
 The front knurled knob sits on the upper vertical tier atX-25/Z72.333mm,
 beside the wand valve location. The lower face'sX-18.5/Z22.22mm opening matches
 the internal front-grip connector's M3 fixing axis; it is not a knob mounting

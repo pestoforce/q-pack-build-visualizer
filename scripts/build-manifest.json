@@ -919,14 +919,14 @@
       "key": "long_hat_inside_body",
       "source_path": "q-pack\\WAND\\LENS\\long_hat_inside_body.stl",
       "rotation_rad": [
-        -1.5707963267948966,
+        0,
         0,
         0
       ],
       "translation_mm": [
-        24.5,
-        20.8,
-        82
+        -12,
+        37,
+        47.9
       ]
     },
     {

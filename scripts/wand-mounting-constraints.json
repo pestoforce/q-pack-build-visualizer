@@ -671,6 +671,22 @@
       "max_axis_angle_deg": 0.05,
       "axial_center_distance_mm": 0,
       "note": "Red Slo-Blo lens shoulder seats on the outer sloped panel at its 5mm opening, below the separate toggle opening."
+    },
+    {
+      "a": {
+        "key": "long_hat_inside_body",
+        "point": [-15, 15, 0],
+        "axis": [0, 0, 1]
+      },
+      "b": {
+        "key": "Gun_body",
+        "point": [-27, 52, 47.9],
+        "axis": [0, 0, 1]
+      },
+      "max_radial_mm": 0.01,
+      "max_axis_angle_deg": 0.05,
+      "axial_center_distance_mm": 0,
+      "note": "Orange cover shown on exterior lower ledge ahead of front knob. Its 10mm body cannot insert through this 6mm LED opening; exterior base contact is illustrative, not an inside-mounted push fit."
     }
   ]
 }
